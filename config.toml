@@ -1,0 +1,25 @@
+baseURL = "https://antoverps.github.io/site/"
+title = "Meu Site"
+theme = "hugo-blox"
+languageCode = "pt-br"
+defaultContentLanguage = "pt"
+
+paginate = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[params]
+  description = "Site pessoal"
+  
+[[menu.main]]
+  name = "Início"
+  url = "#"
+  weight = 1
+
+[[menu.main]]
+  name = "Sobre"
+  url = "about/"
+  weight = 2
