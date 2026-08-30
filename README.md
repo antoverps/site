@@ -1,66 +1,31 @@
-# Site Prof. Antover — Hugo Profile v1
+# Site Prof. Antover — Hugo Profile v2
 
-Base: Hugo Profile v4.06  
-Publicação: GitHub Pages  
-URL prevista: https://antoverps.github.io/site/
+## Alterações desta versão
 
-## O que já está configurado
+- hero com título e tagline menores;
+- Formação removida da Home e do menu;
+- "Atuação" renomeada para **Atuação e áreas de interesse**;
+- projetos migrados para `content/projects/`;
+- a Home exibe apenas projetos com `showInHome: true`;
+- o menu **Projetos** abre o acervo completo em `/projects/`;
+- botão **Ver todos os projetos →** é inserido abaixo dos projetos ativos;
+- seção **Resultados** renomeada para **Grupos e Infraestrutura**;
+- apenas 3 Atualizações recentes na Home;
+- rodapé com ResearchGate, Lattes, ORCID, GitHub e Instagram;
+- crédito do tema mantido em formato profissional:
+  **Tecnologia: Hugo · Tema-base: Hugo Profile**.
 
-- identidade verde institucional;
-- seletor claro/escuro do Hugo Profile;
-- português como idioma principal;
-- estrutura pronta para habilitar inglês depois da tradução;
-- Sobre com o texto do Google Sites atual;
-- Atuação em 3 frentes;
-- Formação;
-- 13 projetos, incluindo o acervo histórico do Google Sites;
-- Resultados/infraestrutura;
-- Atualizações usando `content/blogs/`;
-- contato institucional;
-- GitHub Pages via GitHub Actions;
-- Hugo Profile v4.06 baixado automaticamente durante o build.
+## Regra de projetos
 
-## Antes de subir este pacote no repositório
+A arquitetura já está preparada para automação com a Planilha-Mãe:
 
-No repositório `antoverps/site`, remova o arquivo antigo:
+- `Publicar = SIM` → projeto permanece no acervo;
+- `Status = Ativo` + `Destaque Home = SIM` + `Publicar = SIM` → aparece na Home;
+- projetos concluídos continuam no acervo completo, mas não ocupam a Home.
 
-- `config.toml`
+Nesta versão, somente o **PDDU Catalão** está marcado como ativo na base atualmente conhecida.
 
-Se existirem arquivos da tentativa estática anterior, remova também:
+## Publicação
 
-- `index.html`
-- `.nojekyll`
-
-O arquivo `content/_index.md` deste pacote deve substituir o antigo.
-
-## Como publicar
-
-1. Extraia este ZIP.
-2. No GitHub, abra `antoverps/site`.
-3. Envie todos os arquivos e pastas desta estrutura para a raiz do repositório.
-4. Faça commit na `main`.
-5. Abra **Settings > Pages**.
-6. Em **Build and deployment > Source**, escolha **GitHub Actions**.
-7. Abra a aba **Actions** e acompanhe `Deploy Hugo Profile to GitHub Pages`.
-8. Ao finalizar, abra:
-   https://antoverps.github.io/site/
-
-## Observação sobre imagens
-
-Os links das imagens históricas foram recuperados do Google Sites e preservados na configuração/Planilha-Mãe.
-O servidor `googleusercontent` bloqueou a cópia direta durante a migração. Se algum link não renderizar no GitHub Pages,
-substituiremos o URL por uma imagem local em `static/images/`.
-
-## Inglês
-
-A estrutura `content/en/` e um bloco comentado no `hugo.yaml` foram deixados prontos.
-O inglês não foi ativado nesta versão para evitar um seletor EN exibindo conteúdo ainda não traduzido.
-
-## Próximo passo
-
-Depois que esta primeira versão estiver publicada:
-1. conferir visual;
-2. ajustar o segundo botão do hero para `Entrar em contato`;
-3. revisar textos curtos dos projetos;
-4. substituir imagens instáveis por arquivos locais;
-5. conectar a aba `07 - Atualizações Hugo` da Planilha-Mãe aos posts.
+Substitua no repositório os arquivos equivalentes por esta versão e faça commit na `main`.
+O workflow existente continuará publicando com Hugo Profile v4.06 via GitHub Actions.
