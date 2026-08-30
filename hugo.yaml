@@ -89,7 +89,7 @@ params:
     secondaryColor: '#18231D'
   navbar:
     align: ms-auto
-    brandName: Antover P. Sarmento
+    brandName: Antover Panazzolo Sarmento
     showBrandLogo: false
     disableSearch: true
     stickyNavBar:
