@@ -75,18 +75,29 @@
 
 .antover-hero-copy h1{
   margin:0;
-  max-width:930px;
-  font-size:clamp(2.05rem,5.2vw,3.25rem);line-height:1.04;
-  letter-spacing:-.035em;
+  max-width:none;
+  font-size:clamp(1.9rem,2.55vw,2.55rem);
+  line-height:1.08;
+  letter-spacing:-.03em;
   font-weight:700;
+  white-space:nowrap;
 }
 
 .antover-hero-tagline{
-  margin:1.15rem 0 0;
-  max-width:870px;
-  font-size:clamp(1.18rem,2.05vw,1.78rem);
-  line-height:1.35;
-  font-weight:600;
+  margin:1.05rem 0 0;
+  max-width:835px;
+  font-size:clamp(1rem,1.45vw,1.28rem);
+  line-height:1.48;
+  font-weight:500;
+  color:#587063;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+
+html.dark .antover-hero-tagline,
+[data-bs-theme="dark"] .antover-hero-tagline{
+  color:#8FA99A;
 }
 
 .antover-hero-actions{
@@ -179,6 +190,21 @@
   border:1px solid rgba(128,128,128,.20);
 }
 
+
+@media(max-width:1180px) and (min-width:901px){
+  .antover-hero-grid{
+    grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr);
+    gap:3rem;
+  }
+  .antover-hero-copy h1{
+    font-size:clamp(1.75rem,2.35vw,2.25rem);
+  }
+  .antover-hero-tagline{
+    font-size:clamp(.98rem,1.35vw,1.16rem);
+    max-width:760px;
+  }
+}
+
 @media(max-width:900px){
   .antover-hero{
     min-height:auto;
@@ -198,10 +224,12 @@
 
 @media(max-width:560px){
   .antover-hero-copy h1{
-    font-size:2.3rem;
+    font-size:2rem;
+    white-space:normal;
   }
   .antover-hero-tagline{
-    font-size:1.15rem;
+    font-size:1.05rem;
+    text-align:left;
   }
   .antover-hero-actions{
     flex-direction:column;
@@ -213,8 +241,3 @@
 </style>
 {{ end }}
 
-<style>
-.antover-hero-subtitle{
-  color:#A8C9B5;
-}
-</style>

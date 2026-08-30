@@ -138,13 +138,16 @@ params:
     enable: true
     title: Sobre
     image: ''
-    content: 'Professor na Faculdade de Engenharia (FENG), no Mestrado em Engenharia Civil (PPGEC) e no Doutorado em Engenharia de Materiais (PPGEM) da Universidade Federal de Catalão. Diretor de Administração na Pró-Reitoria de Administração e Finanças (DADM-PROAF-UFCAT). Coordenador Administrativo do Grupo de Pesquisa e Estudo em Engenharia (GPEE-UFCAT). Coordenador do grupo Engenheiros do Bem.
+    content: 'Professor da Faculdade de Engenharia (FENG), do Mestrado em Engenharia Civil (PPGEC), do Mestrado e Doutorado em Engenharia de Materiais (PPGEM) e do Mestrado e Doutorado em Geografia da Universidade Federal de Catalão (UFCAT). Coordenador do Centro de Pesquisa em Engenharia Sustentável (CENPES-UFCAT), coordenador administrativo do Grupo de Pesquisa e Estudo em Engenharia (GPEE-UFCAT), coordenador do Escritório Escola e coordenador docente do grupo Engenheiros do Bem.
 
 
-      Membro titular e representante da UFCAT no Comitê de Bacias Hidrográficas dos Rios Corumbá, Veríssimo e porção Goiana do Rio São Marcos (CBH CVSM). Trabalha com ensino, pesquisa e extensão nos temas: modelagem de variáveis hidrológicas; construção sustentável; estatística, inteligência artificial; gestão de recursos hídricos e ambientais; biodigestão; utilização de drone na engenharia, análise de investimentos, tratamento e gestão de efluentes e resíduos sólidos.
+      Membro titular, representante da AMAT/UFCAT, na Câmara Técnica de Segurança de Barragens (CTSB) do Conselho Nacional de Recursos Hídricos (CNRH), vinculado ao Ministério da Integração e do Desenvolvimento Regional (MIDR).
 
 
-      Doutor e Mestre em Recursos Hídricos e Ambientais pelo Programa de Pós-Graduação em Engenharia Agrícola da Universidade Federal de Viçosa (DEA-UFV) e graduado em Engenharia Agrícola na Universidade Federal de Pelotas (FEA-UFPel).'
+      Membro suplente, representante da UFCAT, no Comitê da Bacia Hidrográfica dos Rios Corumbá, Veríssimo e porção goiana do Rio São Marcos (CBH CVSM).
+
+
+      Doutor e Mestre em Recursos Hídricos e Ambientais pelo Programa de Pós-Graduação em Engenharia Agrícola da Universidade Federal de Viçosa (DEA-UFV) e graduado em Engenharia Agrícola pela Universidade Federal de Pelotas (FEA-UFPel).'
     skills:
       enable: false
   experience:
