@@ -2,17 +2,14 @@
   {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
   <span class="px-1">
     <a href="{{ .url }}" target="_blank" rel="noopener" class="btn social-icon" aria-label="Perfil ou contato externo">
-      {{ $iconName := replace .icon "fab fa-" "" }}
-      {{ $iconName = replace $iconName "fas fa-" "" }}
-      {{ $iconName = replace $iconName "fa fa-" "" }}
-      {{ $iconName = replace $iconName "fa-" "" }}
-      {{ partial "icon" (dict "icon" $iconName) }}
+      <i class="{{ .icon }}" aria-hidden="true"></i>
     </a>
   </span>
   {{ end }}
+
   {{ range .Site.Params.hero.socialLinks.customIcons }}
   <span class="px-1">
-    <a href="{{ .url }}" target="_blank" rel="noopener" class="btn social-icon academic-social-icon">
+    <a href="{{ .url }}" target="_blank" rel="noopener" class="btn social-icon academic-social-icon" aria-label="Perfil acadêmico externo">
       <img src="{{ .icon | relURL }}" alt="">
     </a>
   </span>

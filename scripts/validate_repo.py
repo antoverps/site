@@ -7,6 +7,8 @@ root = Path(__file__).resolve().parents[1]
 
 for p in (root / 'layouts').rglob('*.html'):
     text = p.read_text(encoding='utf-8')
+    if 'partial "icon"' in text or "partial 'icon'" in text:
+        errors.append(f'{p.relative_to(root)}: usa partial "icon", inexistente no Hugo Profile v4.06.')
     # Ignore CSS/JS bodies; only lint the Hugo/HTML template area.
     template_text = re.sub(r'<script\b[^>]*>.*?</script>', '', text, flags=re.S | re.I)
     template_text = re.sub(r'<style\b[^>]*>.*?</style>', '', template_text, flags=re.S | re.I)
@@ -31,6 +33,8 @@ else:
         if p.name == '_index.md':
             continue
         text = p.read_text(encoding='utf-8')
+    if 'partial "icon"' in text or "partial 'icon'" in text:
+        errors.append(f'{p.relative_to(root)}: usa partial "icon", inexistente no Hugo Profile v4.06.')
         for key in required:
             if key not in text:
                 errors.append(f'{p.relative_to(root)}: campo obrigatório ausente: {key}')
