@@ -4,35 +4,36 @@
     <h2 class="text-center pb-4">{{ .Site.Params.projects.title | default "Projetos de PD&I e Extensão — Ativos" }}</h2>
 
     {{ $projects := where .Site.RegularPages "Section" "projects" }}
-    {{ $active := where $projects "Params.status" "Ativo" }}
+    {{ $active := where $projects "Params.showInHome" true }}
 
     {{ if gt (len $active) 0 }}
     <div class="row justify-content-center g-4">
       {{ range $active.ByDate.Reverse }}
+      {{ $project := . }}
       <div class="col-12 col-md-6 col-lg-4">
         <article class="card h-100 shadow-sm project-card-custom">
-          {{ with .Params.image }}
-          <a href="{{ .RelPermalink }}" class="project-image-link">
-            <img src="{{ . | safeURL }}" class="card-img-top project-cover-custom" alt="{{ .Title }}">
+          {{ with $project.Params.image }}
+          <a href="{{ $project.RelPermalink }}" class="project-image-link">
+            <img src="{{ . | safeURL }}" class="card-img-top project-cover-custom" alt="{{ $project.Title }}">
           </a>
           {{ end }}
           <div class="card-body d-flex flex-column">
             <div class="mb-2">
               <span class="badge project-status-active">Ativo</span>
-              {{ with .Params.periodo }}
+              {{ with $project.Params.periodo }}
               <span class="project-period-custom">{{ . }}</span>
               {{ end }}
             </div>
-            <h3 class="h5 card-title">{{ .Title }}</h3>
-            {{ with .Description }}
+            <h3 class="h5 card-title">{{ $project.Title }}</h3>
+            {{ with $project.Description }}
             <p class="card-text text-secondary">{{ . }}</p>
             {{ end }}
-            {{ with .Params.tags }}
+            {{ with $project.Params.tags }}
             <div class="project-tags-custom mt-auto pt-2">
               {{ range . }}<span>{{ . }}</span>{{ end }}
             </div>
             {{ end }}
-            <a href="{{ .RelPermalink }}" class="stretched-link" aria-label="Ver projeto {{ .Title }}"></a>
+            <a href="{{ $project.RelPermalink }}" class="stretched-link" aria-label="Ver projeto {{ $project.Title }}"></a>
           </div>
         </article>
       </div>
