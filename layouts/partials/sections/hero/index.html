@@ -4,7 +4,7 @@
     <div class="antover-hero-grid">
 
       <div class="antover-hero-copy">
-        <h1>{{ .Site.Params.hero.title }}</h1>
+        <h1 style="font-size:2rem !important; line-height:1.08 !important; white-space:nowrap !important; max-width:none !important;">{{ .Site.Params.hero.title }}</h1>
 
         <p class="antover-hero-tagline">
           {{ .Site.Params.hero.subtitle }}
@@ -15,7 +15,7 @@
             Conheça os projetos
           </a>
           <a href="#contact" class="antover-btn antover-btn-secondary">
-            Entrar em contato
+            Dados para contato
           </a>
         </div>
 
@@ -238,6 +238,14 @@ html.dark .antover-hero-tagline,
     width:100%;
   }
 }
+
+@media(max-width:900px){
+  .antover-hero-copy h1{
+    font-size:1.7rem !important;
+    white-space:normal !important;
+  }
+}
+
 </style>
 {{ end }}
 
