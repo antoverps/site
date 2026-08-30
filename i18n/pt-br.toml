@@ -1,0 +1,23 @@
+[nav_home]
+other = "Início"
+
+[nav_about]
+other = "Sobre"
+
+[nav_experience]
+other = "Atuação"
+
+[nav_education]
+other = "Formação"
+
+[nav_projects]
+other = "Projetos"
+
+[nav_achievements]
+other = "Resultados"
+
+[nav_contact]
+other = "Contato"
+
+[nav_blog]
+other = "Atualizações"
