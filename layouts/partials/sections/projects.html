@@ -15,37 +15,37 @@
       <button class="project-filter-btn" type="button" data-filter="ensino">Ensino</button>
     </div>
 
-    { $projects := where .Site.RegularPages "Section" "projects" }
+    {{ $projects := where .Site.RegularPages "Section" "projects" }}
     <div class="project-portfolio-grid">
-      { range $projects.ByDate.Reverse }
-      { $project := . }
+      {{ range $projects.ByDate.Reverse }}
+      {{ $project := . }}
       <article class="project-portfolio-item"
         tabindex="0"
         role="button"
-        data-title="{ $project.Title }"
-        data-status="{ $project.Params.status }"
-        data-periodo="{ $project.Params.periodo }"
-        data-description="{ $project.Description }"
-        data-tags="{ delimit ($project.Params.tags | default (slice)) "|" }"
-        data-tags-display="{ delimit ($project.Params.tags | default (slice)) "|" }"
-        data-image="{ $project.Params.image }"
-        data-url="{ $project.RelPermalink }">
-        { with $project.Params.image }
-          <img class="project-portfolio-image" src="{ . | safeURL }" alt="{ $project.Title }"
+        data-title="{{ $project.Title }}"
+        data-status="{{ $project.Params.status }}"
+        data-periodo="{{ $project.Params.periodo }}"
+        data-description="{{ $project.Description }}"
+        data-tags="{{ delimit ($project.Params.tags | default (slice)) "|" }}"
+        data-tags-display="{{ delimit ($project.Params.tags | default (slice)) "|" }}"
+        data-image="{{ $project.Params.image }}"
+        data-url="{{ $project.RelPermalink }}">
+        {{ with $project.Params.image }}
+          <img class="project-portfolio-image" src="{{ . | safeURL }}" alt="{{ $project.Title }}"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div class="project-portfolio-placeholder" style="display:none"></div>
-        { else }
+        {{ else }}
           <div class="project-portfolio-placeholder"></div>
-        { end }
+        {{ end }}
         <div class="project-portfolio-overlay">
-          <h3>{ $project.Title }</h3>
+          <h3>{{ $project.Title }}</h3>
           <div class="project-portfolio-meta">
-            <span class="project-portfolio-status">{ $project.Params.status }</span>
-            { with $project.Params.periodo }<span>{ . }</span>{ end }
+            <span class="project-portfolio-status">{{ $project.Params.status }}</span>
+            {{ with $project.Params.periodo }}<span>{{ . }}</span>{{ end }}
           </div>
         </div>
       </article>
-      { end }
+      {{ end }}
     </div>
 
     <div class="project-portfolio-empty">
