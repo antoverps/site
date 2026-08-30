@@ -1,0 +1,178 @@
+{{ define "main" }}
+<main class="container py-5 updates-list-page">
+  <header class="text-center mb-5">
+    <h1>Atualizações</h1>
+    <p class="text-secondary updates-list-intro">
+      Notícias, vagas, eventos, projetos e publicações.
+    </p>
+  </header>
+
+  {{ $pages := .Pages.ByDate.Reverse }}
+
+  {{ if gt (len $pages) 0 }}
+  <div class="updates-grid">
+    {{ range $pages }}
+    {{ $post := . }}
+    <article class="update-card">
+      <a href="{{ $post.RelPermalink }}" class="update-card-link" aria-label="Ler {{ $post.Title }}">
+
+        <div class="update-card-image-wrap">
+          {{ with $post.Params.image }}
+            {{- $img := . -}}
+            {{- if or (hasPrefix $img "http://") (hasPrefix $img "https://") -}}
+              <img src="{{ $img | safeURL }}"
+                   class="update-card-image"
+                   alt="{{ $post.Params.image_alt | default $post.Title }}">
+            {{- else -}}
+              <img src="{{ $img | relURL }}"
+                   class="update-card-image"
+                   alt="{{ $post.Params.image_alt | default $post.Title }}">
+            {{- end -}}
+          {{ else }}
+            <div class="update-card-placeholder" aria-hidden="true"></div>
+          {{ end }}
+        </div>
+
+        <div class="update-card-body">
+          <div class="update-card-meta">
+            <span>{{ $post.Date.Format ($post.Site.Params.datesFormat.articleList | default "02/01/2006") }}</span>
+            {{ with index $post.Params.categories 0 }}
+            <span class="update-card-category">{{ . }}</span>
+            {{ end }}
+          </div>
+
+          <h2>{{ $post.Title }}</h2>
+
+          {{ with $post.Description }}
+          <p>{{ . }}</p>
+          {{ end }}
+
+          {{ with $post.Params.tags }}
+          <div class="update-card-tags">
+            {{ range first 3 . }}
+            <span>{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          <div class="update-card-read">Ler →</div>
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p class="text-center text-secondary">Nenhuma atualização publicada.</p>
+  {{ end }}
+</main>
+
+<style>
+.updates-list-page{
+  min-height:65vh;
+}
+.updates-list-intro{
+  max-width:650px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.updates-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1rem;
+  max-width:1120px;
+  margin:0 auto;
+}
+.update-card{
+  overflow:hidden;
+  border:1px solid rgba(128,128,128,.20);
+  border-radius:.8rem;
+  background:rgba(128,128,128,.055);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.update-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+  border-color:rgba(0,71,37,.42);
+}
+.update-card-link{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  color:inherit!important;
+  text-decoration:none!important;
+}
+.update-card-image-wrap{
+  width:100%;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  background:rgba(128,128,128,.08);
+}
+.update-card-image,
+.update-card-placeholder{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.update-card-image{
+  object-fit:cover;
+}
+.update-card-placeholder{
+  background:linear-gradient(135deg,#004725,#0a6b3d);
+}
+.update-card-body{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  padding:1rem;
+}
+.update-card-meta{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:.45rem;
+  font-size:.72rem;
+  opacity:.72;
+  margin-bottom:.55rem;
+}
+.update-card-category{
+  border:1px solid rgba(128,128,128,.26);
+  border-radius:999px;
+  padding:.12rem .4rem;
+}
+.update-card h2{
+  font-size:1rem;
+  line-height:1.35;
+  margin:0 0 .55rem;
+}
+.update-card p{
+  font-size:.86rem;
+  line-height:1.52;
+  margin:0;
+  opacity:.82;
+}
+.update-card-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.32rem;
+  margin-top:.8rem;
+}
+.update-card-tags span{
+  font-size:.68rem;
+  padding:.2rem .4rem;
+  border-radius:999px;
+  border:1px solid rgba(128,128,128,.25);
+}
+.update-card-read{
+  margin-top:auto;
+  padding-top:1rem;
+  font-size:.82rem;
+  font-weight:650;
+}
+@media(max-width:900px){
+  .updates-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .updates-grid{grid-template-columns:1fr}
+}
+</style>
+{{ end }}
