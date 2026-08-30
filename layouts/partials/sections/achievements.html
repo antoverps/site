@@ -1,16 +1,15 @@
 {{ if .Site.Params.achievements.enable | default false }}
-<section id="achievements" class="py-5 groups-infra-section" data-groups-infra>
+<section id="achievements" class="py-5 groups-infra-section">
   <div class="container">
     <h3 class="text-center mb-4">{{ .Site.Params.achievements.title | default "Grupos e Infraestrutura" }}</h3>
-
     {{ $groups := where .Site.RegularPages "Section" "grupos" }}
     <div class="row justify-content-center g-3">
       {{ range $groups.ByParam "ordem" }}
       {{ $group := . }}
       <div class="col-12 col-md-6 col-lg-3">
-        <button class="group-infra-card card h-100 p-3 text-decoration-none group-infra-open"
-                type="button"
-                aria-label="Abrir informações sobre {{ $group.Title }}">
+        <a href="{{ $group.RelPermalink }}"
+           class="group-infra-card card h-100 p-3 text-decoration-none"
+           aria-label="Abrir página de {{ $group.Title }}">
           <div class="group-infra-icon-wrap">
             {{ with $group.Params.image }}
             <img src="{{ . | relURL }}" class="group-infra-icon" alt="{{ $group.Title }}">
@@ -20,36 +19,9 @@
             <h4 class="h5 mb-2">{{ $group.Title }}</h4>
             <p class="mb-0 text-secondary small">{{ $group.Description }}</p>
           </div>
-        </button>
-
-        <div class="group-modal-source" hidden>
-          <span class="source-title">{{ $group.Title }}</span>
-          <span class="source-type">{{ $group.Params.tipo }}</span>
-          <p class="source-description">{{ $group.Description }}</p>
-          <div class="source-tags">
-            {{ range ($group.Params.tags | default (slice)) }}<span>{{ . }}</span>{{ end }}
-          </div>
-          <span class="source-image">{{ $group.Params.image }}</span>
-          <a class="source-url" href="{{ $group.RelPermalink }}">Abrir página</a>
-        </div>
+        </a>
       </div>
       {{ end }}
-    </div>
-  </div>
-
-  <div class="group-modal-backdrop" aria-hidden="true">
-    <div class="group-modal" role="dialog" aria-modal="true" aria-labelledby="group-modal-title">
-      <button class="group-modal-close" type="button" aria-label="Fechar">×</button>
-      <div class="group-modal-visual">
-        <img class="group-modal-image" src="" alt="">
-      </div>
-      <div class="group-modal-body">
-        <div class="group-modal-type text-secondary"></div>
-        <h3 id="group-modal-title" class="group-modal-title"></h3>
-        <div class="group-modal-tags"></div>
-        <p class="group-modal-description"></p>
-        <a class="btn btn-primary group-modal-detail" href="#">Ver detalhes</a>
-      </div>
     </div>
   </div>
 </section>
@@ -62,67 +34,14 @@
   cursor:pointer;
   border:1px solid rgba(128,128,128,.20);
   background:var(--bs-card-bg,transparent);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
 }
-.group-infra-card:hover{color:inherit!important}
-.group-modal-backdrop{position:fixed;inset:0;z-index:1110;background:rgba(0,0,0,.74);display:none;align-items:center;justify-content:center;padding:1rem}
-.group-modal-backdrop.is-open{display:flex}
-.group-modal{position:relative;width:min(720px,96vw);max-height:90vh;overflow:auto;border-radius:1rem;background:#fff;color:#202522;box-shadow:0 25px 70px rgba(0,0,0,.35)}
-html.dark .group-modal{background:#18231D;color:#F1F5F2}
-.group-modal-close{position:absolute;top:.7rem;right:.7rem;z-index:3;width:2.2rem;height:2.2rem;border-radius:50%;border:0;background:rgba(0,0,0,.62);color:#fff;font-size:1.2rem;cursor:pointer}
-.group-modal-visual{height:190px;display:flex;align-items:center;justify-content:center;background:rgba(128,128,128,.06);padding:1.5rem}
-.group-modal-image{max-width:260px;max-height:145px;object-fit:contain;display:block}
-.group-modal-body{padding:1.35rem 1.5rem 1.6rem}
-.group-modal-type{font-size:.85rem;margin-bottom:.35rem}
-.group-modal-title{margin:.1rem 0 .75rem}
-.group-modal-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1rem}
-.group-modal-tags span{font-size:.75rem;padding:.26rem .5rem;border:1px solid rgba(128,128,128,.3);border-radius:999px}
+.group-infra-card:hover{
+  color:inherit!important;
+  text-decoration:none!important;
+  transform:translateY(-3px);
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+  border-color:rgba(0,71,37,.42);
+}
 </style>
-
-<script>
-(function(){
-  document.querySelectorAll("[data-groups-infra]").forEach(function(root){
-    if(root.dataset.ready==="1") return;
-    root.dataset.ready="1";
-    var modal=root.querySelector(".group-modal-backdrop");
-    if(!modal) return;
-    var title=modal.querySelector(".group-modal-title");
-    var type=modal.querySelector(".group-modal-type");
-    var desc=modal.querySelector(".group-modal-description");
-    var tags=modal.querySelector(".group-modal-tags");
-    var image=modal.querySelector(".group-modal-image");
-    var detail=modal.querySelector(".group-modal-detail");
-
-    function close(){
-      modal.classList.remove("is-open");
-      modal.setAttribute("aria-hidden","true");
-      document.body.style.overflow="";
-    }
-
-    root.querySelectorAll(".group-infra-open").forEach(function(btn){
-      btn.addEventListener("click",function(){
-        var source=btn.parentElement.querySelector(".group-modal-source");
-        title.textContent=source.querySelector(".source-title").textContent;
-        type.textContent=source.querySelector(".source-type").textContent;
-        desc.textContent=source.querySelector(".source-description").textContent;
-        tags.innerHTML="";
-        source.querySelectorAll(".source-tags span").forEach(function(tag){
-          tags.appendChild(tag.cloneNode(true));
-        });
-        var imgSrc=source.querySelector(".source-image").textContent.trim();
-        image.src=imgSrc;
-        image.alt=title.textContent;
-        detail.href=source.querySelector(".source-url").getAttribute("href");
-        modal.classList.add("is-open");
-        modal.setAttribute("aria-hidden","false");
-        document.body.style.overflow="hidden";
-      });
-    });
-
-    var closeBtn=modal.querySelector(".group-modal-close");
-    if(closeBtn) closeBtn.addEventListener("click",close);
-    modal.addEventListener("click",function(e){if(e.target===modal)close()});
-    document.addEventListener("keydown",function(e){if(e.key==="Escape"&&modal.classList.contains("is-open"))close()});
-  });
-})();
-</script>
 {{ end }}
