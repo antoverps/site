@@ -4,6 +4,18 @@
     <div class="antover-hero-grid">
 
       <div class="antover-hero-copy">
+        <div class="antover-hero-logos" aria-label="Instituições e grupos vinculados">
+          <div class="antover-hero-logo antover-hero-logo-left">
+            <img src="{{ "images/gpee.png" | relURL }}" alt="GPEE">
+          </div>
+          <div class="antover-hero-logo antover-hero-logo-center">
+            <img src="{{ "images/cenpes.png" | relURL }}" alt="CENPES">
+          </div>
+          <div class="antover-hero-logo antover-hero-logo-right">
+            <img src="{{ "images/ufcat.png" | relURL }}" alt="UFCAT">
+          </div>
+        </div>
+
         <h1 style="font-size:2rem !important; line-height:1.08 !important; white-space:nowrap !important; max-width:none !important;">{{ .Site.Params.hero.title }}</h1>
 
         <p class="antover-hero-tagline">
@@ -243,6 +255,58 @@ html.dark .antover-hero-tagline,
   .antover-hero-copy h1{
     font-size:1.7rem !important;
     white-space:normal !important;
+  }
+}
+
+
+.antover-hero-logos{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items:center;
+  gap:1.5rem;
+  width:100%;
+  max-width:820px;
+  margin:0 0 1.55rem;
+}
+.antover-hero-logo{
+  min-width:0;
+  display:flex;
+  align-items:center;
+}
+.antover-hero-logo-left{
+  justify-content:flex-start;
+}
+.antover-hero-logo-center{
+  justify-content:center;
+}
+.antover-hero-logo-right{
+  justify-content:flex-end;
+}
+.antover-hero-logo img{
+  display:block;
+  max-width:100%;
+  width:auto;
+  height:auto;
+  max-height:64px;
+  object-fit:contain;
+}
+@media(max-width:900px){
+  .antover-hero-logos{
+    max-width:100%;
+    gap:1rem;
+    margin-bottom:1.25rem;
+  }
+  .antover-hero-logo img{
+    max-height:52px;
+  }
+}
+@media(max-width:560px){
+  .antover-hero-logos{
+    grid-template-columns:repeat(3,1fr);
+    gap:.65rem;
+  }
+  .antover-hero-logo img{
+    max-height:42px;
   }
 }
 
