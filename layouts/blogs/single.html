@@ -11,7 +11,12 @@
 
     {{ with .Params.image }}
     <div class="blog-cover-wrap mb-4">
-      <img src="{{ . | relURL }}" class="blog-cover-custom" alt="{{ $.Title }}">
+      {{- $img := . -}}
+      {{- if or (hasPrefix $img "http://") (hasPrefix $img "https://") -}}
+        <img src="{{ $img | safeURL }}" class="blog-cover-custom" alt="{{ $.Title }}">
+      {{- else -}}
+        <img src="{{ $img | relURL }}" class="blog-cover-custom" alt="{{ $.Title }}">
+      {{- end -}}
     </div>
     {{ end }}
 
