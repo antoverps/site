@@ -1,0 +1,50 @@
+{{ if .Site.Params.projects.enable | default false }}
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center pb-4">{{ .Site.Params.projects.title | default "Projetos de PD&I e Extensão — Ativos" }}</h2>
+
+    {{ $projects := where .Site.RegularPages "Section" "projects" }}
+    {{ $active := where $projects "Params.status" "Ativo" }}
+
+    {{ if gt (len $active) 0 }}
+    <div class="row justify-content-center g-4">
+      {{ range $active.ByDate.Reverse }}
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm project-card-custom">
+          {{ with .Params.image }}
+          <a href="{{ .RelPermalink }}" class="project-image-link">
+            <img src="{{ . | safeURL }}" class="card-img-top project-cover-custom" alt="{{ .Title }}">
+          </a>
+          {{ end }}
+          <div class="card-body d-flex flex-column">
+            <div class="mb-2">
+              <span class="badge project-status-active">Ativo</span>
+              {{ with .Params.periodo }}
+              <span class="project-period-custom">{{ . }}</span>
+              {{ end }}
+            </div>
+            <h3 class="h5 card-title">{{ .Title }}</h3>
+            {{ with .Description }}
+            <p class="card-text text-secondary">{{ . }}</p>
+            {{ end }}
+            {{ with .Params.tags }}
+            <div class="project-tags-custom mt-auto pt-2">
+              {{ range . }}<span>{{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
+            <a href="{{ .RelPermalink }}" class="stretched-link" aria-label="Ver projeto {{ .Title }}"></a>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="text-center text-secondary">Nenhum projeto ativo cadastrado no momento.</p>
+    {{ end }}
+
+    <div class="text-center mt-4">
+      <a class="btn btn-outline-primary px-4" href="{{ "projects/" | relURL }}">Ver todos os projetos →</a>
+    </div>
+  </div>
+</section>
+{{ end }}
