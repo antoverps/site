@@ -1,0 +1,68 @@
+{{ define "main" }}
+<main class="container py-5 blog-single-custom">
+  <a class="btn btn-sm btn-outline-secondary mb-4" href="{{ "blogs/" | relURL }}">← Voltar às Atualizações</a>
+
+  <article class="blog-article-custom">
+    <header class="mb-4">
+      <div class="small text-secondary mb-2">{{ .Date.Format (.Site.Params.datesFormat.article | default "02/01/2006") }}</div>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lead text-secondary">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ with .Params.image }}
+    <div class="blog-cover-wrap mb-4">
+      <img src="{{ . | relURL }}" class="blog-cover-custom" alt="{{ $.Title }}">
+    </div>
+    {{ end }}
+
+    {{ with .Params.tags }}
+    <section class="blog-meta-section mb-4">
+      <h2 class="blog-meta-label">Tags</h2>
+      <div class="blog-tags-custom">
+        {{ range . }}
+        <span>{{ . }}</span>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    <div class="blog-content-custom">
+      {{ .Content }}
+    </div>
+
+    {{ if .Site.Params.singlePages.socialShare }}
+    <section class="blog-share-section mt-5 pt-4">
+      <h2 class="blog-meta-label">Compartilhar</h2>
+      {{ $url := .Permalink | urlquery }}
+      {{ $title := .Title | urlquery }}
+      <div class="blog-share-row">
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url }}" target="_blank" rel="noopener" title="Compartilhar no LinkedIn" aria-label="Compartilhar no LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 7.9H1.6V22h3.6V7.9zM3.4 2A2.1 2.1 0 1 0 3.4 6.2 2.1 2.1 0 0 0 3.4 2zM22.4 14c0-4.2-2.2-6.2-5.2-6.2-2.4 0-3.5 1.3-4.1 2.2v-1.9H9.5V22h3.6v-6.9c0-1.8.3-3.6 2.6-3.6 2.3 0 2.3 2.1 2.3 3.7V22h3.6V14z"/></svg>
+        </a>
+        <a href="https://api.whatsapp.com/send?text={{ $title }}%20{{ $url }}" target="_blank" rel="noopener" title="Compartilhar no WhatsApp" aria-label="Compartilhar no WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.7 11.7 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zm-8.4 18.2h-.1c-1.7 0-3.5-.5-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.8 9.8 0 1 1 8.7 4.8zm5.4-7.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.1-.7-1.7-1-2.3-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.2-.3-.3-.6-.4z"/></svg>
+        </a>
+        <a href="mailto:?subject={{ $title }}&body={{ $url }}" title="Compartilhar por e-mail" aria-label="Compartilhar por e-mail">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm10 8 9-6H3l9 6zm0 2.4L2 7.7V18h20V7.7l-10 6.7z"/></svg>
+        </a>
+      </div>
+    </section>
+    {{ end }}
+  </article>
+</main>
+
+<style>
+.blog-article-custom{max-width:920px;margin:0 auto}
+.blog-cover-wrap{overflow:hidden;border-radius:.9rem;background:rgba(128,128,128,.06)}
+.blog-cover-custom{width:100%;max-height:500px;object-fit:cover;display:block}
+.blog-meta-label{font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;margin:0 0 .65rem;opacity:.7}
+.blog-tags-custom{display:flex;flex-wrap:wrap;gap:.4rem}
+.blog-tags-custom span{font-size:.78rem;padding:.28rem .55rem;border:1px solid rgba(128,128,128,.3);border-radius:999px}
+.blog-content-custom{line-height:1.75}
+.blog-share-section{border-top:1px solid rgba(128,128,128,.18)}
+.blog-share-row{display:flex;gap:.55rem}
+.blog-share-row a{width:42px;height:42px;border:1px solid rgba(128,128,128,.28);border-radius:.55rem;display:grid;place-items:center;color:inherit!important;text-decoration:none!important}
+.blog-share-row a:hover{border-color:#004725;transform:translateY(-1px)}
+.blog-share-row svg{width:21px;height:21px;fill:currentColor}
+</style>
+{{ end }}
