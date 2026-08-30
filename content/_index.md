@@ -1,3 +1,3 @@
 ---
-title: "Prof. Antover Panazzolo Sarmento"
+title: ""
 ---
