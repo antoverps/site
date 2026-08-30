@@ -1,12 +1,9 @@
 ---
 title: "CENPES"
-date: "2026-08-30"
+date: 2026-01-01
 draft: false
-description: "Centro de Pesquisa em Engenharia Sustentável."
+description: "Página institucional em preparação."
+tags: ["Grupo e Infraestrutura"]
 ---
 
-**Página em construção.**
-
-Centro de Pesquisa em Engenharia Sustentável: articulação de pesquisadores, estudantes, infraestrutura e projetos aplicados.
-
-Mais informações em breve.
+Esta página será detalhada após a validação final do layout do site.

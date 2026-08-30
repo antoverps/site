@@ -1,4 +1,4 @@
 ---
 title: "Grupos e Infraestrutura"
-description: "Grupos de pesquisa, extensão e infraestrutura coordenados ou integrados pelo Prof. Antover."
+description: "Grupos, laboratórios e infraestrutura associados à atuação acadêmica e institucional."
 ---

@@ -4,6 +4,8 @@ title: Prof. Antover Panazzolo Sarmento
 theme: hugo-profile
 defaultContentLanguage: pt-br
 defaultContentLanguageInSubdir: false
+ignoreFiles:
+- content/projetcs/.*
 languages:
   pt-br:
     languageName: Português
@@ -14,18 +16,31 @@ languages:
       main:
       - identifier: inicio
         name: Início
-        title: Início
         url: /
-        weight: 0
+        weight: 1
+      - identifier: sobre
+        name: Sobre
+        url: /#about
+        weight: 2
+      - identifier: atuacao
+        name: Atuação e áreas de interesse
+        url: /#experience
+        weight: 3
       - identifier: projetos
         name: Projetos
-        title: Projetos ativos e acervo completo
-        url: /projects/
+        url: /#projects
+        weight: 4
+      - identifier: grupos
+        name: Grupos e Infraestrutura
+        url: /#achievements
         weight: 5
       - identifier: atualizacoes
         name: Atualizações
-        title: Notícias, vagas, eventos e publicações
         url: /blogs/
+        weight: 6
+      - identifier: contato
+        name: Contato
+        url: /#contact
         weight: 7
 outputs:
   home:
@@ -45,7 +60,7 @@ markup:
 params:
   title: Prof. Antover Panazzolo Sarmento
   description: Engenharia sustentável, recursos hídricos, diagnóstico ambiental, geotecnologias e inteligência artificial aplicada.
-  favicon: /fav.png
+  favicon: fav.svg
   useBootstrapCDN: false
   mathjax: false
   animate: true
@@ -75,20 +90,19 @@ params:
   navbar:
     align: ms-auto
     brandName: Antover P. Sarmento
-    disableSearch: false
-    searchPlaceholder: Buscar
+    showBrandLogo: false
+    disableSearch: true
     stickyNavBar:
       enable: true
       showOnScrollUp: true
       enableSeparator: false
     menus:
-      disableAbout: false
-      disableExperience: false
+      disableAbout: true
+      disableExperience: true
       disableEducation: true
       disableProjects: true
-      disableAchievements: false
-      disableContact: false
-    showBrandLogo: false
+      disableAchievements: true
+      disableContact: true
   hero:
     enable: true
     intro: ''
@@ -113,11 +127,12 @@ params:
         url: https://github.com/antoverps
       - icon: fab fa-instagram
         url: https://www.instagram.com/antoverps/
-      - icon: fas fa-id-card
-        url: http://lattes.cnpq.br/4025685702530313
-      - icon: fab fa-researchgate
+      customIcons:
+      - icon: /icons-academic/researchgate.svg
         url: https://www.researchgate.net/profile/Antover-Sarmento
-      - icon: fab fa-orcid
+      - icon: /icons-academic/lattes.svg
+        url: http://lattes.cnpq.br/4025685702530313
+      - icon: /icons-academic/orcid.svg
         url: https://orcid.org/0000-0002-8533-1575
   about:
     enable: true
@@ -178,16 +193,23 @@ params:
     items:
     - title: CENPES
       content: 'Centro de Pesquisa em Engenharia Sustentável: articulação de pesquisadores, estudantes, infraestrutura e projetos aplicados.'
+      image: /images/groups/cenpes.svg
+      url: /grupos/cenpes/
     - title: LAIMS
-      content: Laboratório de Inteligência Artificial, Modelagem e Simulação, com cluster de 192 núcleos, 1 TB de RAM, cinco workstations e plataforma Coretec Tools.
+      content: Laboratório de Inteligência Artificial, Modelagem e Simulação, com infraestrutura computacional para pesquisa aplicada.
+      image: /images/groups/laims.svg
+      url: /grupos/laims/
     - title: GPEE
       content: Grupo de Pesquisa e Estudo em Engenharia, integrando formação, pesquisa e desenvolvimento de soluções.
+      image: /images/groups/gpee.svg
+      url: /grupos/gpee/
     - title: Engenheiros do Bem
       content: Grupo de extensão voltado à aplicação do conhecimento de engenharia em ações de interesse social.
+      image: /images/groups/engenheiros-do-bem.svg
+      url: /grupos/engenheiros-do-bem/
   projects:
     enable: true
-    title: Projetos de PD&I e Extensão — Ativos
-    items: []
+    title: Projetos de PD&I e Extensão
   contact:
     enable: true
     title: Contato
@@ -224,4 +246,5 @@ params:
     article: 02/01/2006
     articleList: 02/01/2006
     articleRecent: 02/01/2006
-  customScripts: "<style>\n/* Hero mais compacto */\n#hero h1 {\n  font-size: clamp(2.15rem, 4.2vw, 3.55rem) !important;\n  line-height: 1.06 !important;\n  letter-spacing: -0.025em;\n}\n#hero h2,\n#hero .subtitle {\n  font-size: clamp(1.15rem, 2.15vw, 1.75rem) !important;\n  line-height: 1.35 !important;\n  max-width: 850px;\n}\n\n/* Projetos */\n.project-card-custom {\n  overflow: hidden;\n  border-radius: .75rem;\n  transition: transform .18s ease, box-shadow .18s ease;\n}\n.project-card-custom:hover {\n  transform: translateY(-3px);\n}\n.project-cover-custom {\n  width: 100%;\n  height: 190px;\n  object-fit: cover;\n}\n.project-status-active {\n  background: #004725 !important;\n  color: #fff !important;\n}\n.project-status-completed {\n  background: #5f6962 !important;\n  color: #fff !important;\n}\n.project-period-custom {\n  font-size: .82rem;\n  margin-left: .45rem;\n  opacity: .72;\n}\n.project-tags-custom {\n  display: flex;\n  flex-wrap: wrap;\n  gap: .35rem;\n}\n.project-tags-custom span {\n  display: inline-block;\n  padding: .22rem .48rem;\n  border-radius: 999px;\n  font-size: .72rem;\n  border: 1px solid rgba(128,128,128,.28);\n}\n.project-count-custom {\n  font-size: .85rem;\n  opacity: .68;\n}\n.projects-list-page {\n  min-height: 60vh;\n}\n\n/* Ícones acadêmicos no rodapé, ao lado de GitHub/Instagram (herdam o tamanho original) */\n.footer-extra-social {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  margin: 0 .3rem;\n  line-height: 1;\n  text-decoration: none !important;\n}\n.footer-extra-social:hover {\n  transform: translateY(-2px);\n}\n\n/* Crédito \"Tecnologia: Hugo · Tema-base: Hugo Profile\" menor, mantido no canto esquerdo */\n.footer-credit-custom {\n  font-size: .78rem !important;\n  opacity: .65;\n  text-align: left !important;\n  margin-left: 0 !important;\n}\n\n/* Grupos e Infraestrutura — ícone + card clicável */\n.achievement-icon {\n  margin-right: .45rem;\n  color: var(--primary-color, #004725);\n}\n.achievement-clickable {\n  cursor: pointer;\n  transition: transform .18s ease, box-shadow .18s ease;\n}\n.achievement-clickable:hover {\n  transform: translateY(-3px);\n  box-shadow: 0 12px 30px rgba(0,0,0,.14);\n}\n</style>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  // Segundo CTA do hero.\n  const heroButton = document.querySelector(\"#hero a.btn\");\n  if (heroButton && !document.querySelector(\"#hero .contact-cta\")) {\n    const contact = heroButton.cloneNode(false);\n    contact.textContent = \"Entrar em contato\";\n    contact.href = \"#contact\";\n    contact.classList.add(\"contact-cta\", \"ms-2\");\n    heroButton.parentElement.appendChild(contact);\n  }\n\n  // ===== Rodapé: ícones acadêmicos com o MESMO tamanho de GitHub/Instagram =====\n  const footer = document.querySelector(\"footer\");\n  if (footer) {\n    footer.querySelectorAll(\".footer-academic-links\").forEach(el => el.remove());\n\n    const github = footer.querySelector('a[href*=\"github.com/antoverps\"]');\n    const instagram = footer.querySelector('a[href*=\"instagram.com/antoverps\"]');\n    const template = github || instagram;\n\n    if (template && !footer.querySelector(\".footer-extra-social\")) {\n      const parent = template.parentElement;\n\n      const cloneSocialIcon = (href, label, iconClasses) => {\n        const clone = template.cloneNode(true);\n        clone.setAttribute(\"href\", href);\n        clone.setAttribute(\"target\", \"_blank\");\n        clone.setAttribute(\"rel\", \"noopener\");\n        clone.setAttribute(\"aria-label\", label);\n        clone.title = label;\n        clone.classList.add(\"footer-extra-social\");\n\n        // Ícone interno: preserva classes de tamanho (fa-lg, fa-xl, fa-2x, fa-fw...)\n        // e troca apenas o glifo/estilo da marca.\n        const icon = clone.querySelector(\"i\") || clone;\n        const sizeClasses = Array.from(icon.classList).filter(c =>\n          /^fa-(lg|xl|xs|sm|fw|[1-9]x)$/.test(c)\n        );\n        icon.className = \"\";\n        iconClasses.split(\" \").forEach(c => icon.classList.add(c));\n        sizeClasses.forEach(c => icon.classList.add(c));\n\n        return clone;\n      };\n\n      const extras = [\n        cloneSocialIcon(\"https://www.researchgate.net/profile/Antover-Sarmento\", \"ResearchGate\", \"fab fa-researchgate\"),\n        cloneSocialIcon(\"http://lattes.cnpq.br/4025685702530313\", \"Currículo Lattes\", \"fas fa-id-card\"),\n        cloneSocialIcon(\"https://orcid.org/0000-0002-8533-1575\", \"ORCID\", \"fab fa-orcid\")\n      ];\n\n      // Ordem final: ResearchGate · Lattes · ORCID · GitHub · Instagram.\n      extras.forEach(link => parent.insertBefore(link, template));\n    }\n\n    // Crédito do tema — menor, mantido no canto esquerdo.\n    const candidates = Array.from(footer.querySelectorAll(\"div,p,span\"));\n    const credit = candidates.find(el =>\n      el.textContent &&\n      (el.textContent.includes(\"Made with\") || el.textContent.includes(\"Tecnologia:\")) &&\n      !el.classList.contains(\"footer-academic-links\")\n    );\n    if (credit) {\n      credit.innerHTML =\n        'Tecnologia: <a href=\"https://gohugo.io/\" target=\"_blank\" rel=\"noopener\">Hugo</a> · ' +\n        'Tema-base: <a href=\"https://github.com/gurusabarish/hugo-profile\" target=\"_blank\" rel=\"noopener\">Hugo Profile</a>';\n      credit.classList.add(\"footer-credit-custom\");\n    }\n  }\n\n  // ===== Grupos e Infraestrutura: ícone + card clicável para cada item =====\n  const achievementData = {\n    \"CENPES\": { icon: \"fas fa-flask\", url: \"/grupos/cenpes/\" },\n    \"LAIMS\": { icon: \"fas fa-microchip\", url: \"/grupos/laims/\" },\n    \"GPEE\": { icon: \"fas fa-users\", url: \"/grupos/gpee/\" },\n    \"Engenheiros do Bem\": { icon: \"fas fa-hand-holding-heart\", url: \"/grupos/engenheiros-do-bem/\" }\n  };\n\n  const achievementsSection =\n    document.querySelector(\"#achievements\") ||\n    Array.from(document.querySelectorAll(\"section\")).find(\n      s => s.textContent && s.textContent.includes(\"Grupos e Infraestrutura\")\n    );\n\n  if (achievementsSection) {\n    achievementsSection.querySelectorAll(\"h1, h2, h3, h4, h5\").forEach(heading => {\n      const title = heading.textContent.trim();\n      const data = achievementData[title];\n      if (!data || heading.dataset.linked === \"1\") return;\n      heading.dataset.linked = \"1\";\n\n      if (!heading.querySelector(\".achievement-icon\")) {\n        const icon = document.createElement(\"i\");\n        icon.className = data.icon + \" achievement-icon\";\n        icon.setAttribute(\"aria-hidden\", \"true\");\n        heading.prepend(icon);\n      }\n\n      let card = heading.parentElement;\n      for (let i = 0; i < 5 && card && card !== achievementsSection; i++) {\n        if (card.className && /card|achievement/i.test(card.className)) break;\n        card = card.parentElement;\n      }\n      if (!card || card === achievementsSection) card = heading.parentElement;\n\n      card.classList.add(\"achievement-clickable\");\n      card.addEventListener(\"click\", function (e) {\n        if (e.target.closest(\"a\")) return;\n        window.location.href = data.url;\n      });\n    });\n  }\n\n  // ===== Move \"Contato\" para o final da página =====\n  const contactSection = document.querySelector(\"#contact\");\n  if (contactSection && contactSection.parentElement) {\n    contactSection.parentElement.appendChild(contactSection);\n  }\n});\n</script>"
+  customScripts: "<style>\n#hero h1{font-size:clamp(2.15rem,4.2vw,3.55rem)!important;line-height:1.06!important;letter-spacing:-.025em;}\n#hero h3,#hero .subtitle{font-size:clamp(1.05rem,1.9vw,1.55rem)!important;line-height:1.35!important;max-width:850px;}\n#hero .social-icon{width:2.55rem;height:2.55rem;display:inline-flex!important;align-items:center;justify-content:center;padding:.45rem!important;}\n#hero .social-icon .icon svg,#hero .social-icon img{width:1.45rem!important;height:1.45rem!important;object-fit:contain;}\n.group-infra-card{border-radius:.85rem;transition:transform .18s ease,box-shadow .18s ease;}\n.group-infra-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.12);}\n.group-infra-icon-wrap{height:110px;display:flex;align-items:center;justify-content:center;}\n.group-infra-icon{max-width:150px;max-height:100px;object-fit:contain;}\n.update-cover-custom{height:170px;object-fit:cover;}\n.update-card-custom{overflow:hidden;border-radius:.75rem;}\n.footer-contact-section{border-top:1px solid rgba(128,128,128,.16);}\n.footer-social-row{display:flex;align-items:center;justify-content:center;gap:.75rem;}\n.footer-social-row a{width:2.55rem;height:2.55rem;display:inline-flex;align-items:center;justify-content:center;text-decoration:none!important;font-size:1.65rem;}\n\
+    .footer-social-row img{width:2rem;height:2rem;object-fit:contain;display:block;}\n.footer-theme-icon .icon svg{width:2rem!important;height:2rem!important;display:block;}\n.professional-footer-bottom{border-top:1px solid rgba(128,128,128,.12);}\n.professional-theme-credit{font-size:.68rem;opacity:.65;text-align:left;}\n.professional-copyright{font-size:.72rem;opacity:.7;}\n@media(max-width:576px){.professional-footer-bottom .d-flex{align-items:flex-start!important}.professional-theme-credit,.professional-copyright{width:100%;text-align:left}}\n</style>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\",function(){\n  var heroButton=document.querySelector(\"#hero a.btn\");\n  if(heroButton&&!document.querySelector(\"#hero .contact-cta\")){\n    var contact=heroButton.cloneNode(false);\n    contact.textContent=\"Entrar em contato\";contact.href=\"#contact\";\n    contact.classList.add(\"contact-cta\",\"ms-2\");\n    heroButton.parentElement.appendChild(contact);\n  }\n});\n</script>"

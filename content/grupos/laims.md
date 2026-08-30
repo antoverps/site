@@ -1,12 +1,9 @@
 ---
 title: "LAIMS"
-date: "2026-08-30"
+date: 2026-01-01
 draft: false
-description: "Laboratório de Inteligência Artificial, Modelagem e Simulação."
+description: "Página institucional em preparação."
+tags: ["Grupo e Infraestrutura"]
 ---
 
-**Página em construção.**
-
-Laboratório de Inteligência Artificial, Modelagem e Simulação, com cluster de 192 núcleos, 1 TB de RAM, cinco workstations e plataforma Coretec Tools.
-
-Mais informações em breve.
+Esta página será detalhada após a validação final do layout do site.

@@ -3,15 +3,23 @@ title: PDDU Catalão
 date: '2026-01-01'
 draft: false
 description: Plano Diretor de Drenagem Urbana de Catalão, em desenvolvimento.
-image: https://antoverps.github.io/site/images/projects/pddu-catalao.svg
-badges: &id001
+image: images/projects/pddu-catalao.svg
+badges:
 - PD&I
 - Planejamento urbano
 - Prefeitura
 showInHome: true
 status: Ativo
 periodo: 2025–2026
-tags: *id001
+tags:
+- PD&I
+- Planejamento urbano
+- Prefeitura
+modalidades:
+- PD&I
+filtros:
+- pdi
+status_slug: ativo
 ---
 
 **Situação:** Ativo  

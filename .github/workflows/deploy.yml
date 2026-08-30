@@ -21,6 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate repository
+        run: python3 scripts/validate_repo.py
+
       - name: Install Hugo Profile v4.06
         run: |
           rm -rf themes/hugo-profile

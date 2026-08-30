@@ -1,0 +1,56 @@
+{{ define "main" }}
+<main class="container py-5 project-single-page">
+  <a class="btn btn-sm btn-outline-secondary mb-4" href="{{ "projects/" | relURL }}">← Voltar aos projetos</a>
+
+  <div class="row g-4 align-items-start">
+    <div class="col-12 col-lg-5">
+      <div class="project-single-image-wrap">
+        {{ with .Params.image }}
+          {{- $img := . -}}
+          {{- if or (hasPrefix $img "http://") (hasPrefix $img "https://") -}}
+            <img class="project-single-image" src="{{ $img | safeURL }}" alt="{{ $.Title }}">
+          {{- else -}}
+            <img class="project-single-image" src="{{ $img | relURL }}" alt="{{ $.Title }}">
+          {{- end -}}
+        {{ end }}
+        <div class="project-single-placeholder"></div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-7">
+      <div class="mb-3">
+        <span class="badge text-bg-success">{{ .Params.status }}</span>
+        {{ with .Params.periodo }}<span class="ms-2 text-secondary">{{ . }}</span>{{ end }}
+      </div>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lead text-secondary">{{ . }}</p>{{ end }}
+
+      {{ with .Params.tags }}
+      <div class="project-single-tags mb-4">
+        {{ range . }}<span>{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+
+      <div class="project-single-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</main>
+
+<style>
+.project-single-image-wrap{position:relative;min-height:300px;border-radius:.9rem;overflow:hidden;background:linear-gradient(135deg,#004725,#0a6b3d)}
+.project-single-image{position:relative;z-index:2;width:100%;min-height:300px;max-height:520px;object-fit:cover;display:block}
+.project-single-placeholder{position:absolute;z-index:1;inset:0;background:linear-gradient(135deg,#004725,#0a6b3d)}
+.project-single-tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.project-single-tags span{font-size:.78rem;padding:.28rem .55rem;border:1px solid rgba(128,128,128,.3);border-radius:999px}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  document.querySelectorAll(".project-single-image").forEach(function(img){
+    img.addEventListener("error",function(){img.style.display="none"});
+  });
+});
+</script>
+{{ end }}

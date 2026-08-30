@@ -1,0 +1,25 @@
+{{ if .Site.Params.achievements.enable | default false }}
+<section id="achievements" class="py-5 groups-infra-section">
+  <div class="container">
+    <h3 class="text-center mb-4">{{ .Site.Params.achievements.title | default "Grupos e Infraestrutura" }}</h3>
+    <div class="row justify-content-center g-3">
+      {{ range .Site.Params.achievements.items }}
+      {{ $item := . }}
+      <div class="col-12 col-md-6 col-lg-3">
+        <a class="group-infra-card card h-100 p-3 text-decoration-none" href="{{ .url | relURL }}" title="{{ .title }}">
+          <div class="group-infra-icon-wrap">
+            {{ with .image }}
+            <img src="{{ . | relURL }}" class="group-infra-icon" alt="{{ $item.title }}">
+            {{ end }}
+          </div>
+          <div class="card-body px-1 pb-1 text-center">
+            <h4 class="h5 mb-2">{{ .title }}</h4>
+            <p class="mb-0 text-secondary small">{{ .content }}</p>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

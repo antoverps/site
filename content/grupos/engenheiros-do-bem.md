@@ -1,12 +1,9 @@
 ---
 title: "Engenheiros do Bem"
-date: "2026-08-30"
+date: 2026-01-01
 draft: false
-description: "Grupo de extensão voltado à aplicação do conhecimento de engenharia em ações de interesse social."
+description: "Página institucional em preparação."
+tags: ["Grupo e Infraestrutura"]
 ---
 
-**Página em construção.**
-
-Grupo de extensão voltado à aplicação do conhecimento de engenharia em ações de interesse social.
-
-Mais informações em breve.
+Esta página será detalhada após a validação final do layout do site.

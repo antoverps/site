@@ -1,0 +1,32 @@
+{{ $recentPostsPath := .Site.Params.footer.recentPosts.path | default "blogs" }}
+{{ $posts := where .Site.RegularPages "Section" $recentPostsPath }}
+{{ if and (gt (len $posts) 0) (.Site.Params.footer.recentPosts.enable | default false) }}
+<section class="container py-4" id="recent-posts">
+  {{ $recentPostsCount := .Site.Params.footer.recentPosts.count | default 3 }}
+  {{ $recentPosts := first $recentPostsCount $posts.ByDate.Reverse }}
+  <h3 class="text-center text-secondary py-3">{{ .Site.Params.footer.recentPosts.title | default "Atualizações" }}</h3>
+  <div class="row justify-content-center g-3">
+    {{ range $recentPosts }}
+    {{ $post := . }}
+    <div class="col-lg-4 col-md-6">
+      <article class="card h-100 update-card-custom">
+        {{ if and (not ($.Site.Params.footer.recentPosts.disableFeaturedImage | default false)) ($post.Params.image) }}
+        <a href="{{ $post.RelPermalink }}" class="update-image-link">
+          <img loading="lazy" src="{{ $post.Params.image | relURL }}" class="card-img-top update-cover-custom" alt="{{ $post.Title }}">
+        </a>
+        {{ end }}
+        <div class="card-body d-flex flex-column">
+          <div class="small text-secondary mb-2">{{ $post.Date.Format ($.Site.Params.datesFormat.articleRecent | default "02/01/2006") }}</div>
+          <h4 class="h5 card-title"><a class="text-decoration-none" href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h4>
+          {{ with $post.Description }}<p class="card-text text-secondary">{{ . }}</p>{{ end }}
+          <a class="mt-auto small" href="{{ $post.RelPermalink }}">Ler atualização →</a>
+        </div>
+      </article>
+    </div>
+    {{ end }}
+  </div>
+  <div class="text-center mt-3">
+    <a class="small text-decoration-none" href="{{ $recentPostsPath | relURL }}/">Ver todas as atualizações →</a>
+  </div>
+</section>
+{{ end }}

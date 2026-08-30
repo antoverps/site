@@ -1,12 +1,9 @@
 ---
 title: "GPEE"
-date: "2026-08-30"
+date: 2026-01-01
 draft: false
-description: "Grupo de Pesquisa e Estudo em Engenharia."
+description: "Página institucional em preparação."
+tags: ["Grupo e Infraestrutura"]
 ---
 
-**Página em construção.**
-
-Grupo de Pesquisa e Estudo em Engenharia, integrando formação, pesquisa e desenvolvimento de soluções.
-
-Mais informações em breve.
+Esta página será detalhada após a validação final do layout do site.
