@@ -1,0 +1,218 @@
+{{ if .Site.Params.hero.enable }}
+<section id="hero" class="antover-hero">
+  <div class="container">
+    <div class="antover-hero-grid">
+
+      <div class="antover-hero-copy">
+        <h1>{{ .Site.Params.hero.title }}</h1>
+
+        <p class="antover-hero-tagline">
+          {{ .Site.Params.hero.subtitle }}
+        </p>
+
+        <div class="antover-hero-actions">
+          <a href="#projects" class="antover-btn antover-btn-primary">
+            Conheça os projetos
+          </a>
+          <a href="#contact" class="antover-btn antover-btn-secondary">
+            Entrar em contato
+          </a>
+        </div>
+
+        <div class="antover-social-row" aria-label="Contatos e perfis profissionais">
+          <a href="mailto:antoverps@ufcat.edu.br" title="E-mail" aria-label="E-mail" class="antover-social-fa">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://github.com/antoverps" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub" class="antover-social-fa">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://www.instagram.com/antoverps/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram" class="antover-social-fa">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://www.researchgate.net/profile/Antover-Sarmento" target="_blank" rel="noopener" title="ResearchGate" aria-label="ResearchGate">
+            <img src="{{ "icons-academic/researchgate.svg" | relURL }}" alt="ResearchGate">
+          </a>
+
+          <a href="http://lattes.cnpq.br/4025685702530313" target="_blank" rel="noopener" title="Currículo Lattes" aria-label="Currículo Lattes">
+            <img src="{{ "icons-academic/lattes.svg" | relURL }}" alt="Lattes">
+          </a>
+
+          <a href="https://orcid.org/0000-0002-8533-1575" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID">
+            <img src="{{ "icons-academic/orcid.svg" | relURL }}" alt="ORCID">
+          </a>
+        </div>
+      </div>
+
+      <div class="antover-hero-photo-column">
+        <img
+          src="{{ "images/sap-des.JPG" | relURL }}"
+          alt="Prof. Antover Panazzolo Sarmento"
+          class="antover-hero-photo">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.antover-hero{
+  min-height:72vh;
+  display:flex;
+  align-items:center;
+  padding:5rem 0 4rem;
+}
+
+.antover-hero-grid{
+  width:100%;
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);
+  gap:4rem;
+  align-items:center;
+}
+
+.antover-hero-copy h1{
+  margin:0;
+  max-width:930px;
+  font-size:clamp(2.5rem,4.4vw,4.15rem);
+  line-height:1.04;
+  letter-spacing:-.035em;
+  font-weight:700;
+}
+
+.antover-hero-tagline{
+  margin:1.15rem 0 0;
+  max-width:870px;
+  font-size:clamp(1.18rem,2.05vw,1.78rem);
+  line-height:1.35;
+  font-weight:600;
+}
+
+.antover-hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem;
+  margin-top:2rem;
+}
+
+.antover-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:.72rem 1.18rem;
+  border-radius:.55rem;
+  font-weight:650;
+  text-decoration:none!important;
+  transition:transform .15s ease,filter .15s ease;
+}
+
+.antover-btn:hover{
+  transform:translateY(-1px);
+  filter:brightness(1.05);
+}
+
+.antover-btn-primary{
+  background:#004725;
+  border:1px solid #004725;
+  color:#fff!important;
+}
+
+.antover-btn-secondary{
+  background:transparent;
+  border:1px solid currentColor;
+  color:inherit!important;
+}
+
+.antover-social-row{
+  margin-top:1.25rem;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.55rem;
+}
+
+.antover-social-row a{
+  width:46px;
+  height:46px;
+  flex:0 0 46px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(128,128,128,.32);
+  border-radius:.65rem;
+  overflow:hidden;
+  color:inherit!important;
+  background:rgba(128,128,128,.06);
+  text-decoration:none!important;
+  transition:transform .15s ease,border-color .15s ease;
+}
+
+.antover-social-row a:hover{
+  transform:translateY(-2px);
+  border-color:#67c58d;
+}
+
+.antover-social-row .antover-social-fa{
+  font-size:1.55rem;
+}
+
+.antover-social-row img{
+  width:32px;
+  height:32px;
+  display:block;
+  object-fit:contain;
+}
+
+.antover-hero-photo-column{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.antover-hero-photo{
+  display:block;
+  width:min(100%,390px);
+  max-height:520px;
+  object-fit:cover;
+  object-position:center top;
+  border-radius:1rem;
+  box-shadow:0 20px 55px rgba(0,0,0,.22);
+  border:1px solid rgba(128,128,128,.20);
+}
+
+@media(max-width:900px){
+  .antover-hero{
+    min-height:auto;
+    padding:4rem 0 3rem;
+  }
+  .antover-hero-grid{
+    grid-template-columns:1fr;
+    gap:2.5rem;
+  }
+  .antover-hero-photo-column{
+    justify-content:flex-start;
+  }
+  .antover-hero-photo{
+    width:min(80vw,350px);
+  }
+}
+
+@media(max-width:560px){
+  .antover-hero-copy h1{
+    font-size:2.3rem;
+  }
+  .antover-hero-tagline{
+    font-size:1.15rem;
+  }
+  .antover-hero-actions{
+    flex-direction:column;
+  }
+  .antover-btn{
+    width:100%;
+  }
+}
+</style>
+{{ end }}
