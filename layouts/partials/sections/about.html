@@ -18,9 +18,18 @@
 .antover-about-content{
   font-size:1rem;
   line-height:1.72;
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
 }
 .antover-about-content p:last-child{
   margin-bottom:0;
+}
+@media(max-width:700px){
+  .antover-about-content{
+    text-align:left;
+    hyphens:none;
+  }
 }
 </style>
 {{ end }}
