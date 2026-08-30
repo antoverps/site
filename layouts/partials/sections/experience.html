@@ -2,10 +2,6 @@
 <section id="experience" class="py-5 antover-areas-section">
   <div class="container">
     <h3 class="text-center mb-2">{{ .Site.Params.experience.title | default "Atuação e áreas de interesse" }}</h3>
-    <p class="text-center text-secondary mb-4 antover-areas-intro">
-      Linhas de atuação consolidadas em pesquisa, orientação, extensão e projetos aplicados.
-    </p>
-
     <div class="antover-areas-grid">
       {{ range .Site.Data.areas }}
       <details class="antover-area-card">
@@ -18,7 +14,6 @@
         </summary>
 
         <div class="antover-area-content">
-          <h5>Subtemas</h5>
           <ul>
             {{ range .topics }}
             <li>{{ . }}</li>
@@ -32,11 +27,6 @@
 </section>
 
 <style>
-.antover-areas-intro{
-  max-width:760px;
-  margin-left:auto;
-  margin-right:auto;
-}
 .antover-areas-grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -94,15 +84,13 @@
   transform:rotate(45deg);
 }
 .antover-area-content{
-  padding:0 1.2rem 1.2rem;
+  padding:1rem 1.2rem 1.2rem;
   border-top:1px solid rgba(128,128,128,.14);
 }
-.antover-area-content h5{
-  margin:1rem 0 .65rem;
-  font-size:.86rem;
-  text-transform:uppercase;
-  letter-spacing:.04em;
-  opacity:.72;
+.antover-area-card:last-child:nth-child(odd){
+  grid-column:1 / -1;
+  width:calc(50% - .5rem);
+  justify-self:center;
 }
 .antover-area-content ul{
   margin:0;
@@ -114,6 +102,10 @@
 }
 @media(max-width:780px){
   .antover-areas-grid{grid-template-columns:1fr}
+  .antover-area-card:last-child:nth-child(odd){
+    grid-column:auto;
+    width:100%;
+  }
 }
 </style>
 {{ end }}

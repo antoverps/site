@@ -4,8 +4,36 @@
       <div class="col-lg-8 text-center">
         <h3 class="mb-3">{{ .Site.Params.contact.title | default "Contato" }}</h3>
         <div class="footer-contact-content text-secondary mb-4">{{ .Site.Params.contact.content | markdownify }}</div>
-        <a class="btn px-4" href="{{ .Site.Params.contact.btnLink }}">{{ .Site.Params.contact.btnName | default "Entrar em contato" }}</a>
+        <a class="footer-contact-btn" href="{{ .Site.Params.contact.btnLink }}">
+          {{ .Site.Params.contact.btnName | default "Entrar em contato" }}
+        </a>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+.footer-contact-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:.72rem 1.18rem;
+  border:1px solid currentColor;
+  border-radius:.55rem;
+  background:transparent;
+  color:inherit!important;
+  font-weight:650;
+  text-decoration:none!important;
+  transition:transform .15s ease,border-color .15s ease,background .15s ease;
+}
+.footer-contact-btn:hover{
+  transform:translateY(-1px);
+  border-color:#004725;
+  background:rgba(0,71,37,.06);
+}
+html.dark .footer-contact-btn:hover{
+  border-color:#67c58d;
+  background:rgba(103,197,141,.08);
+}
+</style>

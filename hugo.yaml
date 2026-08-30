@@ -137,7 +137,7 @@ params:
   about:
     enable: true
     title: Sobre
-    image: https://lh3.googleusercontent.com/sitesv/AG8ngQV6E0_lh6pql8MyXZNLgiMup_IpmYmt75fDWrYEE5jinNiTC61XhxAW93HCEZC8f_U8UBfn8IXdMEN0KqqIpXF2FijNkNiJ-7xnv1njWhjCMtaw8MmxT4FX1YHn7z3ups3rPXrtXcL3vaIXU1lPyQdy7d4TcVrUSQwqaIjLzVul4I6bm6qa_DXTIupTKtoCg3lX7_Z5oN6j_j5GXPCZSxuOutsK4tjp8MTaNovcwA4=w1280
+    image: ''
     content: 'Professor na Faculdade de Engenharia (FENG), no Mestrado em Engenharia Civil (PPGEC) e no Doutorado em Engenharia de Materiais (PPGEM) da Universidade Federal de Catalão. Diretor de Administração na Pró-Reitoria de Administração e Finanças (DADM-PROAF-UFCAT). Coordenador Administrativo do Grupo de Pesquisa e Estudo em Engenharia (GPEE-UFCAT). Coordenador do grupo Engenheiros do Bem.
 
 
@@ -209,7 +209,7 @@ params:
       url: /grupos/engenheiros-do-bem/
   projects:
     enable: true
-    title: Projetos de PD&I e Extensão
+    title: Projetos e Parcerias
   contact:
     enable: true
     title: Contato
