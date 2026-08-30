@@ -1,0 +1,320 @@
+baseURL: "https://antoverps.github.io/site/"
+languageCode: "pt-br"
+title: "Prof. Antover Panazzolo Sarmento"
+theme: hugo-profile
+
+defaultContentLanguage: "pt-br"
+defaultContentLanguageInSubdir: false
+
+languages:
+  pt-br:
+    languageName: "Português"
+    languageCode: "pt-BR"
+    weight: 1
+    contentDir: "content"
+    menu:
+      main:
+        - identifier: inicio
+          name: "Início"
+          title: "Início"
+          url: "/"
+          weight: 0
+        - identifier: atualizacoes
+          name: "Atualizações"
+          title: "Notícias, vagas, eventos e publicações"
+          url: "/blogs"
+          weight: 7
+
+# Estrutura preparada para inglês.
+# Ativar somente depois que o conteúdo for traduzido, para evitar um seletor EN com textos em português.
+#  en:
+#    languageName: "English"
+#    languageCode: "en-US"
+#    weight: 2
+#    contentDir: "content/en"
+#    menu:
+#      main:
+#        - identifier: home
+#          name: "Home"
+#          url: "/en/"
+#          weight: 0
+#        - identifier: updates
+#          name: "Updates"
+#          url: "/en/blogs"
+#          weight: 7
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - RSS
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 6
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Prof. Antover Panazzolo Sarmento"
+  description: "Engenharia sustentável, recursos hídricos, diagnóstico ambiental, geotecnologias e inteligência artificial aplicada."
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    # O seletor claro/escuro permanece habilitado.
+    # defaultTheme pode ser definido depois como light/dark, se desejado.
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  color:
+    textColor: "#202522"
+    secondaryTextColor: "#66706A"
+    textLinkColor: "#004725"
+    backgroundColor: "#F7F9F7"
+    secondaryBackgroundColor: "#EAF1ED"
+    primaryColor: "#004725"
+    secondaryColor: "#FFFFFF"
+
+  darkmode:
+    textColor: "#F1F5F2"
+    secondaryTextColor: "#B7C1BA"
+    textLinkColor: "#8BD3A9"
+    backgroundColor: "#101713"
+    secondaryBackgroundColor: "#18231D"
+    primaryColor: "#67C58D"
+    secondaryColor: "#18231D"
+
+  navbar:
+    align: ms-auto
+    brandName: "Antover P. Sarmento"
+    disableSearch: false
+    searchPlaceholder: "Buscar"
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+      enableSeparator: false
+
+  menus:
+    disableAbout: false
+    disableExperience: false
+    disableEducation: false
+    disableProjects: false
+    disableAchievements: false
+    disableContact: false
+
+  hero:
+    enable: true
+    intro: ""
+    title: "Prof. Antover Panazzolo Sarmento"
+    subtitle: "Ajudamos a sociedade a transformar passivos ambientais em ativos com engenharia sustentável e ciência."
+    content: ""
+    image: "https://lh3.googleusercontent.com/sitesv/AG8ngQV6E0_lh6pql8MyXZNLgiMup_IpmYmt75fDWrYEE5jinNiTC61XhxAW93HCEZC8f_U8UBfn8IXdMEN0KqqIpXF2FijNkNiJ-7xnv1njWhjCMtaw8MmxT4FX1YHn7z3ups3rPXrtXcL3vaIXU1lPyQdy7d4TcVrUSQwqaIjLzVul4I6bm6qa_DXTIupTKtoCg3lX7_Z5oN6j_j5GXPCZSxuOutsK4tjp8MTaNovcwA4=w1280"
+    roundImage: true
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Conheça os projetos"
+      url: "#projects"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: "fas fa-envelope"
+          url: "mailto:antoverps@ufcat.edu.br"
+        - icon: "fab fa-github"
+          url: "https://github.com/antoverps"
+        - icon: "fab fa-instagram"
+          url: "https://www.instagram.com/antoverps/"
+        - icon: "fas fa-id-card"
+          url: "https://lattes.cnpq.br/4025685702530313"
+
+  about:
+    enable: true
+    title: "Sobre"
+    image: "https://lh3.googleusercontent.com/sitesv/AG8ngQV6E0_lh6pql8MyXZNLgiMup_IpmYmt75fDWrYEE5jinNiTC61XhxAW93HCEZC8f_U8UBfn8IXdMEN0KqqIpXF2FijNkNiJ-7xnv1njWhjCMtaw8MmxT4FX1YHn7z3ups3rPXrtXcL3vaIXU1lPyQdy7d4TcVrUSQwqaIjLzVul4I6bm6qa_DXTIupTKtoCg3lX7_Z5oN6j_j5GXPCZSxuOutsK4tjp8MTaNovcwA4=w1280"
+    content: |-
+      Professor na Faculdade de Engenharia (FENG), no Mestrado em Engenharia Civil (PPGEC) e no Doutorado em Engenharia de Materiais (PPGEM) da Universidade Federal de Catalão. Diretor de Administração na Pró-Reitoria de Administração e Finanças (DADM-PROAF-UFCAT). Coordenador Administrativo do Grupo de Pesquisa e Estudo em Engenharia (GPEE-UFCAT). Coordenador do grupo Engenheiros do Bem.
+
+      Membro titular e representante da UFCAT no Comitê de Bacias Hidrográficas dos Rios Corumbá, Veríssimo e porção Goiana do Rio São Marcos (CBH CVSM). Trabalha com ensino, pesquisa e extensão nos temas: modelagem de variáveis hidrológicas; construção sustentável; estatística, inteligência artificial; gestão de recursos hídricos e ambientais; biodigestão; utilização de drone na engenharia, análise de investimentos, tratamento e gestão de efluentes e resíduos sólidos.
+
+      Doutor e Mestre em Recursos Hídricos e Ambientais pelo Programa de Pós-Graduação em Engenharia Agrícola da Universidade Federal de Viçosa (DEA-UFV) e graduado em Engenharia Agrícola na Universidade Federal de Pelotas (FEA-UFPel).
+    skills:
+      enable: false
+
+  experience:
+    enable: true
+    title: "Atuação"
+    items:
+      - company: "Prefeituras"
+        jobs:
+          - name: "Território, infraestrutura e recursos ambientais"
+            content: |-
+              - Planos diretores, planejamento territorial e drenagem urbana.
+              - Diagnóstico ambiental, uso e ocupação do solo e recursos hídricos.
+              - Geotecnologias, VANTs, erosão, resíduos e apoio técnico à tomada de decisão.
+
+      - company: "Indústrias e Mineração"
+        jobs:
+          - name: "Sustentabilidade e valorização de passivos"
+            content: |-
+              - Estudos ambientais integrados e conservação de solo e água.
+              - Recuperação de áreas e valorização de resíduos e rejeitos.
+              - Rotas tecnológicas para aproveitamento energético e construção sustentável.
+
+      - company: "Órgãos e Inovação"
+        jobs:
+          - name: "Dados, inteligência artificial e suporte técnico"
+            content: |-
+              - Inteligência artificial, estatística e modelagem.
+              - Dashboards, aplicativos e sistemas de apoio à decisão.
+              - Diagnósticos, análises independentes e capacitação técnica.
+
+  education:
+    enable: true
+    title: "Formação"
+    index: false
+    items:
+      - title: "Doutorado em Recursos Hídricos e Ambientais"
+        school:
+          name: "Universidade Federal de Viçosa — DEA/UFV"
+          url: "https://www.ufv.br/"
+      - title: "Mestrado em Recursos Hídricos e Ambientais"
+        school:
+          name: "Universidade Federal de Viçosa — DEA/UFV"
+          url: "https://www.ufv.br/"
+      - title: "Engenharia Agrícola"
+        school:
+          name: "Universidade Federal de Pelotas — UFPel"
+          url: "https://portal.ufpel.edu.br/"
+
+  achievements:
+    enable: true
+    title: "Resultados"
+    items:
+      - title: "LAIMS"
+        content: "Infraestrutura de inteligência artificial, modelagem e simulação vinculada à FENG/CENPES, com cluster de 192 núcleos, 1 TB de RAM, cinco workstations e plataforma Coretec Tools."
+      - title: "CENPES"
+        content: "Ecossistema de pesquisa e desenvolvimento que articula infraestrutura, pesquisadores, estudantes e projetos aplicados."
+      - title: "GPEE"
+        content: "Grupo de Pesquisa e Estudo em Engenharia, integrando formação, pesquisa e desenvolvimento de soluções."
+      - title: "Rede de parceiros"
+        content: "Articulação com prefeituras, empresas, comitês, agências de fomento e órgãos públicos em projetos de pesquisa, extensão e inovação."
+
+  projects:
+    enable: true
+    title: "Projetos"
+    items:
+      - title: "PDDU Catalão"
+        content: "Plano Diretor de Drenagem Urbana de Catalão — projeto ativo."
+        badges: ["PDDU", "Planejamento urbano", "Prefeitura"]
+      - title: "Estudos Ambientais Integrados no Estado de Goiás"
+        content: "Projeto de extensão desenvolvido em 2023–2024, com parceria da CMOC."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUC79dg2ntZCcA1U7LsHUApDDxYmSuUBR7iWYt4pN_98GKZKBhIoqu3YjHRuzU1QOPuMedOfKELvbBT1cIcXJNekt2nmOOUwYo4LP6HAJlEuzaDNTQyAzVqcM6H7_h6Yg-4XJ6NSnbVbHg8YXRJ1u5sEvMxqORO5FCp_mgy76XFMwkg9yivie4SxuhBx6vGoV1Z9thd2PNTlfzG24EZQXupEZY1OW7uPUTkA84ozXqM=w1280"
+        badges: ["Sustentabilidade", "Mineração", "Extensão"]
+      - title: "Mapeamento e georreferenciamento de cachoeiras em Araguari (MG)"
+        content: "Projeto de extensão realizado em 2023."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUDzOsAoSEuKg0dy5FJFLSHZgw81Z0DSrz8Kz0_OVopC43wBgRI8zLEP2tleQEfWRtf8jQFMGdVC90Cl9Ix4h-vHvaoSXuf_tYE5Ns7HeJVKFCCP_u-FddhgdZWKIAPyCRNK5xDt8xWisDpW1BtTSd50RLXIOH1iR6-h7rGjKv2K_mbbxXywH0nOmHy10Nmg0a_VOgykc6cNDHYtm7LyS3guwa3x4c38hv_A4xcy=w1280"
+        badges: ["Georreferenciamento", "Turismo", "Prefeitura"]
+      - title: "Diagnóstico da Microbacia do Ribeirão Vai-e-Vem — Ipameri/GO"
+        content: "Diagnóstico de uso e ocupação do solo em 65 propriedades, com foco em conservação ambiental e segurança hídrica."
+        badges: ["Recursos hídricos", "Uso do solo", "Prefeitura"]
+      - title: "Rotas tecnológicas para materiais lenhosos de reservatórios"
+        content: "Projeto de pesquisa desenvolvido entre 2017 e 2019."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUBsZt86LP6LkdPArk1ITrnVpp84ibYcQBgtsdNqfkimaJCc4IdpLT678UZb23KnNzjSgZxaP9j2GSV5xBN8OktsZomzCv5-UyJ_-6VR7w2cMDagYqreOrzd7ZPR5i1C0_GlwrL6z989YoP5CxmDfJ5lsJRAC2-Y42daMzQpk5tYfAbxdfCePXDvBgpLdi9TGjN-hzax9cia7aCpnLdZe-xgg_-z0-g0lstPAyj6dFA=w1280"
+        badges: ["Energia", "Biomassa", "Resíduos"]
+      - title: "Biogás a partir de efluentes de abatedouros"
+        content: "Projeto de pesquisa desenvolvido entre 2017 e 2020."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUB_pVT3P9YWoI86K-SiMM0zCh60RTQX1Y_b9DdK79D88_K1BGpjaHqHTcEPyDvmWEUjjJDUuKoP7FCyLQuNF8r86DAhVqV-53KuRQT4bheuKHWiu-vyedpS9ki90FXBCfbXH1q_WMNdmhQuNfM9bzCXS4n9cK7XxhvBPaU91jhsqAgT5P9-5OB36lBQnbk-fEkiQeHkZiRDzF7kyUqi4pi5CJfAqWmlkoBljnoz8PQ=w1280"
+        badges: ["Biogás", "Energia", "Efluentes"]
+      - title: "Aloteritas: usos na construção civil"
+        content: "Projeto de pesquisa desenvolvido entre 2022 e 2023."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUBv2tE8Rx82mKrzuzmZGGJW8rK7N_ksWngL101b5uXtB-XJMB3m2LDwZAyxBh_3z_O7v6SFeZ0iIvsHjMcmvjef7vh0dnbFxjpKF-6891ar33urJ4zI34YT0hfG9VCrwhKMx7Xa4Od1U9HQ_Po8r7aML2_Q3w35DwD3uwPxTvLukRL2b5BX9WRjRAW0euS7rYDdEqq6ZKdfYRQEalMj2odITY5rKtXg1G-e8g=w1280"
+        badges: ["Aloterita", "Construção sustentável"]
+      - title: "Concretos permeáveis e aprendizagem de máquinas"
+        content: "Predição da resistência à compressão e do coeficiente de permeabilidade — 2021–2023."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUDPHZa6LZ5Z6a3nDzbd6hs7H2S63rGww1nCEQqmNEXGOes2MKedsSF2ppnuaa_MJab9Blhgh8nAeUelLVsw0_q4vp62WgN6K0pejnIR0LHudYQzGzDTOialesCyfpofeNQvgEH7kmtVGS5obtnQ13lBM_LgEfgAzZcDEtJmHE89nI-3v8EoHvHSc3pUviQKPmEH_4YC-TvM8PPvrtZg-3f-phIjj3E5sFvBFwxx0oE=w1280"
+        badges: ["Concreto permeável", "Aprendizagem de máquina"]
+      - title: "Tratamento de efluente industrial"
+        content: "Estudo de reagentes para coagulação e melhoria do processo — 2021–2022."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUCnWoDePExhgW2DF3RYFf197X1VaVf3-kMGZYABeqxY3UwULcR43GGKo8SxQHyAjpG1FUJpb5pqv97TWM5WUKubCUaRV1WHoKF_JED7HZG4uPveljkYMP6PRRP1cFFzICu2X7uFTyN4xl_QPkqyBhzUHM2qBmCbwTVws-r0QS0o5L26Sxfp_XLUfe00vc7fOSvSPLLLsFz22DYBAjS2hDB_cSXFpJpC-rlUqai3=w1280"
+        badges: ["Efluentes", "Coagulação", "Tratamento"]
+      - title: "Resíduos da construção civil em blocos permeáveis"
+        content: "Projeto de pesquisa desenvolvido entre 2016 e 2018."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUBQhLgTzUzh5PX0nSOnTfUHPqrFOtvroDsFHw62ZFT7UxRtsP2D12G1FI1xNpAvaQzXPWgc8aqDhGNZuQvxCbD56jl6dZy_2EEPeAGtQ1cKizQCYPnDM4DfVAII4kH1VUHINxw-tX_13Mq7NDdcU3gJF99Nce9uSNG4_Eljx4q3-5L2U9YRzDvF18unhZwsdgaubwTwjVFl3FwBkFxv1lPJrXRc-QFh2kfXuca1=w1280"
+        badges: ["RCC", "Concreto permeável", "Resíduos"]
+      - title: "Processo Fenton na degradação de compostos orgânicos"
+        content: "Estudo da dose de H2O2 e dos catalisadores — 2013–2016."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUDs2tLtIMXJXqUqnlHBxslLjWV4k3cR_Qd2EP_7ye0EnJIjwA1aip-ggOuoGldNgWSq8DyCgYiM4woPt01v2wUSEYcE92izF_hRdAl2lnY6sL0_tfpT05sO0pF8ZXYtq0QC8kuTTYHYpUCy3OmJeaKBFmxLTWiHSaY1VYXPkgQYDqWlCP1t0qhldZDCZJ1QRKhlxc4-LdgzXw1QucAABtgpW5lOdhaQIXIoZ_p1=w1280"
+        badges: ["Fenton", "Tratamento"]
+      - title: "Diagnóstico geoecológico e socioeconômico de Araguari (MG)"
+        content: "Projeto de extensão desenvolvido entre 2023 e 2024."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUBR9xMu5eP5n-fnyRFbzvN1FKDqgcDl_SKDpI7s4jZb-avIeX0jsSzUU70UHvOCG6_mlIOnCg5_Xocx1nYSNkUpX85v_p95rTZZlMNJfHuBXJscDFfJtn1Y0cG4LzPswJZaaRYx_RlXHpt_rOn1wi8hjeqgpCfcFh46Yb5dgJ3es0yTCg8dWuaU_jx0cbJbdYBj-s-oqCDJlmqJSTPnO6AsU2qzHoeLTGdYdtk5QVQ=w1280"
+        badges: ["Diagnóstico", "Território", "Extensão"]
+      - title: "IV Semana de Engenharia Civil e II Encontro de Pesquisa, Ensino e Extensão"
+        content: "Projeto de extensão realizado em 2018."
+        image: "https://lh3.googleusercontent.com/sitesv/AA5AbUCHA0aH04NElw7few5KihmXuf8XS0YZxjEt1QDmtY_-ei_wghu8a0oGko7GfWml1oVVHyND0mzTVqZqlLPrHpEw0NktbIsL6QYXjaShmVpXSPNDU27328z2-4LIZNzUGLlGM5shUTnlULy9sAvtP5fGErEO_42hl9q8FnqXthoIWmSZyxMejjoyV_V9YeraCVLyga1rF-aWy01Mzhzx_tPgJp9WymJPMUiTupFe6sg=w1280"
+        badges: ["Evento", "Engenharia Civil", "Extensão"]
+
+  contact:
+    enable: true
+    title: "Contato"
+    content: |-
+      **Universidade Federal de Catalão**  
+      Faculdade de Engenharia — Bloco O  
+      Av. Dr. Lamartine Pinto de Avelar, 1120  
+      Setor Universitário — Catalão — GO — Brasil  
+      CEP 75.704-020
+
+      Para projetos, parcerias e contato institucional:
+    btnName: "Entrar em contato"
+    btnLink: "mailto:antoverps@ufcat.edu.br"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 6
+      title: "Atualizações"
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: "https://github.com/antoverps"
+      instagram: "https://www.instagram.com/antoverps/"
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min de leitura"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Ler"
+    toc: "Sumário"
+    copyright: "Todos os direitos reservados"
+    emailText: "Compartilhar por e-mail"
+
+  datesFormat:
+    article: "02/01/2006"
+    articleList: "02/01/2006"
+    articleRecent: "02/01/2006"
