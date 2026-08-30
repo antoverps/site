@@ -6,8 +6,8 @@
   </header>
 
   {{ $projects := where .Site.RegularPages "Section" "projects" }}
-  {{ $active := where $projects "Params.status" "Ativo" }}
-  {{ $completed := where $projects "Params.status" "Concluído" }}
+  {{ $active := where $projects "Params.showInHome" true }}
+  {{ $completed := where $projects "Params.showInHome" false }}
 
   {{ if gt (len $active) 0 }}
   <section class="mb-5">
@@ -20,22 +20,22 @@
       {{ $project := . }}
       <div class="col-12 col-md-6 col-xl-4">
         <article class="card h-100 shadow-sm project-card-custom">
-          {{ with .Params.image }}
+          {{ with $project.Params.image }}
           <img src="{{ . | safeURL }}" class="card-img-top project-cover-custom" alt="{{ $project.Title }}">
           {{ end }}
           <div class="card-body d-flex flex-column">
             <div class="mb-2">
               <span class="badge project-status-active">Ativo</span>
-              {{ with .Params.periodo }}<span class="project-period-custom">{{ . }}</span>{{ end }}
+              {{ with $project.Params.periodo }}<span class="project-period-custom">{{ . }}</span>{{ end }}
             </div>
-            <h3 class="h5">{{ .Title }}</h3>
-            <p class="text-secondary">{{ .Description }}</p>
-            {{ with .Params.tags }}
+            <h3 class="h5">{{ $project.Title }}</h3>
+            <p class="text-secondary">{{ $project.Description }}</p>
+            {{ with $project.Params.tags }}
             <div class="project-tags-custom mt-auto pt-2">
               {{ range . }}<span>{{ . }}</span>{{ end }}
             </div>
             {{ end }}
-            <a href="{{ .RelPermalink }}" class="stretched-link" aria-label="Abrir projeto {{ .Title }}"></a>
+            <a href="{{ $project.RelPermalink }}" class="stretched-link" aria-label="Abrir projeto {{ $project.Title }}"></a>
           </div>
         </article>
       </div>
@@ -55,22 +55,22 @@
       {{ $project := . }}
       <div class="col-12 col-md-6 col-xl-4">
         <article class="card h-100 shadow-sm project-card-custom">
-          {{ with .Params.image }}
+          {{ with $project.Params.image }}
           <img src="{{ . | safeURL }}" class="card-img-top project-cover-custom" alt="{{ $project.Title }}">
           {{ end }}
           <div class="card-body d-flex flex-column">
             <div class="mb-2">
               <span class="badge project-status-completed">Concluído</span>
-              {{ with .Params.periodo }}<span class="project-period-custom">{{ . }}</span>{{ end }}
+              {{ with $project.Params.periodo }}<span class="project-period-custom">{{ . }}</span>{{ end }}
             </div>
-            <h3 class="h5">{{ .Title }}</h3>
-            <p class="text-secondary">{{ .Description }}</p>
-            {{ with .Params.tags }}
+            <h3 class="h5">{{ $project.Title }}</h3>
+            <p class="text-secondary">{{ $project.Description }}</p>
+            {{ with $project.Params.tags }}
             <div class="project-tags-custom mt-auto pt-2">
               {{ range . }}<span>{{ . }}</span>{{ end }}
             </div>
             {{ end }}
-            <a href="{{ .RelPermalink }}" class="stretched-link" aria-label="Abrir projeto {{ .Title }}"></a>
+            <a href="{{ $project.RelPermalink }}" class="stretched-link" aria-label="Abrir projeto {{ $project.Title }}"></a>
           </div>
         </article>
       </div>
