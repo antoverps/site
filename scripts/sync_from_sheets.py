@@ -187,7 +187,12 @@ def render_project(row: dict[str, str]) -> tuple[str, str]:
     elif y0:
         periodo = f"{y0}–atual" if status_slug == "ativo" else y0
 
-    year_for_date = y1 or y0 or str(datetime.now().year)
+    # IMPORTANTE:
+    # O campo `date` é usado internamente pelo Hugo para decidir se uma página
+    # já pode ser publicada. Usar Ano Fim fazia projetos ativos com término
+    # em 2027/2029/2031 serem tratados como conteúdo futuro e removidos do build.
+    # Para projetos, a data técnica deve representar o início do projeto.
+    year_for_date = y0 or str(datetime.now().year)
     date = f"{year_for_date}-01-01" if re.fullmatch(r"\d{4}", year_for_date) else datetime.now().strftime("%Y-%m-%d")
 
     image = normalize_image(row.get("Imagem Capa 16:9 (1600x900)"))
