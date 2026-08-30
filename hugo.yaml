@@ -1,89 +1,82 @@
-baseURL: "https://antoverps.github.io/site/"
-languageCode: "pt-br"
-title: "Prof. Antover Panazzolo Sarmento"
+baseURL: https://antoverps.github.io/site/
+languageCode: pt-br
+title: Prof. Antover Panazzolo Sarmento
 theme: hugo-profile
-
-defaultContentLanguage: "pt-br"
+defaultContentLanguage: pt-br
 defaultContentLanguageInSubdir: false
-
 languages:
   pt-br:
-    languageName: "Português"
-    languageCode: "pt-BR"
+    languageName: Português
+    languageCode: pt-BR
     weight: 1
-    contentDir: "content"
+    contentDir: content
     menu:
       main:
-        - identifier: inicio
-          name: "Início"
-          title: "Início"
-          url: "/"
-          weight: 0
-        - identifier: projetos
-          name: "Projetos"
-          title: "Projetos ativos e acervo completo"
-          url: "/projects/"
-          weight: 5
-        - identifier: atualizacoes
-          name: "Atualizações"
-          title: "Notícias, vagas, eventos e publicações"
-          url: "/blogs/"
-          weight: 7
-
+      - identifier: inicio
+        name: Início
+        title: Início
+        url: /
+        weight: 0
+      - identifier: projetos
+        name: Projetos
+        title: Projetos ativos e acervo completo
+        url: /projects/
+        weight: 5
+      - identifier: atualizacoes
+        name: Atualizações
+        title: Notícias, vagas, eventos e publicações
+        url: /blogs/
+        weight: 7
 outputs:
-  home: [HTML, RSS, JSON]
-  page: [HTML, RSS]
-
+  home:
+  - HTML
+  - RSS
+  - JSON
+  page:
+  - HTML
+  - RSS
 enableRobotsTXT: true
-
 pagination:
   pagerSize: 6
-
 markup:
   goldmark:
     renderer:
       unsafe: true
-
 params:
-  title: "Prof. Antover Panazzolo Sarmento"
-  description: "Engenharia sustentável, recursos hídricos, diagnóstico ambiental, geotecnologias e inteligência artificial aplicada."
-  favicon: "/fav.png"
+  title: Prof. Antover Panazzolo Sarmento
+  description: Engenharia sustentável, recursos hídricos, diagnóstico ambiental, geotecnologias e inteligência artificial aplicada.
+  favicon: /fav.png
   useBootstrapCDN: false
   mathjax: false
   animate: true
-
   theme:
     disableThemeToggle: false
-
   font:
     fontSize: 1rem
     fontWeight: 400
     lineHeight: 1.5
     textAlign: left
-
   color:
-    textColor: "#202522"
-    secondaryTextColor: "#66706A"
-    textLinkColor: "#004725"
-    backgroundColor: "#F7F9F7"
-    secondaryBackgroundColor: "#EAF1ED"
-    primaryColor: "#004725"
-    secondaryColor: "#FFFFFF"
-
+    textColor: '#202522'
+    secondaryTextColor: '#66706A'
+    textLinkColor: '#004725'
+    backgroundColor: '#F7F9F7'
+    secondaryBackgroundColor: '#EAF1ED'
+    primaryColor: '#004725'
+    secondaryColor: '#FFFFFF'
   darkmode:
-    textColor: "#F1F5F2"
-    secondaryTextColor: "#B7C1BA"
-    textLinkColor: "#8BD3A9"
-    backgroundColor: "#101713"
-    secondaryBackgroundColor: "#18231D"
-    primaryColor: "#67C58D"
-    secondaryColor: "#18231D"
-
+    textColor: '#F1F5F2'
+    secondaryTextColor: '#B7C1BA'
+    textLinkColor: '#8BD3A9'
+    backgroundColor: '#101713'
+    secondaryBackgroundColor: '#18231D'
+    primaryColor: '#67C58D'
+    secondaryColor: '#18231D'
   navbar:
     align: ms-auto
-    brandName: "Antover P. Sarmento"
+    brandName: Antover P. Sarmento
     disableSearch: false
-    searchPlaceholder: "Buscar"
+    searchPlaceholder: Buscar
     stickyNavBar:
       enable: true
       showOnScrollUp: true
@@ -95,238 +88,138 @@ params:
       disableProjects: true
       disableAchievements: false
       disableContact: false
-
+    showBrandLogo: false
   hero:
     enable: true
-    intro: ""
-    title: "Prof. Antover Panazzolo Sarmento"
-    subtitle: "Ajudamos a sociedade a transformar passivos ambientais em ativos com engenharia sustentável e ciência."
-    content: ""
-    image: "https://lh3.googleusercontent.com/sitesv/AG8ngQV6E0_lh6pql8MyXZNLgiMup_IpmYmt75fDWrYEE5jinNiTC61XhxAW93HCEZC8f_U8UBfn8IXdMEN0KqqIpXF2FijNkNiJ-7xnv1njWhjCMtaw8MmxT4FX1YHn7z3ups3rPXrtXcL3vaIXU1lPyQdy7d4TcVrUSQwqaIjLzVul4I6bm6qa_DXTIupTKtoCg3lX7_Z5oN6j_j5GXPCZSxuOutsK4tjp8MTaNovcwA4=w1280"
+    intro: ''
+    title: Prof. Antover Panazzolo Sarmento
+    subtitle: Ajudamos a sociedade a transformar passivos ambientais em ativos com engenharia sustentável e ciência.
+    content: ''
+    image: https://lh3.googleusercontent.com/sitesv/AG8ngQV6E0_lh6pql8MyXZNLgiMup_IpmYmt75fDWrYEE5jinNiTC61XhxAW93HCEZC8f_U8UBfn8IXdMEN0KqqIpXF2FijNkNiJ-7xnv1njWhjCMtaw8MmxT4FX1YHn7z3ups3rPXrtXcL3vaIXU1lPyQdy7d4TcVrUSQwqaIjLzVul4I6bm6qa_DXTIupTKtoCg3lX7_Z5oN6j_j5GXPCZSxuOutsK4tjp8MTaNovcwA4=w1280
     roundImage: true
     bottomImage:
       enable: true
     button:
       enable: true
-      name: "Conheça os projetos"
-      url: "#projects"
+      name: Conheça os projetos
+      url: '#projects'
       download: false
       newPage: false
     socialLinks:
       fontAwesomeIcons:
-        - icon: "fas fa-envelope"
-          url: "mailto:antoverps@ufcat.edu.br"
-        - icon: "fab fa-github"
-          url: "https://github.com/antoverps"
-        - icon: "fab fa-instagram"
-          url: "https://www.instagram.com/antoverps/"
-
+      - icon: fas fa-envelope
+        url: mailto:antoverps@ufcat.edu.br
+      - icon: fab fa-github
+        url: https://github.com/antoverps
+      - icon: fab fa-instagram
+        url: https://www.instagram.com/antoverps/
   about:
     enable: true
-    title: "Sobre"
-    image: "https://lh3.googleusercontent.com/sitesv/AG8ngQV6E0_lh6pql8MyXZNLgiMup_IpmYmt75fDWrYEE5jinNiTC61XhxAW93HCEZC8f_U8UBfn8IXdMEN0KqqIpXF2FijNkNiJ-7xnv1njWhjCMtaw8MmxT4FX1YHn7z3ups3rPXrtXcL3vaIXU1lPyQdy7d4TcVrUSQwqaIjLzVul4I6bm6qa_DXTIupTKtoCg3lX7_Z5oN6j_j5GXPCZSxuOutsK4tjp8MTaNovcwA4=w1280"
-    content: |-
-      Professor na Faculdade de Engenharia (FENG), no Mestrado em Engenharia Civil (PPGEC) e no Doutorado em Engenharia de Materiais (PPGEM) da Universidade Federal de Catalão. Diretor de Administração na Pró-Reitoria de Administração e Finanças (DADM-PROAF-UFCAT). Coordenador Administrativo do Grupo de Pesquisa e Estudo em Engenharia (GPEE-UFCAT). Coordenador do grupo Engenheiros do Bem.
+    title: Sobre
+    image: https://lh3.googleusercontent.com/sitesv/AG8ngQV6E0_lh6pql8MyXZNLgiMup_IpmYmt75fDWrYEE5jinNiTC61XhxAW93HCEZC8f_U8UBfn8IXdMEN0KqqIpXF2FijNkNiJ-7xnv1njWhjCMtaw8MmxT4FX1YHn7z3ups3rPXrtXcL3vaIXU1lPyQdy7d4TcVrUSQwqaIjLzVul4I6bm6qa_DXTIupTKtoCg3lX7_Z5oN6j_j5GXPCZSxuOutsK4tjp8MTaNovcwA4=w1280
+    content: 'Professor na Faculdade de Engenharia (FENG), no Mestrado em Engenharia Civil (PPGEC) e no Doutorado em Engenharia de Materiais (PPGEM) da Universidade Federal de Catalão. Diretor de Administração na Pró-Reitoria de Administração e Finanças (DADM-PROAF-UFCAT). Coordenador Administrativo do Grupo de Pesquisa e Estudo em Engenharia (GPEE-UFCAT). Coordenador do grupo Engenheiros do Bem.
+
 
       Membro titular e representante da UFCAT no Comitê de Bacias Hidrográficas dos Rios Corumbá, Veríssimo e porção Goiana do Rio São Marcos (CBH CVSM). Trabalha com ensino, pesquisa e extensão nos temas: modelagem de variáveis hidrológicas; construção sustentável; estatística, inteligência artificial; gestão de recursos hídricos e ambientais; biodigestão; utilização de drone na engenharia, análise de investimentos, tratamento e gestão de efluentes e resíduos sólidos.
 
-      Doutor e Mestre em Recursos Hídricos e Ambientais pelo Programa de Pós-Graduação em Engenharia Agrícola da Universidade Federal de Viçosa (DEA-UFV) e graduado em Engenharia Agrícola na Universidade Federal de Pelotas (FEA-UFPel).
+
+      Doutor e Mestre em Recursos Hídricos e Ambientais pelo Programa de Pós-Graduação em Engenharia Agrícola da Universidade Federal de Viçosa (DEA-UFV) e graduado em Engenharia Agrícola na Universidade Federal de Pelotas (FEA-UFPel).'
     skills:
       enable: false
-
   experience:
     enable: true
-    title: "Atuação e áreas de interesse"
+    title: Atuação e áreas de interesse
     items:
-      - job: "Prefeituras e Território"
-        company: "Soluções aplicadas"
-        content: |-
-          - Planejamento urbano, drenagem e planos diretores.
-          - Diagnóstico ambiental, recursos hídricos e uso e ocupação do solo.
-          - Geotecnologias, VANTs, erosão, resíduos e apoio técnico à tomada de decisão.
+    - job: Prefeituras e Território
+      company: Soluções aplicadas
+      content: '- Planejamento urbano, drenagem e planos diretores.
 
-      - job: "Indústrias e Mineração"
-        company: "Soluções aplicadas"
-        content: |-
-          - Estudos ambientais integrados e conservação de solo e água.
-          - Recuperação de áreas e valorização de resíduos e rejeitos.
-          - Rotas tecnológicas, aproveitamento energético e construção sustentável.
+        - Diagnóstico ambiental, recursos hídricos e uso e ocupação do solo.
 
-      - job: "Órgãos e Inovação"
-        company: "Soluções aplicadas"
-        content: |-
-          - Inteligência artificial, estatística, modelagem e automação.
-          - Dashboards, aplicativos e sistemas de apoio à decisão.
-          - Diagnósticos, análises independentes e capacitação técnica.
+        - Geotecnologias, VANTs, erosão, resíduos e apoio técnico à tomada de decisão.'
+    - job: Indústrias e Mineração
+      company: Soluções aplicadas
+      content: '- Estudos ambientais integrados e conservação de solo e água.
 
-      - job: "Áreas de interesse"
-        company: "Linhas transversais"
-        content: |-
-          - Recursos hídricos e ambientais.
-          - Geotecnologias, VANTs e análise socioambiental.
-          - Estatística e inteligência artificial.
-          - Efluentes, resíduos sólidos e biodigestão.
-          - Construção sustentável e aproveitamento de resíduos.
-          - Análise de investimentos e apoio à decisão.
+        - Recuperação de áreas e valorização de resíduos e rejeitos.
 
+        - Rotas tecnológicas, aproveitamento energético e construção sustentável.'
+    - job: Órgãos e Inovação
+      company: Soluções aplicadas
+      content: '- Inteligência artificial, estatística, modelagem e automação.
+
+        - Dashboards, aplicativos e sistemas de apoio à decisão.
+
+        - Diagnósticos, análises independentes e capacitação técnica.'
+    - job: Áreas de interesse
+      company: Linhas transversais
+      content: '- Recursos hídricos e ambientais.
+
+        - Geotecnologias, VANTs e análise socioambiental.
+
+        - Estatística e inteligência artificial.
+
+        - Efluentes, resíduos sólidos e biodigestão.
+
+        - Construção sustentável e aproveitamento de resíduos.
+
+        - Análise de investimentos e apoio à decisão.'
   education:
     enable: false
-
   achievements:
     enable: true
-    title: "Grupos e Infraestrutura"
+    title: Grupos e Infraestrutura
     items:
-      - title: "CENPES"
-        content: "Centro de Pesquisa em Engenharia Sustentável: articulação de pesquisadores, estudantes, infraestrutura e projetos aplicados."
-      - title: "LAIMS"
-        content: "Laboratório de Inteligência Artificial, Modelagem e Simulação, com cluster de 192 núcleos, 1 TB de RAM, cinco workstations e plataforma Coretec Tools."
-      - title: "GPEE"
-        content: "Grupo de Pesquisa e Estudo em Engenharia, integrando formação, pesquisa e desenvolvimento de soluções."
-      - title: "Engenheiros do Bem"
-        content: "Grupo de extensão voltado à aplicação do conhecimento de engenharia em ações de interesse social."
-
+    - title: CENPES
+      content: 'Centro de Pesquisa em Engenharia Sustentável: articulação de pesquisadores, estudantes, infraestrutura e projetos aplicados.'
+    - title: LAIMS
+      content: Laboratório de Inteligência Artificial, Modelagem e Simulação, com cluster de 192 núcleos, 1 TB de RAM, cinco workstations e plataforma Coretec Tools.
+    - title: GPEE
+      content: Grupo de Pesquisa e Estudo em Engenharia, integrando formação, pesquisa e desenvolvimento de soluções.
+    - title: Engenheiros do Bem
+      content: Grupo de extensão voltado à aplicação do conhecimento de engenharia em ações de interesse social.
   projects:
     enable: true
-    title: "Projetos de PD&I e Extensão — Ativos"
+    title: Projetos de PD&I e Extensão — Ativos
     items: []
-
   contact:
     enable: true
-    title: "Contato"
-    content: |-
-      **Universidade Federal de Catalão**  
-      Faculdade de Engenharia — Bloco O  
-      Av. Dr. Lamartine Pinto de Avelar, 1120  
-      Setor Universitário — Catalão — GO — Brasil  
-      CEP 75.704-020
-
-      Para projetos, parcerias e contato institucional:
-    btnName: "Entrar em contato"
-    btnLink: "mailto:antoverps@ufcat.edu.br"
-
+    title: Contato
+    content: "**Universidade Federal de Catalão**  \nFaculdade de Engenharia — Bloco O  \nAv. Dr. Lamartine Pinto de Avelar, 1120  \nSetor Universitário — Catalão — GO — Brasil  \nCEP 75.704-020\n\nPara projetos, parcerias e contato institucional:"
+    btnName: Entrar em contato
+    btnLink: mailto:antoverps@ufcat.edu.br
   footer:
     recentPosts:
-      path: "blogs"
+      path: blogs
       count: 3
-      title: "Atualizações"
+      title: Atualizações
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: "https://github.com/antoverps"
-      instagram: "https://www.instagram.com/antoverps/"
-
+      github: https://github.com/antoverps
+      instagram: https://www.instagram.com/antoverps/
   listPages:
     disableFeaturedImage: false
-
   singlePages:
     socialShare: true
     readTime:
       enable: true
-      content: "min de leitura"
+      content: min de leitura
     scrollprogress:
       enable: true
     tags:
       openInNewTab: true
-
   terms:
-    read: "Ler"
-    toc: "Sumário"
-    copyright: "Todos os direitos reservados"
-    emailText: "Compartilhar por e-mail"
-
+    read: Ler
+    toc: Sumário
+    copyright: Todos os direitos reservados
+    emailText: Compartilhar por e-mail
   datesFormat:
-    article: "02/01/2006"
-    articleList: "02/01/2006"
-    articleRecent: "02/01/2006"
-
-  customScripts: |-
-    <style>
-    /* Hero mais compacto e institucional */
-    #hero h1 {
-      font-size: clamp(2.15rem, 4.2vw, 3.55rem) !important;
-      line-height: 1.06 !important;
-      letter-spacing: -0.025em;
-    }
-    #hero h2,
-    #hero .subtitle {
-      font-size: clamp(1.15rem, 2.15vw, 1.75rem) !important;
-      line-height: 1.35 !important;
-      max-width: 850px;
-    }
-    #hero .content {
-      font-size: 1rem !important;
-    }
-    #hero .btn {
-      margin-top: .4rem;
-    }
-    #projects .all-projects-link {
-      margin-top: 1.5rem;
-      text-align: center;
-    }
-    #projects .all-projects-link a {
-      display: inline-block;
-      padding: .65rem 1.05rem;
-      border: 1px solid var(--primary-color, #004725);
-      border-radius: .45rem;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .footer-academic-links {
-      text-align: center;
-      padding: .7rem 1rem 0;
-      font-size: .9rem;
-    }
-    .footer-academic-links a {
-      margin: 0 .35rem;
-      text-decoration: none;
-    }
-    </style>
-
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Segundo CTA do hero
-      const heroButton = document.querySelector("#hero a.btn");
-      if (heroButton && !document.querySelector("#hero .contact-cta")) {
-        const contact = heroButton.cloneNode(false);
-        contact.textContent = "Entrar em contato";
-        contact.href = "#contact";
-        contact.classList.add("contact-cta", "ms-2");
-        heroButton.parentElement.appendChild(contact);
-      }
-
-      // CTA discreto para o acervo completo de projetos
-      const projectContainer = document.querySelector("#projects .container");
-      if (projectContainer && !document.querySelector("#projects .all-projects-link")) {
-        const wrap = document.createElement("div");
-        wrap.className = "all-projects-link";
-        wrap.innerHTML = '<a href="projects/">Ver todos os projetos →</a>';
-        projectContainer.appendChild(wrap);
-      }
-
-      // Links acadêmicos e profissionais no rodapé
-      const footer = document.querySelector("footer");
-      if (footer && !footer.querySelector(".footer-academic-links")) {
-        const links = document.createElement("div");
-        links.className = "footer-academic-links";
-        links.innerHTML =
-          '<a href="https://www.researchgate.net/profile/Antover-Sarmento" target="_blank" rel="noopener">ResearchGate</a> · ' +
-          '<a href="http://lattes.cnpq.br/4025685702530313" target="_blank" rel="noopener">Lattes</a> · ' +
-          '<a href="https://orcid.org/0000-0002-8533-1575" target="_blank" rel="noopener">ORCID</a> · ' +
-          '<a href="https://github.com/antoverps" target="_blank" rel="noopener">GitHub</a> · ' +
-          '<a href="https://www.instagram.com/antoverps/" target="_blank" rel="noopener">Instagram</a>';
-        footer.appendChild(links);
-
-        // Crédito do tema em formato mais profissional, sem coração.
-        const candidates = Array.from(footer.querySelectorAll("div,p,span"));
-        const credit = candidates.find(el =>
-          el.textContent && el.textContent.includes("Made with") &&
-          el.querySelector && el.querySelector('a[href*="hugo-profile"]')
-        );
-        if (credit) {
-          credit.innerHTML =
-            'Tecnologia: <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> · ' +
-            'Tema-base: <a href="https://github.com/gurusabarish/hugo-profile" target="_blank" rel="noopener">Hugo Profile</a>';
-        }
-      }
-    });
-    </script>
+    article: 02/01/2006
+    articleList: 02/01/2006
+    articleRecent: 02/01/2006
+  customScripts: "<style>\n/* Hero mais compacto */\n#hero h1 {\n  font-size: clamp(2.15rem, 4.2vw, 3.55rem) !important;\n  line-height: 1.06 !important;\n  letter-spacing: -0.025em;\n}\n#hero h2,\n#hero .subtitle {\n  font-size: clamp(1.15rem, 2.15vw, 1.75rem) !important;\n  line-height: 1.35 !important;\n  max-width: 850px;\n}\n\n/* Projetos */\n.project-card-custom {\n  overflow: hidden;\n  border-radius: .75rem;\n  transition: transform .18s ease, box-shadow .18s ease;\n}\n.project-card-custom:hover {\n  transform: translateY(-3px);\n}\n.project-cover-custom {\n  width: 100%;\n  height: 190px;\n  object-fit: cover;\n}\n.project-status-active {\n  background: #004725 !important;\n  color: #fff !important;\n}\n.project-status-completed {\n  background: #5f6962 !important;\n  color: #fff !important;\n}\n.project-period-custom {\n  font-size: .82rem;\n  margin-left: .45rem;\n  opacity: .72;\n}\n.project-tags-custom {\n  display: flex;\n  flex-wrap: wrap;\n  gap: .35rem;\n}\n.project-tags-custom\
+    \ span {\n  display: inline-block;\n  padding: .22rem .48rem;\n  border-radius: 999px;\n  font-size: .72rem;\n  border: 1px solid rgba(128,128,128,.28);\n}\n.project-count-custom {\n  font-size: .85rem;\n  opacity: .68;\n}\n.projects-list-page {\n  min-height: 60vh;\n}\n\n/* Ícones acadêmicos no mesmo grupo de GitHub/Instagram */\n.footer-extra-social {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  margin: 0 .3rem;\n  font-size: 1.75rem;\n  line-height: 1;\n  text-decoration: none !important;\n}\n.footer-extra-social:hover {\n  transform: translateY(-2px);\n}\n</style>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  // Segundo CTA do hero.\n  const heroButton = document.querySelector(\"#hero a.btn\");\n  if (heroButton && !document.querySelector(\"#hero .contact-cta\")) {\n    const contact = heroButton.cloneNode(false);\n    contact.textContent = \"Entrar em contato\";\n    contact.href = \"#contact\";\n    contact.classList.add(\"\
+    contact-cta\", \"ms-2\");\n    heroButton.parentElement.appendChild(contact);\n  }\n\n  const footer = document.querySelector(\"footer\");\n  if (!footer) return;\n\n  // Remove qualquer linha textual criada pela versão anterior.\n  footer.querySelectorAll(\".footer-academic-links\").forEach(el => el.remove());\n\n  // Localiza o grupo dos ícones já existentes.\n  const github = footer.querySelector('a[href*=\"github.com/antoverps\"]');\n  const instagram = footer.querySelector('a[href*=\"instagram.com/antoverps\"]');\n  const anchor = github || instagram;\n\n  if (anchor && !footer.querySelector(\".footer-extra-social\")) {\n    const parent = anchor.parentElement;\n\n    const makeIcon = (href, label, iconClass) => {\n      const a = document.createElement(\"a\");\n      a.href = href;\n      a.target = \"_blank\";\n      a.rel = \"noopener\";\n      a.className = \"footer-extra-social\";\n      a.setAttribute(\"aria-label\", label);\n      a.title = label;\n      a.innerHTML = '<i\
+    \ class=\"' + iconClass + '\" aria-hidden=\"true\"></i>';\n      return a;\n    };\n\n    const extras = [\n      makeIcon(\"https://www.researchgate.net/profile/Antover-Sarmento\", \"ResearchGate\", \"fab fa-researchgate\"),\n      makeIcon(\"http://lattes.cnpq.br/4025685702530313\", \"Currículo Lattes\", \"fas fa-id-card\"),\n      makeIcon(\"https://orcid.org/0000-0002-8533-1575\", \"ORCID\", \"fab fa-orcid\")\n    ];\n\n    // Insere antes do GitHub para ficar: ResearchGate · Lattes · ORCID · GitHub · Instagram.\n    extras.forEach(link => parent.insertBefore(link, anchor));\n  }\n\n  // Crédito do tema, mantendo atribuição de forma institucional.\n  const candidates = Array.from(footer.querySelectorAll(\"div,p,span\"));\n  const credit = candidates.find(el =>\n    el.textContent &&\n    (el.textContent.includes(\"Made with\") || el.textContent.includes(\"Tecnologia:\")) &&\n    !el.classList.contains(\"footer-academic-links\")\n  );\n  if (credit) {\n    credit.innerHTML =\n   \
+    \   'Tecnologia: <a href=\"https://gohugo.io/\" target=\"_blank\" rel=\"noopener\">Hugo</a> · ' +\n      'Tema-base: <a href=\"https://github.com/gurusabarish/hugo-profile\" target=\"_blank\" rel=\"noopener\">Hugo Profile</a>';\n  }\n});\n</script>"
