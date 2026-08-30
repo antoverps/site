@@ -5,19 +5,19 @@ other = "Início"
 other = "Sobre"
 
 [nav_experience]
-other = "Atuação"
-
-[nav_education]
-other = "Formação"
+other = "Atuação e áreas de interesse"
 
 [nav_projects]
 other = "Projetos"
 
 [nav_achievements]
-other = "Resultados"
+other = "Grupos e Infraestrutura"
 
 [nav_contact]
 other = "Contato"
 
 [nav_blog]
 other = "Atualizações"
+
+[know_more]
+other = "Ver projeto"
