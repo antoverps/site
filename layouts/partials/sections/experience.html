@@ -1,0 +1,119 @@
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-5 antover-areas-section">
+  <div class="container">
+    <h3 class="text-center mb-2">{{ .Site.Params.experience.title | default "Atuação e áreas de interesse" }}</h3>
+    <p class="text-center text-secondary mb-4 antover-areas-intro">
+      Linhas de atuação consolidadas em pesquisa, orientação, extensão e projetos aplicados.
+    </p>
+
+    <div class="antover-areas-grid">
+      {{ range .Site.Data.areas }}
+      <details class="antover-area-card">
+        <summary>
+          <div class="antover-area-heading">
+            <h4>{{ .title }}</h4>
+            <span class="antover-area-plus" aria-hidden="true">+</span>
+          </div>
+          <p>{{ .summary }}</p>
+        </summary>
+
+        <div class="antover-area-content">
+          <h5>Subtemas</h5>
+          <ul>
+            {{ range .topics }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<style>
+.antover-areas-intro{
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.antover-areas-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1rem;
+  max-width:1100px;
+  margin:0 auto;
+}
+.antover-area-card{
+  border:1px solid rgba(128,128,128,.24);
+  border-radius:.8rem;
+  background:rgba(128,128,128,.045);
+  overflow:hidden;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+.antover-area-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(0,71,37,.45);
+  box-shadow:0 10px 26px rgba(0,0,0,.08);
+}
+.antover-area-card summary{
+  cursor:pointer;
+  list-style:none;
+  padding:1.1rem 1.2rem;
+}
+.antover-area-card summary::-webkit-details-marker{display:none}
+.antover-area-heading{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:1rem;
+}
+.antover-area-heading h4{
+  margin:0;
+  font-size:1.05rem;
+  line-height:1.35;
+}
+.antover-area-card summary p{
+  margin:.55rem 0 0;
+  font-size:.9rem;
+  opacity:.76;
+}
+.antover-area-plus{
+  flex:0 0 auto;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(128,128,128,.32);
+  font-size:1.1rem;
+  line-height:1;
+  transition:transform .18s ease;
+}
+.antover-area-card[open] .antover-area-plus{
+  transform:rotate(45deg);
+}
+.antover-area-content{
+  padding:0 1.2rem 1.2rem;
+  border-top:1px solid rgba(128,128,128,.14);
+}
+.antover-area-content h5{
+  margin:1rem 0 .65rem;
+  font-size:.86rem;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  opacity:.72;
+}
+.antover-area-content ul{
+  margin:0;
+  padding-left:1.15rem;
+}
+.antover-area-content li{
+  margin:.42rem 0;
+  line-height:1.45;
+}
+@media(max-width:780px){
+  .antover-areas-grid{grid-template-columns:1fr}
+}
+</style>
+{{ end }}

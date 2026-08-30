@@ -1,0 +1,51 @@
+- title: Recursos Hídricos e Ambientais
+  slug: recursos-hidricos-ambientais
+  summary: Hidrologia, drenagem, bacias hidrográficas e diagnóstico ambiental.
+  topics:
+  - Hidrologia e modelagem de variáveis hidrológicas
+  - Chuvas intensas, curvas IDF e eventos extremos
+  - Drenagem urbana, alagamentos e inundações
+  - Bacias hidrográficas, nascentes e disponibilidade hídrica
+  - Uso e ocupação do solo, aptidão e conservação ambiental
+  - Geotecnologias e VANTs aplicados ao diagnóstico territorial
+- title: Tratamento e Gestão de Águas, Efluentes e Resíduos Sólidos
+  slug: aguas-efluentes-residuos
+  summary: Saneamento, tratamento, valorização de resíduos e recuperação de recursos.
+  topics:
+  - Tratamento de água, águas cinzas e águas residuárias
+  - Efluentes domésticos, industriais e de centrais de concreto
+  - Coagulação química e natural, incluindo Moringa oleifera
+  - Processos oxidativos avançados e processos Fenton
+  - Redes coletoras de esgoto e ferramentas de saneamento
+  - Gestão de resíduos sólidos, compostagem e reaproveitamento
+  - Biodigestão, biogás e valorização energética de resíduos
+- title: Construção Sustentável
+  slug: construcao-sustentavel
+  summary: Materiais, resíduos, eficiência e soluções de menor impacto ambiental.
+  topics:
+  - Resíduos da construção civil e agregados reciclados
+  - Concretos, argamassas, pavers e concretos permeáveis
+  - Resíduos minerais, aloteritas e materiais cimentícios alternativos
+  - Fibras de papel Kraft, gesso reciclado e cinzas de biomassa
+  - Eficiência energética e desempenho ambiental de edificações
+  - Indicadores de sustentabilidade aplicados ao ambiente construído
+- title: Ferramentas Estatísticas e Aprendizado de Máquina
+  slug: estatistica-aprendizado-maquina
+  summary: Estatística aplicada, modelos preditivos, IA e ferramentas computacionais.
+  topics:
+  - Estatística aplicada e análise de distribuições
+  - Análise de frequência e modelagem de extremos hidrológicos
+  - Aprendizado de máquina para propriedades de concretos e argamassas
+  - Modelos preditivos, classificação e otimização
+  - Automação de rotinas de engenharia e desenvolvimento de algoritmos
+  - Dashboards, aplicativos e ferramentas computacionais de apoio à decisão
+- title: Finanças e Análise de Investimentos
+  slug: financas-investimentos
+  summary: Viabilidade econômica, custos, cenários e suporte à decisão.
+  topics:
+  - Análise de viabilidade econômica de projetos
+  - Custos, benefícios, payback e retorno de soluções sustentáveis
+  - Viabilidade de aproveitamento energético e valorização de resíduos
+  - Indicadores de sustentabilidade e formação de valor imobiliário
+  - Análise de cenários e sensibilidade
+  - Modelagem econômico-financeira aplicada à decisão em engenharia
