@@ -4,7 +4,7 @@ Gera o Boletim de Vagas de Engenharia Civil.
 
 Fonte das vagas: aba "11 - Boletim Vagas" da planilha-mãe (CSV publicado, chave "vagas"
 em data/sheets.json; só linhas com Publicar? = SIM). Se a chave não existir ou a leitura
-falhar, usa data/vagas.json. Seções, dicas e "onde acompanhar" vêm sempre do JSON.
+falhar, usa data/vagas.json. Seções e dicas vêm sempre do JSON.
 
 Saídas:
 - content/blogs/boletim-vagas-engenharia-civil.md   (post Hugo, preservado pelo sync: manual: true)
@@ -109,6 +109,7 @@ CSS = """<style>
 .vg-btn-alt{background:transparent;color:#087944!important;border:1px solid #087944;word-break:break-all}
 .vg-note{font-size:.75rem!important;opacity:.6}
 .vg-tips li{margin-bottom:.4rem}
+.vg-follow{padding:1.2rem 1.4rem;border:1px solid rgba(8,121,68,.35);border-radius:.8rem;background:rgba(8,121,68,.06)}
 @media (max-width:560px){.vg-meta{grid-template-columns:1fr}}
 </style>"""
 
@@ -129,16 +130,14 @@ def render_post(data: dict) -> str:
 {cards}
 </div>
 </section>""")
-    links = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(t)}</a></li>'
-                    for t, u in data.get("onde_monitorar", []))
     dicas = "".join(f"<li>{e(t)}</li>" for t in data.get("dicas", []))
     fm = f"""---
-title: "Boletim de Vagas — Engenharia Civil (recém-formados)"
+title: "Boletim de Vagas — Engenharia Civil"
 date: {d}
 lastmod: {d}
 draft: false
 manual: true
-description: "{n} oportunidades ativas para engenheiros(as) civis recém-formados: Catalão, Goiás e Brasil. Atualizado em {br(d)}."
+description: "{n} vagas ativas em Engenharia Civil — Catalão, Goiás e Brasil. Atualizado toda segunda-feira (última: {br(d)})."
 categories:
 - Vaga
 tags:
@@ -155,16 +154,17 @@ image_alt: "Boletim de Vagas de Engenharia Civil — {br(d)}"
 {CSS}
 
 <div class="vg-intro">
-<strong>Atualizado em {extenso(d)}.</strong> Levantamento semanal (toda segunda-feira) de vagas para egressos e recém-formados em Engenharia Civil — obras, saneamento, recursos hídricos, ambiental, barragens, geotecnia e infraestrutura. Prioridade: <strong>Catalão</strong>, depois <strong>Goiás</strong> e <strong>Brasil</strong>. Cada link foi aberto e conferido na data acima; ainda assim, confirme prazo e requisitos na página oficial antes de se candidatar.
+<strong>Atualizado em {extenso(d)}.</strong> Levantamento semanal (toda segunda-feira) de vagas em Engenharia Civil, de todos os níveis — obras, saneamento, recursos hídricos, ambiental, barragens, geotecnia e infraestrutura. Prioridade: <strong>Catalão</strong>, depois <strong>Goiás</strong> e <strong>Brasil</strong>. Cada link foi aberto e conferido na data acima; ainda assim, confirme prazo e requisitos na página oficial antes de se candidatar.
 </div>
 
 <div class="vg-summary">{resumo}</div>
 
 {''.join(secs)}
 
-<section class="vg-sec">
-<h2>Onde acompanhar novas vagas</h2>
-<ul>{links}</ul>
+<section class="vg-sec vg-follow">
+<h2>Receba o boletim toda segunda-feira</h2>
+<p>A lista é atualizada semanalmente aqui no site e divulgada no Instagram. Siga o perfil para ver as novas vagas assim que saírem e salve esta página nos favoritos.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://www.instagram.com/antoverps/" target="_blank" rel="noopener">Seguir @antoverps no Instagram ↗</a><a class="vg-btn vg-btn-alt" href="{SITE_URL}">Link desta página</a></div>
 </section>
 
 <section class="vg-sec">
@@ -181,7 +181,7 @@ image_alt: "Boletim de Vagas de Engenharia Civil — {br(d)}"
 def render_cover(data: dict) -> str:
     n = total(data)
     d = br(data["atualizado_em"])
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b13"/><stop offset="1" stop-color="#087944"/></linearGradient></defs><rect width="1200" height="675" fill="url(#g)"/><g fill="none" stroke="#84d6a7" stroke-width="5" opacity=".55"><path d="M720 520V250l110-70 110 70v270"/><path d="M830 180V110M770 520V330h120v190M690 520h300"/><path d="M1010 520V300h70v220M1010 360h70M1010 420h70"/></g><g fill="#fff" opacity=".9"><circle cx="830" cy="110" r="12"/></g><text x="75" y="200" fill="#bce6cd" font-family="Arial" font-size="28" letter-spacing="3">BOLETIM SEMANAL</text><text x="72" y="290" fill="#fff" font-family="Arial" font-size="78" font-weight="700">Vagas</text><text x="72" y="370" fill="#fff" font-family="Arial" font-size="58" font-weight="700">Engenharia Civil</text><text x="75" y="430" fill="#bce6cd" font-family="Arial" font-size="29">Recém-formados · Catalão · Goiás · Brasil</text><rect x="75" y="480" width="300" height="64" rx="32" fill="#84d6a7"/><text x="225" y="522" fill="#071b13" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle">{n} vagas ativas</text><text x="78" y="610" fill="#9bcbb0" font-family="Arial" font-size="22">Atualizado em {d} · Prof. Antover · UFCAT</text></svg>
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b13"/><stop offset="1" stop-color="#087944"/></linearGradient></defs><rect width="1200" height="675" fill="url(#g)"/><g fill="none" stroke="#84d6a7" stroke-width="5" opacity=".55"><path d="M720 520V250l110-70 110 70v270"/><path d="M830 180V110M770 520V330h120v190M690 520h300"/><path d="M1010 520V300h70v220M1010 360h70M1010 420h70"/></g><g fill="#fff" opacity=".9"><circle cx="830" cy="110" r="12"/></g><text x="75" y="200" fill="#bce6cd" font-family="Arial" font-size="28" letter-spacing="3">BOLETIM SEMANAL</text><text x="72" y="290" fill="#fff" font-family="Arial" font-size="78" font-weight="700">Vagas</text><text x="72" y="370" fill="#fff" font-family="Arial" font-size="58" font-weight="700">Engenharia Civil</text><text x="75" y="430" fill="#bce6cd" font-family="Arial" font-size="29">Todos os níveis · Catalão · Goiás · Brasil</text><rect x="75" y="480" width="300" height="64" rx="32" fill="#84d6a7"/><text x="225" y="522" fill="#071b13" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle">{n} vagas ativas</text><text x="78" y="610" fill="#9bcbb0" font-family="Arial" font-size="22">Atualizado em {d} · Prof. Antover · UFCAT</text></svg>
 """
 
 
@@ -231,7 +231,7 @@ def render_ig(data: dict) -> dict[str, str]:
         destaques += [v for s in secs for v in s["vagas"] if v not in destaques][: 4 - len(destaques)]
     body = (f'<div class="kick">BOLETIM SEMANAL DE VAGAS</div>'
             f'<h1>Engenharia<br>Civil</h1>'
-            f'<div class="sub">Oportunidades para recém-formados<br>Catalão · Goiás · Brasil</div>'
+            f'<div class="sub">Todos os níveis · obras, saneamento,<br>hídricos, geotecnia e infraestrutura</div>'
             f'<div><span class="pill">{n} vagas ativas</span></div>'
             f'<div class="list">{"".join(ig_item(v) for v in destaques)}</div>' + foot(d))
     pages["01-capa"] = IG_BASE.replace("{body}", body)
@@ -254,16 +254,16 @@ def render_caption(data: dict) -> str:
     lines = [
         f"🏗️ BOLETIM DE VAGAS | ENGENHARIA CIVIL — {br(d)}",
         "",
-        f"Separei {n} oportunidades ATIVAS para engenheiros(as) civis recém-formados — obras, saneamento, recursos hídricos, ambiental, geotecnia e infraestrutura. Todos os links foram conferidos hoje. 👇",
+        f"Separei {n} vagas ATIVAS em Engenharia Civil, de todos os níveis — obras, saneamento, recursos hídricos, ambiental, geotecnia e infraestrutura. Todos os links foram conferidos hoje. 👇",
         "",
     ]
     icons = {"catalao": "📍", "goias": "🟢", "brasil": "🇧🇷"}
     tail = [
         "🔗 Descrição, requisitos e link de candidatura de cada vaga: LINK NA BIO (Atualizações → Boletim de Vagas)",
         "",
-        "📅 A lista é atualizada toda segunda-feira. Salve o post e compartilhe com quem está se formando! 🎓",
+        "📅 Toda segunda-feira tem boletim novo: siga @antoverps, ative as notificações e compartilhe com colegas da engenharia! 🏗️",
         "",
-        "#engenhariacivil #vagas #vagasdeemprego #engenheirocivil #recemformado #trainee #programadetrainee "
+        "#engenhariacivil #vagas #vagasdeemprego #engenheirocivil #oportunidades #trainee #programadetrainee "
         "#catalao #catalaogo #goias #goiania #saneamento #recursoshidricos #geotecnia #construcaocivil #ufcat #egressos",
     ]
 
