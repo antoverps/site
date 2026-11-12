@@ -1,0 +1,425 @@
+{
+  "atualizado_em": "2026-11-12",
+  "secoes": [
+    {
+      "id": "catalao",
+      "titulo": "Catalão e região",
+      "kick": "Catalão e região",
+      "subtitulo": "Catalão/GO e cidades próximas (Araguari e Uberlândia/MG, a cerca de 100 km).",
+      "vagas": [
+        {
+          "empresa": "Transfer Logística",
+          "cargo": "Engenheiro(a) Civil – Predial",
+          "local": "Catalão/GO (presencial)",
+          "ig_resumo": "Predial · Catalão/GO · CLT",
+          "nivel": "CREA ativo; experiência em obras/manutenção predial é preferencial (não obrigatória)",
+          "regime": "CLT, escala",
+          "publicada": "2026-09-23",
+          "descricao": "Acompanhamento de obras e manutenção predial, controle de cronograma e orçamento, documentação técnica e atendimento às normas.",
+          "requisitos": "Engenharia Civil completa, CREA ativo, disponibilidade para residir em Catalão.",
+          "link": "https://www.empregare.com/pt-br/vaga-engenheiro-civil-predial_176458",
+          "destaque": "Mais viável em Catalão",
+          "verificacao": "Página aberta e ativa em 12/11/2026."
+        },
+        {
+          "empresa": "Transfer Logística",
+          "cargo": "Engenheiro(a) Civil – Obra Vertical",
+          "local": "Catalão/GO (presencial)",
+          "ig_resumo": "Obra vertical · Catalão/GO",
+          "nivel": "Exige experiência comprovada em edifícios (residente/produção)",
+          "regime": "CLT, salário a combinar",
+          "descricao": "Engenharia de produção/residente em obra de edificação vertical.",
+          "requisitos": "Engenharia Civil, CREA ativo, experiência em obra vertical.",
+          "link": "https://www.bne.com.br/vaga-de-emprego-na-area-construcao-em-catalao-go/engenheiro-civil/6203450",
+          "verificacao": "Anúncio no BNE com candidatura ativa em 12/11/2026 (o BNE não mostra data de publicação)."
+        },
+        {
+          "empresa": "7LM",
+          "cargo": "Engenheiro(a) Civil de Obras",
+          "local": "Catalão/GO (presencial)",
+          "ig_resumo": "Catalão/GO · PJ",
+          "nivel": "Exige experiência sólida em MCMV e parede de concreto",
+          "regime": "PJ",
+          "publicada": "2026-11-09",
+          "prazo": "2026-12-18",
+          "descricao": "Gestão de canteiro em obras habitacionais (Minha Casa Minha Vida, parede de concreto): planejamento, orçamento, cronograma, qualidade (PBQP-H/ISO 9001), medições e liderança de equipe.",
+          "requisitos": "Engenharia Civil, CREA ativo, vivência em parede de concreto e gestão de equipes.",
+          "link": "https://vemser7lm.gupy.io/job/eyJqb2JJZCI6MTI4NTc4NzcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+          "verificacao": "Vaga na Gupy ativa em 12/11/2026."
+        },
+        {
+          "empresa": "SINE Catalão",
+          "cargo": "Engenheiro(a) Civil – construção civil",
+          "local": "Catalão/GO",
+          "ig_resumo": "Candidatura presencial no SINE",
+          "nivel": "Requisitos informados no atendimento",
+          "descricao": "Vaga captada pelo SINE para empresa de construção civil (empresa e requisitos divulgados apenas no balcão). Há também vagas de técnico de obras e de planejamento de obras.",
+          "requisitos": "Levar documentos pessoais, carteira de trabalho e currículo.",
+          "link": "https://www.badiinho.com.br/vagas-emprego-catalao-10-11-2026",
+          "link_label": "Ver lista do SINE",
+          "verificacao": "Constava na lista do SINE Catalão de 10/11/2026. Atendimento: Av. 20 de Agosto, Centro (em frente à Caixa)."
+        },
+        {
+          "empresa": "Infotec Brasil",
+          "cargo": "Engenheiro(a) de Obra Mecânica e Civil",
+          "local": "Araguari/MG",
+          "ig_resumo": "Araguari/MG · sem exigir experiência",
+          "nivel": "Pede apenas graduação em Eng. Civil ou Mecânica",
+          "regime": "Tempo integral",
+          "publicada": "2026-10-21",
+          "descricao": "Fiscalização de obras industriais/mineração, controle de qualidade, comissionamento, medições e RDO.",
+          "requisitos": "Graduação em Engenharia Civil ou Mecânica.",
+          "link": "https://br.linkedin.com/jobs/view/engenheiro-de-obra-mec%C3%A2nica-e-civil-araguari-mg-at-infotec-brasil-4489411746",
+          "destaque": "Aceita recém-formado",
+          "verificacao": "Página do LinkedIn aberta e ativa em 12/11/2026."
+        },
+        {
+          "empresa": "Infotec Brasil",
+          "cargo": "Engenheiro(a) de Obra Mecânica e Civil",
+          "local": "Uberlândia/MG",
+          "ig_resumo": "Uberlândia/MG · sem exigir experiência",
+          "nivel": "Pede apenas graduação em Eng. Civil ou Mecânica",
+          "regime": "Tempo integral",
+          "publicada": "2026-10-21",
+          "descricao": "Mesma vaga da unidade de Araguari: fiscalização de obra, qualidade, comissionamento, medições e RDO.",
+          "requisitos": "Graduação em Engenharia Civil ou Mecânica.",
+          "link": "https://br.linkedin.com/jobs/view/engenheiro-de-obra-mec%C3%A2nica-e-civil-uberl%C3%A2ndia-mg-at-infotec-brasil-4489412953",
+          "verificacao": "Página do LinkedIn aberta e ativa em 12/11/2026."
+        },
+        {
+          "empresa": "Grupo EPR (concessão rodoviária)",
+          "cargo": "Assistente de Engenharia – Medição",
+          "local": "Uberlândia/MG",
+          "ig_resumo": "Uberlândia/MG · rodovias",
+          "nivel": "Superior em Engenharia desejável; experiência em rodovias é diferencial",
+          "regime": "Tempo integral",
+          "publicada": "2026-11-12",
+          "descricao": "Apoio às medições de obras e serviços na concessão de rodovias.",
+          "requisitos": "Engenharia completa ou em curso (desejável); Excel.",
+          "link": "https://br.linkedin.com/jobs/view/assistente-de-engenharia-medi%C3%A7%C3%A3o-at-grupo-epr-4481104950",
+          "verificacao": "Página do LinkedIn aberta e ativa em 12/11/2026."
+        },
+        {
+          "empresa": "Empregare (empresa cliente)",
+          "cargo": "Assistente de Engenharia",
+          "local": "Uberlândia/MG",
+          "ig_resumo": "Uberlândia/MG · CLT",
+          "nivel": "Pede experiência em levantamento de dados e projetos",
+          "regime": "CLT, seg–sex 7h–17h, VA e VT",
+          "publicada": "2026-11-03",
+          "requisitos": "Engenharia Civil, Elétrica ou Mecânica; AutoCAD e SketchUp.",
+          "link": "https://br.linkedin.com/jobs/view/assistente-de-engenharia-at-empregare-com-4487053040",
+          "verificacao": "Página do LinkedIn aberta e ativa em 12/11/2026."
+        }
+      ]
+    },
+    {
+      "id": "goias",
+      "titulo": "Goiás (e entorno do DF)",
+      "kick": "Goiás",
+      "subtitulo": "Goiânia e região metropolitana, interior e entorno do Distrito Federal.",
+      "vagas": [
+        {
+          "empresa": "Realiza Construtora",
+          "cargo": "Engenheiro(a) Civil Júnior",
+          "local": "Goiânia/GO",
+          "ig_resumo": "Goiânia · CLT",
+          "nivel": "Júnior; pede apenas a graduação em Eng. Civil",
+          "regime": "CLT efetivo, seg–qui 7h–17h, sex 7h–16h; salário a combinar + benefícios",
+          "descricao": "Acompanhamento e execução de obras de construção civil.",
+          "requisitos": "Engenharia Civil completa.",
+          "link": "https://www.bne.com.br/vaga-de-emprego-na-area-construcao-em-goiania-go/engenheiro-civil/6024018",
+          "destaque": "Aceita recém-formado",
+          "verificacao": "Candidatura ativa no BNE em 12/11/2026 (há um 2º anúncio: BNE 6024017)."
+        },
+        {
+          "empresa": "RioVento Energia",
+          "cargo": "Engenheiro(a) Civil Júnior – Obra de CGH",
+          "local": "Jataí/GO",
+          "ig_resumo": "Jataí · hidrelétrica (CGH)",
+          "nivel": "Júnior; CREA ativo ou em andamento",
+          "regime": "Efetivo, contratação imediata; transporte e refeição na obra",
+          "descricao": "Engenharia de campo em obra de Central Geradora Hidrelétrica (recursos hídricos/energia).",
+          "requisitos": "Engenharia Civil, CREA (ativo ou em andamento), CNH B, AutoCAD intermediário.",
+          "link": "https://www.bne.com.br/vaga-de-emprego-na-area-construcao-em-jatai-go/engenheiro-civil/6027213",
+          "destaque": "Recursos hídricos",
+          "verificacao": "Candidatura ativa no BNE em 12/11/2026."
+        },
+        {
+          "empresa": "Terral Incorporadora",
+          "cargo": "Analista de Pós-Obra Júnior",
+          "local": "Goiânia/GO",
+          "ig_resumo": "Goiânia · sem exigir experiência",
+          "nivel": "Experiência não exigida",
+          "regime": "Tempo integral",
+          "publicada": "2026-11-10",
+          "descricao": "Atendimento de assistência técnica e manutenção pós-entrega de empreendimentos.",
+          "requisitos": "Engenharia Civil completa; pacote Office.",
+          "link": "https://br.linkedin.com/jobs/view/analista-de-p%C3%B3s-obra-j%C3%BAnior-at-terral-incorporadora-4487421574",
+          "destaque": "Aceita recém-formado",
+          "verificacao": "LinkedIn ativo em 12/11/2026."
+        },
+        {
+          "empresa": "Log",
+          "cargo": "Auxiliar de Engenharia",
+          "local": "Hidrolândia/GO",
+          "ig_resumo": "Hidrolândia · porta de entrada",
+          "nivel": "Experiência não exigida",
+          "regime": "Tempo integral; plano de saúde, VR e outros benefícios",
+          "publicada": "2026-10-22",
+          "requisitos": "Técnico em edificações ou Engenharia Civil (completo ou em curso); AutoCAD e Excel básicos.",
+          "link": "https://br.linkedin.com/jobs/view/auxiliar-de-engenharia-hidrol%C3%A2ndia-go-at-log-4477757781",
+          "verificacao": "LinkedIn ativo em 12/11/2026."
+        },
+        {
+          "empresa": "abler Vagas (cliente de infraestrutura)",
+          "cargo": "Engenheiro(a) de Planejamento Júnior – Infraestrutura Rodoviária",
+          "local": "Goiânia/GO",
+          "ig_resumo": "Goiânia · rodovias · PJ",
+          "nivel": "Júnior",
+          "regime": "PJ, 44h; VR e notebook",
+          "publicada": "2026-10-13",
+          "descricao": "Planejamento e controle de obras rodoviárias.",
+          "requisitos": "Engenharia Civil ou de Transportes; AutoCAD, Civil 3D, NBRs e Excel.",
+          "link": "https://br.linkedin.com/jobs/view/engenheiro-de-planejamento-j%C3%BAnior-infraestrutura-rodovi%C3%A1ria-at-abler-vagas-4471128816",
+          "email": "vaga-393771@vagas.abler.in",
+          "verificacao": "LinkedIn ativo em 12/11/2026."
+        },
+        {
+          "empresa": "Bela Mares Incorporações",
+          "cargo": "Assistente de Engenharia Civil (5 vagas)",
+          "local": "Valparaíso de Goiás/GO",
+          "ig_resumo": "Valparaíso de Goiás · 5 vagas",
+          "nivel": "Experiência de 1–3 anos desejável (não obrigatória)",
+          "regime": "Tempo integral",
+          "publicada": "2026-11-04",
+          "requisitos": "Superior completo em Engenharia Civil.",
+          "link": "https://br.linkedin.com/jobs/view/assistente-de-engenharia-civil-at-bela-mares-incorpora%C3%A7%C3%B5es-4477864840",
+          "verificacao": "LinkedIn ativo em 12/11/2026 (republicada em 04/11)."
+        },
+        {
+          "empresa": "EBM Desenvolvimento Imobiliário",
+          "cargo": "Engenheiro(a) Trainee",
+          "local": "Goiânia/GO",
+          "ig_resumo": "Goiânia · trainee",
+          "nivel": "Exige ao menos 6 meses de estágio em obra",
+          "regime": "Contrato (aparentemente PJ)",
+          "publicada": "2026-11-06",
+          "requisitos": "Engenharia Civil cursando ou concluída; AutoCAD e MS Project desejáveis.",
+          "link": "https://br.linkedin.com/jobs/view/engenheiro-trainee-at-ebm-incorporacoes-4485879322",
+          "verificacao": "LinkedIn ativo em 12/11/2026."
+        },
+        {
+          "empresa": "Metal Light",
+          "cargo": "Engenheiro(a) Civil Júnior",
+          "local": "Goiânia/GO",
+          "ig_resumo": "Goiânia · estruturas metálicas",
+          "nivel": "Júnior; pede experiência com estruturas metálicas",
+          "regime": "Tempo integral",
+          "publicada": "2026-11-10",
+          "requisitos": "Engenharia Civil; estruturas metálicas; SketchUp.",
+          "link": "https://br.linkedin.com/jobs/view/engenheiro-civil-j%C3%BAnior-at-metal-light-4487450691",
+          "verificacao": "LinkedIn ativo em 12/11/2026."
+        },
+        {
+          "empresa": "Arvos Construtora",
+          "cargo": "Engenheiro(a) Civil Júnior – Obras",
+          "local": "Goiânia/GO",
+          "ig_resumo": "Goiânia · alto padrão",
+          "nivel": "Júnior; pede experiência em obras de alto padrão e planejamento",
+          "regime": "Efetivo, presencial; salário a combinar",
+          "descricao": "Engenharia de obras verticais de médio/alto padrão, cronograma físico-financeiro e suprimentos.",
+          "requisitos": "Engenharia Civil, MS Project e AutoCAD.",
+          "link": "https://www.bne.com.br/vaga-de-emprego-na-area-construcao-em-goiania-go/engenheiro-civil/6102954",
+          "verificacao": "Candidatura ativa no BNE em 12/11/2026 (anúncios 6102954, 6102955 e 6115534)."
+        },
+        {
+          "empresa": "GZ Sinalização",
+          "cargo": "Engenheiro(a) Civil Júnior",
+          "local": "Senador Canedo/GO",
+          "ig_resumo": "Senador Canedo · PJ",
+          "nivel": "Júnior; pede experiência em orçamento e planejamento",
+          "regime": "PJ; salário a combinar; disponibilidade para viagens",
+          "descricao": "Projetos de sinalização viária, orçamento, planejamento, supervisão de equipes e medições.",
+          "requisitos": "Engenharia Civil; AutoCAD, Excel avançado e Power BI.",
+          "link": "https://www.bne.com.br/vaga-de-emprego-na-area-construcao-em-senador-canedo-go/engenheiro-civil/6198493",
+          "verificacao": "Candidatura ativa no BNE em 12/11/2026."
+        },
+        {
+          "empresa": "Laselva RH (cliente construtora)",
+          "cargo": "Engenheiro(a) Civil (nível assistente)",
+          "local": "Goiânia/GO",
+          "ig_resumo": "Goiânia · R$ 10 mil",
+          "nivel": "Experiência em obras residenciais de alto padrão desejável",
+          "regime": "Efetivo; R$ 10.000 citado na descrição",
+          "publicada": "2026-10-22",
+          "requisitos": "Engenharia Civil; Excel, AutoCAD e MS Project.",
+          "link": "https://br.linkedin.com/jobs/view/engenheiro-civil-at-laselva-recursos-humanos-4482438639",
+          "verificacao": "LinkedIn e BNE (6233182) ativos em 12/11/2026."
+        },
+        {
+          "empresa": "Consórcio Supervisor CSG",
+          "cargo": "Engenheiro(a) Civil – Supervisão de Obras Rodoviárias",
+          "local": "Goiânia e região metropolitana/GO",
+          "ig_resumo": "Goiânia · rodovias",
+          "nivel": "Nível não informado",
+          "regime": "Efetivo; VT, VA, plano de saúde e odontológico",
+          "descricao": "Supervisão e fiscalização de obras rodoviárias.",
+          "link": "https://www.bne.com.br/vaga-de-emprego-na-area-construcao-em-goiania-go/engenheiro-civil/6034148",
+          "verificacao": "Candidatura ativa no BNE em 12/11/2026."
+        },
+        {
+          "empresa": "Buriti Empreendimentos",
+          "cargo": "Analista de Saneamento (Projetos)",
+          "local": "Goiânia/GO",
+          "ig_resumo": "Goiânia · saneamento",
+          "nivel": "Pede experiência sólida em projetos de saneamento",
+          "regime": "Tempo integral",
+          "publicada": "2026-11-05",
+          "requisitos": "Engenharia Sanitária/Civil ou correlata; projetos de água e esgoto.",
+          "link": "https://br.linkedin.com/jobs/view/analista-de-saneamento-projetos-goi%C3%A2nia-go-at-buriti-empreendimentos-4485043100",
+          "verificacao": "LinkedIn ativo em 12/11/2026."
+        },
+        {
+          "empresa": "Engertal Construtora",
+          "cargo": "Assistente de Engenharia (2 vagas)",
+          "local": "São Sebastião/DF",
+          "ig_resumo": "DF · R$ 4 mil",
+          "nivel": "Pede experiência com patologias e atendimento ao cliente",
+          "regime": "PJ, R$ 4.000, 7h–17h, alimentação no local",
+          "publicada": "2026-11-10",
+          "requisitos": "Engenharia Civil.",
+          "link": "https://br.linkedin.com/jobs/view/assistente-de-engenheiro-at-engertal-construtora-4487493669",
+          "verificacao": "LinkedIn ativo em 12/11/2026."
+        },
+        {
+          "empresa": "Empregare (empresa cliente)",
+          "cargo": "Assistente de Engenharia",
+          "local": "Paranoá/DF",
+          "ig_resumo": "DF · CLT",
+          "nivel": "Pede experiência em levantamento de dados e projetos",
+          "regime": "CLT, 7h–17h, VA e VT",
+          "publicada": "2026-11-05",
+          "requisitos": "Engenharia Civil, Elétrica ou Mecânica; AutoCAD, SketchUp e SolidWorks.",
+          "link": "https://br.linkedin.com/jobs/view/assistente-de-engenharia-at-empregare-com-4487052083",
+          "verificacao": "LinkedIn ativo em 12/11/2026."
+        }
+      ]
+    },
+    {
+      "id": "brasil",
+      "titulo": "Brasil: trainees e concursos",
+      "kick": "Brasil",
+      "subtitulo": "Programas de trainee e seleções públicas com inscrições abertas que aceitam Engenharia Civil.",
+      "vagas": [
+        {
+          "empresa": "Grupo Solví",
+          "cargo": "Programa Trainee 2027",
+          "local": "Guapó/GO (ETE e Biogás), SP, Betim/MG, Porto Alegre/RS e outras",
+          "ig_resumo": "Saneamento · trilha em Guapó/GO",
+          "nivel": "Formados entre dez/2024 e dez/2026 (Eng. Civil, Ambiental, Sanitária, Produção, Química)",
+          "regime": "CLT; salário competitivo + variável, saúde/odonto, previdência, ajuda de mudança",
+          "prazo": "2027-01-15",
+          "descricao": "19 trilhas em resíduos, saneamento, aterros, ETE e biogás. Destaque para a trilha ETE e Biogás em Guapó/GO.",
+          "requisitos": "Formação no período indicado; disponibilidade presencial e para mudança.",
+          "link": "https://programatraineesolvi.gupy.io/",
+          "destaque": "Tem vaga em Goiás",
+          "verificacao": "Página oficial aberta em 12/11/2026."
+        },
+        {
+          "empresa": "ACCIONA",
+          "cargo": "Programa iXPA 2027",
+          "local": "SP, PE, PR e ES",
+          "ig_resumo": "Água e infraestrutura · pós USP/Madri",
+          "nivel": "Formados entre dez/2022 e dez/2026; inglês avançado",
+          "regime": "CLT; início em abr/2027",
+          "prazo": "2027-01-18",
+          "descricao": "Infraestrutura, mobilidade, água e saneamento, com pós-graduação em Gestão de Projetos (USP + Universidad Politécnica de Madrid).",
+          "requisitos": "Engenharia Civil (ou Elétrica, Mecânica, Arquitetura, STEM), inglês avançado, mobilidade.",
+          "link": "https://www.acciona.com.br/trabalhe-conosco/talento-jovem/programa-ixpa",
+          "verificacao": "Inscrições abertas na página oficial em 12/11/2026 (prazo de 18/01 segundo a imprensa)."
+        },
+        {
+          "empresa": "CETESB/SP (FCC)",
+          "cargo": "Concurso: Engenheiro e Analista Ambiental (Eng. Civil)",
+          "local": "São Paulo",
+          "ig_resumo": "Concurso · R$ 8.971,98",
+          "nivel": "Graduação em Engenharia Civil (2 + 2 vagas)",
+          "regime": "Estatutário/CLT pública; R$ 8.971,98 (até R$ 12.023,52 com adicional)",
+          "prazo": "2026-12-14",
+          "descricao": "Inscrições de 12/11 a 14/12/2026; isenção até 14/11; prova em 21/02/2027.",
+          "link": "https://www.concursosfcc.com.br",
+          "destaque": "Ambiental",
+          "verificacao": "Edital 01/2026 conferido em 12/11/2026."
+        },
+        {
+          "empresa": "Verum Partners (Accenture)",
+          "cargo": "Programa Trainee 2027",
+          "local": "SP, RJ, MG ou PA",
+          "ig_resumo": "Projetos de capital · fecha logo",
+          "nivel": "Engenharias concluídas entre 2022 e 2026; inglês avançado",
+          "regime": "Benefícios e PLR",
+          "prazo": "2026-11-15",
+          "descricao": "Planejamento/AWP e excelência operacional em projetos de mineração, energia e saneamento (4 vagas).",
+          "link": "https://app.jobconvo.com/job/NDQyNzI5Nw-programa-trainee-2027/3e810575-1efa-499a-bd1d-08dee0d657d7/",
+          "verificacao": "Link de inscrição publicado na página oficial; conferido em 12/11/2026."
+        },
+        {
+          "empresa": "Prefeitura de Mirassol d'Oeste/MT",
+          "cargo": "Processo Seletivo: Engenheiro(a) Civil",
+          "local": "Mirassol d'Oeste/MT",
+          "ig_resumo": "Seletivo · Centro-Oeste",
+          "nivel": "Graduação em Engenharia Civil (1 vaga)",
+          "regime": "Contrato temporário (PSS 01/2026)",
+          "prazo": "2026-11-16",
+          "link": "https://mirassoldoeste.selecao.net.br",
+          "verificacao": "Inscrições de 06 a 16/11/2026, conferido em 12/11/2026."
+        },
+        {
+          "empresa": "AMH",
+          "cargo": "Trainee 2027 – Fábrica de Líderes (trilha Operações)",
+          "local": "Goiânia/GO, Brasília/DF, Palmas/TO e S. J. do Rio Preto/SP",
+          "ig_resumo": "Goiânia · R$ 6.400 · gestão",
+          "nivel": "Formados nos últimos 3 anos (aceita Engenharia)",
+          "regime": "CLT, R$ 6.400 + benefícios e auxílio no job rotation",
+          "descricao": "Programa de gestão (área hospitalar), com rotação por 4 cidades. Bom para quem busca gestão e operações; não é engenharia de obras.",
+          "link": "https://vagas.bettha.com/trainee-amh-2027",
+          "verificacao": "Página de inscrição aberta em 12/11/2026; prazo não divulgado."
+        }
+      ]
+    }
+  ],
+  "onde_monitorar": [
+    [
+      "Gupy — busca \"engenheiro civil\" (filtre Goiás)",
+      "https://portal.gupy.io/job-search/term=engenheiro%20civil"
+    ],
+    [
+      "LinkedIn — Engenheiro Civil Júnior em Goiás (crie um alerta)",
+      "https://www.linkedin.com/jobs/search/?keywords=engenheiro%20civil%20j%C3%BAnior&location=Goi%C3%A1s%2C%20Brasil"
+    ],
+    [
+      "BNE — Engenheiro Civil em Catalão",
+      "https://www.bne.com.br/vagas-de-emprego-para-engenheiro-civil-em-catalao-go"
+    ],
+    [
+      "Seja Trainee — programas abertos",
+      "https://www.sejatrainee.com.br/"
+    ],
+    [
+      "O Trainee — calendário de programas",
+      "https://www.otrainee.com.br/"
+    ],
+    [
+      "PCI Concursos — concursos e seletivos abertos",
+      "https://www.pciconcursos.com.br/"
+    ]
+  ],
+  "dicas": [
+    "Fique de olho: concurso da Prefeitura de São Francisco de Goiás (1 vaga de Engenheiro Civil) abre inscrições em 07/12/2026.",
+    "Vagas marcadas como 'pede experiência' ainda valem a tentativa: conte estágio, Empresa Júnior, IC e projetos de extensão como experiência prática.",
+    "Solicite o registro no CREA-GO logo após a colação de grau — várias vagas pedem CREA ativo ou em andamento.",
+    "Em Gupy e Workday a triagem é automática: use no currículo as mesmas palavras-chave da vaga (planejamento, orçamento, medição, saneamento, AutoCAD, MS Project).",
+    "Anúncios do BNE e de agregadores podem ficar no ar depois de preenchidos; quando houver e-mail ou site da empresa, prefira o contato direto."
+  ]
+}

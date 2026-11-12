@@ -29,6 +29,9 @@ jobs:
       - name: Sync Google Sheets
         run: python3 scripts/sync_from_sheets.py
 
+      - name: Gerar Boletim de Vagas (aba 11 da planilha)
+        run: python3 scripts/gerar_boletim_vagas.py --so-site
+
       - name: Validate repository
         run: python3 scripts/validate_repo.py
 

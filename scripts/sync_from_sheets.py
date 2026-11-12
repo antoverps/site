@@ -299,7 +299,12 @@ def write_section(section: str, pages: list[tuple[str, str]], index_text: str) -
     dest = ROOT / "content" / section
     dest.mkdir(parents=True, exist_ok=True)
     # Limpa SOMENTE depois que todas as fontes já foram baixadas e validadas.
+    # Preserva páginas mantidas fora da planilha (front matter com "manual: true"),
+    # como o Boletim de Vagas atualizado semanalmente.
     for p in dest.glob("*.md"):
+        head = p.read_text(encoding="utf-8").split("---", 2)
+        if len(head) == 3 and re.search(r"^manual:\s*true\s*$", head[1], re.M):
+            continue
         p.unlink()
     (dest / "_index.md").write_text(index_text, encoding="utf-8")
     for slug, content in pages:
