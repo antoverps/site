@@ -296,8 +296,7 @@ def find_browser() -> str | None:
     return shutil.which("msedge") or shutil.which("chrome") or shutil.which("chromium")
 
 
-def to_png(browser: str, html_path: Path) -> Path:
-    png = html_path.with_suffix(".png")
+def to_png(browser: str, html_path: Path, png: Path) -> Path:
     subprocess.run([browser, "--headless=new", "--disable-gpu", "--hide-scrollbars",
                     "--force-device-scale-factor=1", "--window-size=1080,1350",
                     f"--screenshot={png}", html_path.resolve().as_uri()],
@@ -422,11 +421,15 @@ def main() -> int:
     out.mkdir(parents=True, exist_ok=True)
     (out / "legenda.txt").write_text(render_caption(data), encoding="utf-8")
     browser = None if args.sem_png else find_browser()
-    for name, page in render_ig(data).items():
-        hp = out / f"{name}.html"
-        hp.write_text(page, encoding="utf-8")
-        if browser:
-            print("PNG:", to_png(browser, hp))
+    import tempfile
+    with tempfile.TemporaryDirectory() as tmp:  # HTML de desenho fica fora da pasta de postagem
+        for name, page in render_ig(data).items():
+            hp = Path(tmp) / f"{name}.html"
+            hp.write_text(page, encoding="utf-8")
+            if browser:
+                print("PNG:", to_png(browser, hp, out / f"{name}.png"))
+            else:
+                (out / f"{name}.html").write_text(page, encoding="utf-8")
     print(f"Instagram: {out}")
     print(f"Total de vagas: {total(data)}")
     return 0
