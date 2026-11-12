@@ -269,7 +269,7 @@ image_alt: "Boletim de Vagas de Engenharia Civil — 12/11/2026"
 </section>
 
 <section class="vg-sec vg-follow">
-<h2>Receba o boletim toda segunda-feira</h2>
+<h2>Acompanhe o boletim toda segunda-feira</h2>
 <p>A lista é atualizada semanalmente aqui no site e divulgada no Instagram. Siga o perfil para ver as novas vagas assim que saírem e salve esta página nos favoritos.</p>
 <div class="vg-actions"><a class="vg-btn" href="https://www.instagram.com/antoverps/" target="_blank" rel="noopener">Seguir @antoverps no Instagram ↗</a><a class="vg-btn vg-btn-alt" href="https://antoverps.github.io/site/blogs/boletim-vagas-engenharia-civil/">Link desta página</a></div>
 </section>
