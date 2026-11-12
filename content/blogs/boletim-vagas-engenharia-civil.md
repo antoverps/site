@@ -13,7 +13,7 @@ tags:
 - trainee
 - egressos
 - Catalão
-image: /images/updates/boletim-vagas.svg
+image: images/updates/boletim-vagas.svg
 image_alt: "Boletim de Vagas de Engenharia Civil — 12/11/2026"
 ---
 
