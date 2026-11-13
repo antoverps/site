@@ -1,0 +1,49 @@
+{{ with .Site.Params.plataformas }}{{ if .enable }}
+<section id="plataformas" class="py-5 platforms-section">
+  <div class="container">
+    <h3 class="text-center mb-2">{{ .title | default "Plataformas" }}</h3>
+    {{ with .subtitle }}<p class="text-center text-secondary mb-4 mx-auto platforms-subtitle">{{ . }}</p>{{ end }}
+    <div class="row justify-content-center g-3">
+      {{ range .items }}
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="{{ .url }}" target="_blank" rel="noopener"
+           class="platform-card card h-100 p-3 text-decoration-none"
+           aria-label="Abrir a plataforma {{ .title }}">
+          <div class="platform-logo-wrap">
+            <img src="{{ .image | relURL }}" class="platform-logo" alt="{{ .title }}" loading="lazy">
+          </div>
+          <div class="card-body px-1 pb-1 text-center d-flex flex-column">
+            <h4 class="h5 mb-2">{{ .title }}</h4>
+            <p class="mb-3 text-secondary small">{{ .content }}</p>
+            <span class="platform-link mt-auto">{{ .host }} ↗</span>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<style>
+.platforms-subtitle{max-width:760px}
+.platform-card{
+  width:100%;
+  color:inherit!important;
+  border:1px solid rgba(128,128,128,.20);
+  background:var(--bs-card-bg,transparent);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.platform-card:hover{
+  color:inherit!important;
+  text-decoration:none!important;
+  transform:translateY(-3px);
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+  border-color:rgba(0,71,37,.42);
+}
+/* Fundo branco atrás dos logos, como em Grupos e Infraestrutura. */
+.platform-logo-wrap{background:#fff;border-radius:.6rem;padding:.6rem;height:110px;display:flex;align-items:center;justify-content:center}
+.platform-logo{max-width:100%;max-height:100%;object-fit:contain}
+.platform-link{font-size:.8rem;font-weight:600;color:#004725}
+html.dark .platform-link,[data-bs-theme="dark"] .platform-link{color:#67c58d}
+</style>
+{{ end }}{{ end }}

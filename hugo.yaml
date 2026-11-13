@@ -34,14 +34,18 @@ languages:
         name: Grupos e Infraestrutura
         url: /#achievements
         weight: 5
+      - identifier: plataformas
+        name: Plataformas
+        url: /#plataformas
+        weight: 6
       - identifier: atualizacoes
         name: Atualizações
         url: /blogs/
-        weight: 6
+        weight: 7
       - identifier: contato
         name: Contato
         url: /#contact
-        weight: 7
+        weight: 8
 outputs:
   home:
   - HTML
@@ -206,6 +210,31 @@ params:
       content: Grupo de Pesquisa e Estudo em Engenharia, integrando formação, pesquisa e desenvolvimento de soluções.
       image: /images/groups/gpee.svg
       url: /grupos/gpee/
+  plataformas:
+    enable: true
+    title: Plataformas
+    subtitle: Ferramentas computacionais abertas, desenvolvidas com estudantes e parceiros, para ensino, pesquisa e projeto em engenharia.
+    items:
+    - title: Coretec Tools
+      content: Hub acessível de calculadoras de engenharia civil e química, com teoria, equações e exemplos ao lado de cada cálculo.
+      image: /images/plataformas/coretec.png
+      url: https://www.coretectools.com.br/
+      host: coretectools.com.br
+    - title: CONCRETA
+      content: Inteligência artificial do GPEE que estima a resistência à compressão (fck) do concreto a partir dos dados de dosagem.
+      image: /images/plataformas/concreta.svg
+      url: https://concreta.streamlit.app/
+      host: concreta.streamlit.app
+    - title: Biodigestor
+      content: Calculadora para dimensionar diferentes modelos de biodigestores, com tutorial, teoria e parâmetros estimados ou personalizados.
+      image: /images/plataformas/biodigestor.svg
+      url: https://biodigestor.streamlit.app/
+      host: biodigestor.streamlit.app
+    - title: RainData
+      content: Mapa e exploração de dados de 602 estações pluviométricas, com análises hidrológicas a partir das séries de chuva.
+      image: /images/plataformas/raindata.svg
+      url: https://raindata.streamlit.app/
+      host: raindata.streamlit.app
   projects:
     enable: true
     title: Projetos e Parcerias

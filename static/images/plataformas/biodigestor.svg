@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" role="img" aria-label="Biodigestor">
+  <!-- solo -->
+  <rect x="14" y="112" width="132" height="8" rx="4" fill="#7A5A3A"/>
+  <!-- cúpula do biodigestor -->
+  <path d="M28 112 A52 52 0 0 1 132 112 Z" fill="#2E7D32"/>
+  <path d="M44 112 A36 36 0 0 1 116 112 Z" fill="#43A047"/>
+  <!-- tubo de gás e chama -->
+  <rect x="76" y="32" width="8" height="30" fill="#2E7D32"/>
+  <path d="M80 6 C92 18 90 28 80 32 C70 28 68 18 80 6 Z" fill="#FB841A"/>
+  <path d="M80 16 C85 22 84 27 80 29 C76 27 75 22 80 16 Z" fill="#FFD25A"/>
+  <!-- bolhas -->
+  <g fill="#C8E6C9"><circle cx="66" cy="98" r="5"/><circle cx="90" cy="92" r="4"/><circle cx="100" cy="104" r="3"/></g>
+  <text x="160" y="92" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="700" fill="#2E7D32">Biodigestor</text>
+  <text x="162" y="120" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#FB841A" letter-spacing=".5">DIMENSIONAMENTO DE BIODIGESTORES</text>
+</svg>
