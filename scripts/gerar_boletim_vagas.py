@@ -297,10 +297,22 @@ def find_browser() -> str | None:
 
 
 def to_png(browser: str, html_path: Path, png: Path) -> Path:
-    subprocess.run([browser, "--headless=new", "--disable-gpu", "--hide-scrollbars",
-                    "--force-device-scale-factor=1", "--window-size=1080,1350",
-                    f"--screenshot={png}", html_path.resolve().as_uri()],
-                   check=True, capture_output=True, timeout=90)
+    """Renderiza o HTML em PNG. Em alguns ambientes (ex.: shells isolados) o Edge sai com
+    código 0 sem gravar nada; nesse caso tenta de novo via PowerShell e, se ainda falhar, erro."""
+    import tempfile
+    png.unlink(missing_ok=True)
+    with tempfile.TemporaryDirectory() as prof:
+        args = ["--headless=new", f"--user-data-dir={prof}", "--no-first-run", "--disable-gpu",
+                "--hide-scrollbars", "--force-device-scale-factor=1", "--window-size=1080,1350",
+                f"--screenshot={png}", html_path.resolve().as_uri()]
+        subprocess.run([browser, *args], capture_output=True, timeout=90)
+        if not png.exists() and shutil.which("powershell"):
+            lista = ",".join("'" + a.replace("'", "''") + "'" for a in args)
+            subprocess.run(["powershell", "-NoProfile", "-Command",
+                            f"Start-Process -FilePath '{browser}' -ArgumentList @({lista}) -Wait"],
+                           capture_output=True, timeout=120)
+    if not png.exists() or png.stat().st_size < 10_000:
+        raise RuntimeError(f"Falha ao gerar {png.name}: o navegador não gravou a imagem.")
     return png
 
 
