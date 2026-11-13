@@ -206,10 +206,6 @@ params:
       content: Grupo de Pesquisa e Estudo em Engenharia, integrando formação, pesquisa e desenvolvimento de soluções.
       image: /images/groups/gpee.svg
       url: /grupos/gpee/
-    - title: Engenheiros do Bem
-      content: Grupo de extensão voltado à aplicação do conhecimento de engenharia em ações de interesse social.
-      image: /images/groups/engenheiros-do-bem.svg
-      url: /grupos/engenheiros-do-bem/
   projects:
     enable: true
     title: Projetos e Parcerias
