@@ -10,7 +10,7 @@
            class="platform-card card h-100 p-3 text-decoration-none"
            aria-label="Abrir a plataforma {{ .title }}">
           <div class="platform-logo-wrap">
-            <img src="{{ strings.TrimPrefix "/" .image | relURL }}" class="platform-logo" alt="{{ .title }}" loading="lazy">
+            <img src="{{ strings.TrimPrefix "/" .image | relURL }}" class="platform-logo" alt="{{ .title }}">
           </div>
           <div class="card-body px-1 pb-1 text-center d-flex flex-column">
             <h4 class="h5 mb-2">{{ .title }}</h4>
