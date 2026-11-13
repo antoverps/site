@@ -9,7 +9,9 @@
             <img src="{{ "images/gpee.svg" | relURL }}" alt="GPEE">
           </div>
           <div class="antover-hero-logo antover-hero-logo-center">
-            <img src="{{ "images/cenpes.svg" | relURL }}" alt="CENPES">
+            <a href="https://cenpes.ufcat.edu.br/" target="_blank" rel="noopener" aria-label="Abrir o site do CENPES">
+              <img src="{{ "images/cenpes.svg" | relURL }}" alt="CENPES">
+            </a>
           </div>
           <div class="antover-hero-logo antover-hero-logo-right">
             <img src="{{ "images/ufcat.svg" | relURL }}" alt="UFCAT">
@@ -281,6 +283,10 @@ html.dark .antover-hero-tagline,
 }
 .antover-hero-logo-right{
   justify-content:flex-end;
+}
+.antover-hero-logo a{
+  display:block;
+  max-width:100%;
 }
 .antover-hero-logo img{
   display:block;

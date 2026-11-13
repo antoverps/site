@@ -6,10 +6,13 @@
     <div class="row justify-content-center g-3">
       {{ range $groups.ByParam "ordem" }}
       {{ $group := . }}
+      {{/* Com "Link Externo" preenchido na planilha, o card abre direto o site do grupo. */}}
+      {{ $ext := $group.Params.link_externo }}
       <div class="col-12 col-md-6 col-lg-3">
-        <a href="{{ $group.RelPermalink }}"
+        <a href="{{ with $ext }}{{ . }}{{ else }}{{ $group.RelPermalink }}{{ end }}"
+           {{ if $ext }}target="_blank" rel="noopener"{{ end }}
            class="group-infra-card card h-100 p-3 text-decoration-none"
-           aria-label="Abrir página de {{ $group.Title }}">
+           aria-label="{{ if $ext }}Abrir o site de{{ else }}Abrir página de{{ end }} {{ $group.Title }}">
           <div class="group-infra-icon-wrap">
             {{ with $group.Params.image }}
             <img src="{{ . | relURL }}" class="group-infra-icon" alt="{{ $group.Title }}">
@@ -43,5 +46,7 @@
   box-shadow:0 12px 30px rgba(0,0,0,.12);
   border-color:rgba(0,71,37,.42);
 }
+/* Fundo branco atrás dos logos, para ficarem legíveis também no tema escuro. */
+.group-infra-icon-wrap{background:#fff;border-radius:.6rem;padding:.35rem}
 </style>
 {{ end }}

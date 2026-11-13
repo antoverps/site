@@ -1,14 +1,16 @@
 {{ define "main" }}
 <main class="container py-5 group-single-page">
-  <a class="btn btn-sm btn-outline-secondary mb-4" href="{{ "/" | relURL }}#achievements">← Voltar a Grupos e Infraestrutura</a>
+  {{/* .Site.Home.RelPermalink mantém o /site/ do baseURL; "/" | relURL apontava para a raiz do domínio (404). */}}
+  <a class="btn btn-sm btn-outline-secondary mb-4" href="{{ .Site.Home.RelPermalink }}#achievements">← Voltar a Grupos e Infraestrutura</a>
 
+  {{ $link := .Params.link_externo }}
   <div class="row g-4 align-items-start">
     <div class="col-12 col-lg-4">
-      <div class="group-single-image-wrap">
+      {{ if $link }}<a class="group-single-image-wrap" href="{{ $link }}" target="_blank" rel="noopener" aria-label="Abrir o site de {{ .Title }}">{{ else }}<div class="group-single-image-wrap">{{ end }}
         {{ with .Params.image }}
         <img class="group-single-image" src="{{ . | relURL }}" alt="{{ $.Title }}">
         {{ end }}
-      </div>
+      {{ if $link }}</a>{{ else }}</div>{{ end }}
     </div>
     <div class="col-12 col-lg-8">
       {{ with .Params.tipo }}<div class="text-secondary mb-2">{{ . }}</div>{{ end }}
@@ -27,7 +29,10 @@
 </main>
 
 <style>
-.group-single-image-wrap{min-height:250px;border-radius:.9rem;background:rgba(128,128,128,.06);display:flex;align-items:center;justify-content:center;padding:2rem}
+/* Fundo branco nos dois temas: os logos têm fundo branco ou textos escuros. */
+.group-single-image-wrap{min-height:250px;border-radius:.9rem;background:#fff;border:1px solid rgba(128,128,128,.2);display:flex;align-items:center;justify-content:center;padding:2rem}
+a.group-single-image-wrap{transition:box-shadow .18s ease,transform .18s ease}
+a.group-single-image-wrap:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.14)}
 .group-single-image{max-width:300px;max-height:210px;object-fit:contain}
 .group-single-tags{display:flex;flex-wrap:wrap;gap:.4rem}
 .group-single-tags span{font-size:.78rem;padding:.28rem .55rem;border:1px solid rgba(128,128,128,.3);border-radius:999px}
