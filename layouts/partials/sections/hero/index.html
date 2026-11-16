@@ -4,12 +4,12 @@
     <div class="antover-hero-grid">
 
       <div class="antover-hero-copy">
-        <div class="antover-hero-logos" aria-label="Instituições e grupos vinculados">
+        <div class="antover-hero-logos" aria-label="{{ i18n "hero_logos" }}">
           <div class="antover-hero-logo antover-hero-logo-left">
             <img src="{{ "images/gpee.svg" | relURL }}" alt="GPEE">
           </div>
           <div class="antover-hero-logo antover-hero-logo-center">
-            <a href="https://cenpes.ufcat.edu.br/" target="_blank" rel="noopener" aria-label="Abrir o site do CENPES">
+            <a href="https://cenpes.ufcat.edu.br/" target="_blank" rel="noopener" aria-label="{{ i18n "open_cenpes" }}">
               <img src="{{ "images/cenpes.svg" | relURL }}" alt="CENPES">
             </a>
           </div>
@@ -26,15 +26,15 @@
 
         <div class="antover-hero-actions">
           <a href="#projects" class="antover-btn antover-btn-primary">
-            Conheça os projetos
+            {{ i18n "hero_btn_projects" }}
           </a>
           <a href="#contact" class="antover-btn antover-btn-secondary">
-            Dados para contato
+            {{ i18n "hero_btn_contact" }}
           </a>
         </div>
 
-        <div class="antover-social-row" aria-label="Contatos e perfis profissionais">
-          <a href="mailto:antoverps@ufcat.edu.br" title="E-mail" aria-label="E-mail">
+        <div class="antover-social-row" aria-label="{{ i18n "hero_social" }}">
+          <a href="mailto:antoverps@ufcat.edu.br" title="{{ i18n "email" }}" aria-label="{{ i18n "email" }}">
             <img src="{{ "icons-academic/email.svg" | relURL }}" alt="E-mail">
           </a>
 
@@ -50,7 +50,7 @@
             <img src="{{ "icons-academic/researchgate.svg" | relURL }}" alt="ResearchGate">
           </a>
 
-          <a href="http://lattes.cnpq.br/4025685702530313" target="_blank" rel="noopener" title="Currículo Lattes" aria-label="Currículo Lattes">
+          <a href="http://lattes.cnpq.br/4025685702530313" target="_blank" rel="noopener" title="{{ i18n "lattes_cv" }}" aria-label="{{ i18n "lattes_cv" }}">
             <img src="{{ "icons-academic/lattes.svg" | relURL }}" alt="Lattes">
           </a>
 

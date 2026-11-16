@@ -1,3 +1,5 @@
+# Textos fixos dos layouts. Gerado a partir da mesma tabela para os três idiomas.
+
 [nav_home]
 other = "Início"
 
@@ -21,3 +23,126 @@ other = "Atualizações"
 
 [know_more]
 other = "Ver projeto"
+
+[lang_switch]
+other = "Idioma"
+
+[hero_btn_projects]
+other = "Conheça os projetos"
+
+[hero_btn_contact]
+other = "Dados para contato"
+
+[hero_logos]
+other = "Instituições e grupos vinculados"
+
+[hero_social]
+other = "Contatos e perfis profissionais"
+
+[open_cenpes]
+other = "Abrir o site do CENPES"
+
+[lattes_cv]
+other = "Currículo Lattes"
+
+[email]
+other = "E-mail"
+
+[projects_filters]
+other = "Filtros de projetos"
+
+[filter_active]
+other = "Ativos"
+
+[filter_done]
+other = "Concluídos"
+
+[filter_teaching]
+other = "Ensino"
+
+[filter_research]
+other = "Pesquisa"
+
+[filter_outreach]
+other = "Extensão"
+
+[filter_social]
+other = "Social"
+
+[filter_all]
+other = "Todos"
+
+[open_project]
+other = "Abrir projeto"
+
+[no_projects]
+other = "Nenhum projeto encontrado nesta categoria."
+
+[back_projects]
+other = "← Voltar aos projetos"
+
+[projects_title]
+other = "Projetos e Parcerias"
+
+[projects_intro]
+other = "Projetos de pesquisa, extensão, ensino, PD&I e parcerias institucionais."
+
+[open_site_of]
+other = "Abrir o site de"
+
+[open_page_of]
+other = "Abrir página de"
+
+[back_groups]
+other = "← Voltar a Grupos e Infraestrutura"
+
+[open_platform]
+other = "Abrir a plataforma"
+
+[updates_title]
+other = "Atualizações"
+
+[updates_intro]
+other = "Notícias, vagas, eventos, projetos e publicações."
+
+[read]
+other = "Ler"
+
+[read_arrow]
+other = "Ler →"
+
+[read_update]
+other = "Ler atualização →"
+
+[all_updates]
+other = "Ver todas as atualizações →"
+
+[no_updates]
+other = "Nenhuma atualização publicada."
+
+[back_updates]
+other = "← Voltar às Atualizações"
+
+[tags_label]
+other = "Tags"
+
+[share]
+other = "Compartilhar"
+
+[share_linkedin]
+other = "Compartilhar no LinkedIn"
+
+[share_whatsapp]
+other = "Compartilhar no WhatsApp"
+
+[share_email]
+other = "Compartilhar por e-mail"
+
+[footer_social]
+other = "Perfis acadêmicos e redes sociais"
+
+[credit_tech]
+other = "Tecnologia:"
+
+[credit_theme]
+other = "Tema-base:"

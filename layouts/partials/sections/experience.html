@@ -1,9 +1,11 @@
 {{ if .Site.Params.experience.enable | default false }}
 <section id="experience" class="py-5 antover-areas-section">
   <div class="container">
-    <h3 class="text-center mb-2">{{ .Site.Params.experience.title | default "Atuação e áreas de interesse" }}</h3>
+    <h3 class="text-center mb-2">{{ .Site.Params.experience.title | default (i18n "nav_experience") }}</h3>
     <div class="antover-areas-grid">
-      {{ range .Site.Data.areas }}
+      {{/* Áreas traduzidas em data/areas_en.yaml e data/areas_es.yaml; português em data/areas.yaml. */}}
+      {{ $areas := index .Site.Data (printf "areas_%s" .Site.Language.Lang) | default .Site.Data.areas }}
+      {{ range $areas }}
       <details class="antover-area-card">
         <summary>
           <div class="antover-area-heading">

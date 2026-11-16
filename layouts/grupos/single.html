@@ -1,12 +1,12 @@
 {{ define "main" }}
 <main class="container py-5 group-single-page">
   {{/* .Site.Home.RelPermalink mantém o /site/ do baseURL; "/" | relURL apontava para a raiz do domínio (404). */}}
-  <a class="btn btn-sm btn-outline-secondary mb-4" href="{{ .Site.Home.RelPermalink }}#achievements">← Voltar a Grupos e Infraestrutura</a>
+  <a class="btn btn-sm btn-outline-secondary mb-4" href="{{ .Site.Home.RelPermalink }}#achievements">{{ i18n "back_groups" }}</a>
 
   {{ $link := .Params.link_externo }}
   <div class="row g-4 align-items-start">
     <div class="col-12 col-lg-4">
-      {{ if $link }}<a class="group-single-image-wrap" href="{{ $link }}" target="_blank" rel="noopener" aria-label="Abrir o site de {{ .Title }}">{{ else }}<div class="group-single-image-wrap">{{ end }}
+      {{ if $link }}<a class="group-single-image-wrap" href="{{ $link }}" target="_blank" rel="noopener" aria-label="{{ i18n "open_site_of" }} {{ .Title }}">{{ else }}<div class="group-single-image-wrap">{{ end }}
         {{ with .Params.image }}
         <img class="group-single-image" src="{{ . | relURL }}" alt="{{ $.Title }}">
         {{ end }}

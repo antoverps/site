@@ -1,0 +1,46 @@
+{{- /*
+  Seletor de idioma com bandeiras (substitui o dropdown do tema).
+  Cada bandeira leva à mesma página no outro idioma; se a página não tiver tradução
+  (ex.: Boletim de Vagas, só em português), leva à página inicial daquele idioma.
+  Na página inicial, o script mantém a âncora (#projects, #contact...) ao trocar de idioma.
+*/ -}}
+{{ if hugo.IsMultilingual }}
+{{ $page := . }}
+<li class="nav-item navbar-text lang-li">
+  <div class="lang-switch" role="group" aria-label="{{ i18n "lang_switch" }}">
+    {{ range site.Languages }}
+      {{ $lang := .Lang }}
+      {{ $url := "" }}
+      {{ range $page.AllTranslations }}{{ if eq .Language.Lang $lang }}{{ $url = .RelPermalink }}{{ end }}{{ end }}
+      {{ if not $url }}{{ range site.Home.AllTranslations }}{{ if eq .Language.Lang $lang }}{{ $url = .RelPermalink }}{{ end }}{{ end }}{{ end }}
+      {{ $active := eq $lang $page.Language.Lang }}
+      <a href="{{ $url }}" hreflang="{{ $lang }}" lang="{{ $lang }}"
+         class="lang-flag{{ if $active }} active{{ end }}"{{ if $active }} aria-current="true"{{ end }}
+         title="{{ .LanguageName }}" aria-label="{{ .LanguageName }}">
+        {{- if eq $lang "en" -}}
+        <svg viewBox="0 0 60 30" aria-hidden="true"><clipPath id="lang-uk-clip"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#lang-uk-clip)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg>
+        {{- else if eq $lang "es" -}}
+        <svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#AA151B"/><rect y="3.5" width="20" height="7" fill="#F1BF00"/></svg>
+        {{- else -}}
+        <svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#009C3B"/><path d="M10 1.6 18.2 7 10 12.4 1.8 7z" fill="#FFDF00"/><circle cx="10" cy="7" r="3.1" fill="#002776"/><path d="M7.1 6.3c1.9-.4 4-.1 5.8.9" stroke="#fff" stroke-width=".6" fill="none"/></svg>
+        {{- end -}}
+      </a>
+    {{ end }}
+  </div>
+</li>
+<style>
+.lang-switch{display:inline-flex;gap:2px;padding:3px;border:1px solid rgba(128,128,128,.32);border-radius:999px;background:rgba(128,128,128,.06);margin:0 .4rem;vertical-align:middle}
+.lang-flag{display:inline-flex;align-items:center;padding:.34rem .42rem;border-radius:999px;opacity:.55;filter:grayscale(.35);transition:opacity .15s,background .15s,filter .15s;text-decoration:none!important}
+.lang-flag:hover,.lang-flag:focus-visible{opacity:1;filter:none}
+.lang-flag.active{opacity:1;filter:none;background:#004725}
+html.dark .lang-flag.active{background:#67c58d}
+.lang-flag svg{width:20px;height:14px;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.12);display:block}
+@media(max-width:991px){.lang-li{padding:.4rem 0}}
+</style>
+<script>
+document.addEventListener("click",function(e){
+  var a=e.target.closest&&e.target.closest(".lang-flag");
+  if(a&&location.hash&&!a.hash){a.hash=location.hash;}
+});
+</script>
+{{ end }}

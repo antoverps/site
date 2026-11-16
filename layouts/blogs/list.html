@@ -1,9 +1,9 @@
 {{ define "main" }}
 <main class="container py-5 updates-list-page">
   <header class="text-center mb-5">
-    <h1>Atualizações</h1>
+    <h1>{{ i18n "updates_title" }}</h1>
     <p class="text-secondary updates-list-intro">
-      Notícias, vagas, eventos, projetos e publicações.
+      {{ i18n "updates_intro" }}
     </p>
   </header>
 
@@ -14,7 +14,7 @@
     {{ range $pages }}
     {{ $post := . }}
     <article class="update-card">
-      <a href="{{ $post.RelPermalink }}" class="update-card-link" aria-label="Ler {{ $post.Title }}">
+      <a href="{{ $post.RelPermalink }}" class="update-card-link" aria-label="{{ i18n "read" }} {{ $post.Title }}">
 
         <div class="update-card-image-wrap">
           {{ with $post.Params.image }}
@@ -55,14 +55,14 @@
           </div>
           {{ end }}
 
-          <div class="update-card-read">Ler →</div>
+          <div class="update-card-read">{{ i18n "read_arrow" }}</div>
         </div>
       </a>
     </article>
     {{ end }}
   </div>
   {{ else }}
-  <p class="text-center text-secondary">Nenhuma atualização publicada.</p>
+  <p class="text-center text-secondary">{{ i18n "no_updates" }}</p>
   {{ end }}
 </main>
 

@@ -1,5 +1,5 @@
 {{ define "main" }}
 <main class="py-5">
-  {{ partial "project-portfolio.html" (dict "context" . "title" "Projetos e Parcerias" "intro" "Projetos de pesquisa, extensão, ensino, PD&I e parcerias institucionais.") }}
+  {{ partial "project-portfolio.html" (dict "context" . "title" (i18n "projects_title") "intro" (i18n "projects_intro")) }}
 </main>
 {{ end }}

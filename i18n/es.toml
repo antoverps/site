@@ -1,0 +1,148 @@
+# Textos fixos dos layouts. Gerado a partir da mesma tabela para os três idiomas.
+
+[nav_home]
+other = "Inicio"
+
+[nav_about]
+other = "Sobre mí"
+
+[nav_experience]
+other = "Actuación y áreas de interés"
+
+[nav_projects]
+other = "Proyectos"
+
+[nav_achievements]
+other = "Grupos e Infraestructura"
+
+[nav_contact]
+other = "Contacto"
+
+[nav_blog]
+other = "Novedades"
+
+[know_more]
+other = "Ver proyecto"
+
+[lang_switch]
+other = "Idioma"
+
+[hero_btn_projects]
+other = "Conozca los proyectos"
+
+[hero_btn_contact]
+other = "Datos de contacto"
+
+[hero_logos]
+other = "Instituciones y grupos vinculados"
+
+[hero_social]
+other = "Contacto y perfiles profesionales"
+
+[open_cenpes]
+other = "Abrir el sitio del CENPES"
+
+[lattes_cv]
+other = "Currículo Lattes"
+
+[email]
+other = "Correo electrónico"
+
+[projects_filters]
+other = "Filtros de proyectos"
+
+[filter_active]
+other = "En curso"
+
+[filter_done]
+other = "Concluidos"
+
+[filter_teaching]
+other = "Enseñanza"
+
+[filter_research]
+other = "Investigación"
+
+[filter_outreach]
+other = "Extensión"
+
+[filter_social]
+other = "Social"
+
+[filter_all]
+other = "Todos"
+
+[open_project]
+other = "Abrir proyecto"
+
+[no_projects]
+other = "No se encontraron proyectos en esta categoría."
+
+[back_projects]
+other = "← Volver a los proyectos"
+
+[projects_title]
+other = "Proyectos y Alianzas"
+
+[projects_intro]
+other = "Proyectos de investigación, extensión, enseñanza e I+D+i y alianzas institucionales."
+
+[open_site_of]
+other = "Abrir el sitio de"
+
+[open_page_of]
+other = "Abrir la página de"
+
+[back_groups]
+other = "← Volver a Grupos e Infraestructura"
+
+[open_platform]
+other = "Abrir la plataforma"
+
+[updates_title]
+other = "Novedades"
+
+[updates_intro]
+other = "Noticias, vacantes, eventos, proyectos y publicaciones."
+
+[read]
+other = "Leer"
+
+[read_arrow]
+other = "Leer →"
+
+[read_update]
+other = "Leer más →"
+
+[all_updates]
+other = "Ver todas las novedades →"
+
+[no_updates]
+other = "Aún no hay novedades publicadas."
+
+[back_updates]
+other = "← Volver a Novedades"
+
+[tags_label]
+other = "Etiquetas"
+
+[share]
+other = "Compartir"
+
+[share_linkedin]
+other = "Compartir en LinkedIn"
+
+[share_whatsapp]
+other = "Compartir en WhatsApp"
+
+[share_email]
+other = "Compartir por correo electrónico"
+
+[footer_social]
+other = "Perfiles académicos y redes sociales"
+
+[credit_tech]
+other = "Tecnología:"
+
+[credit_theme]
+other = "Tema base:"

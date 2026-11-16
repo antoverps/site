@@ -46,6 +46,212 @@ languages:
         name: Contato
         url: /#contact
         weight: 8
+  en:
+    languageName: English
+    languageCode: en
+    weight: 2
+    contentDir: content_en
+    title: Prof. Antover Panazzolo Sarmento
+    menu:
+      main:
+      - identifier: inicio
+        name: Home
+        url: /en/
+        weight: 1
+      - identifier: sobre
+        name: About
+        url: /en/#about
+        weight: 2
+      - identifier: atuacao
+        name: Expertise and interests
+        url: /en/#experience
+        weight: 3
+      - identifier: projetos
+        name: Projects
+        url: /en/#projects
+        weight: 4
+      - identifier: grupos
+        name: Groups and Infrastructure
+        url: /en/#achievements
+        weight: 5
+      - identifier: plataformas
+        name: Platforms
+        url: /en/#plataformas
+        weight: 6
+      - identifier: atualizacoes
+        name: News
+        url: /en/blogs/
+        weight: 7
+      - identifier: contato
+        name: Contact
+        url: /en/#contact
+        weight: 8
+    params:
+      description: Sustainable engineering, water resources, environmental assessment, geotechnologies and applied artificial intelligence.
+      hero:
+        subtitle: Teaching, research and innovation applied to sustainable engineering solutions.
+      about:
+        title: About
+        content: 'Professor at the School of Engineering (FENG), the Master''s Program in Civil Engineering (PPGEC), the Master''s and Doctoral Programs in Materials Engineering (PPGEM) and the Master''s and Doctoral Programs in Geography at the Federal University of Catalão (UFCAT). Coordinator of the Sustainable Engineering Research Center (CENPES-UFCAT), administrative coordinator of the Engineering Research and Study Group (GPEE-UFCAT) and coordinator of the Escritório Escola (engineering practice office).
+
+
+          Full member, representing AMAT/UFCAT, of the Technical Chamber on Dam Safety (CTSB) of Brazil''s National Water Resources Council (CNRH), under the Ministry of Integration and Regional Development (MIDR).
+
+
+          Alternate member, representing UFCAT, of the River Basin Committee of the Corumbá, Veríssimo and Goiás portion of the São Marcos rivers (CBH CVSM).
+
+
+          PhD and MSc in Water and Environmental Resources from the Graduate Program in Agricultural Engineering at the Federal University of Viçosa (DEA-UFV), and BEng in Agricultural Engineering from the Federal University of Pelotas (FEA-UFPel).'
+      experience:
+        title: Expertise and research interests
+      achievements:
+        title: Groups and Infrastructure
+      plataformas:
+        title: Platforms
+        subtitle: Open computational tools, built with students and partners, for engineering teaching, research and design.
+        items:
+        - title: Coretec Tools
+          content: Accessible hub of civil and chemical engineering calculators, with theory, equations and examples alongside each calculation.
+          image: /images/plataformas/coretec.png
+          url: https://www.coretectools.com.br/
+          host: coretectools.com.br
+        - title: CONCRETA
+          content: GPEE's artificial intelligence that estimates concrete compressive strength (fck) from mix design data.
+          image: /images/plataformas/concreta.svg
+          url: https://concreta.streamlit.app/
+          host: concreta.streamlit.app
+        - title: Biodigestor
+          content: Calculator for sizing different biodigester models, with tutorial, theory and estimated or custom parameters.
+          image: /images/plataformas/biodigestor.svg
+          url: https://biodigestor.streamlit.app/
+          host: biodigestor.streamlit.app
+        - title: RainData
+          content: Map and data explorer for 602 rain gauge stations, with hydrological analyses from rainfall series.
+          image: /images/plataformas/raindata.svg
+          url: https://raindata.streamlit.app/
+          host: raindata.streamlit.app
+      projects:
+        title: Projects and Partnerships
+      contact:
+        title: Contact
+        content: "**Federal University of Catalão (UFCAT)**  \nSchool of Engineering — Building O  \nAv. Dr. Lamartine Pinto de Avelar, 1120  \nSetor Universitário — Catalão — GO — Brazil  \nZIP 75.704-020\n\nFor projects, partnerships and institutional contact:"
+        btnName: Get in touch
+      footer:
+        recentPosts:
+          title: News
+      singlePages:
+        readTime:
+          content: min read
+      terms:
+        read: Read
+        toc: Contents
+        copyright: All rights reserved
+        emailText: Share by email
+      datesFormat:
+        article: Jan 2, 2006
+        articleList: Jan 2, 2006
+        articleRecent: Jan 2, 2006
+  es:
+    languageName: Español
+    languageCode: es
+    weight: 3
+    contentDir: content_es
+    title: Prof. Antover Panazzolo Sarmento
+    menu:
+      main:
+      - identifier: inicio
+        name: Inicio
+        url: /es/
+        weight: 1
+      - identifier: sobre
+        name: Sobre mí
+        url: /es/#about
+        weight: 2
+      - identifier: atuacao
+        name: Actuación y áreas de interés
+        url: /es/#experience
+        weight: 3
+      - identifier: projetos
+        name: Proyectos
+        url: /es/#projects
+        weight: 4
+      - identifier: grupos
+        name: Grupos e Infraestructura
+        url: /es/#achievements
+        weight: 5
+      - identifier: plataformas
+        name: Plataformas
+        url: /es/#plataformas
+        weight: 6
+      - identifier: atualizacoes
+        name: Novedades
+        url: /es/blogs/
+        weight: 7
+      - identifier: contato
+        name: Contacto
+        url: /es/#contact
+        weight: 8
+    params:
+      description: Ingeniería sostenible, recursos hídricos, diagnóstico ambiental, geotecnologías e inteligencia artificial aplicada.
+      hero:
+        subtitle: Enseñanza, investigación e innovación aplicadas a soluciones sostenibles en ingeniería.
+      about:
+        title: Sobre mí
+        content: 'Profesor de la Facultad de Ingeniería (FENG), de la Maestría en Ingeniería Civil (PPGEC), de la Maestría y el Doctorado en Ingeniería de Materiales (PPGEM) y de la Maestría y el Doctorado en Geografía de la Universidad Federal de Catalão (UFCAT). Coordinador del Centro de Investigación en Ingeniería Sostenible (CENPES-UFCAT), coordinador administrativo del Grupo de Investigación y Estudio en Ingeniería (GPEE-UFCAT) y coordinador del Escritório Escola (oficina-escuela de ingeniería).
+
+
+          Miembro titular, en representación de AMAT/UFCAT, de la Cámara Técnica de Seguridad de Presas (CTSB) del Consejo Nacional de Recursos Hídricos (CNRH) de Brasil, vinculado al Ministerio de Integración y Desarrollo Regional (MIDR).
+
+
+          Miembro suplente, en representación de la UFCAT, del Comité de la Cuenca Hidrográfica de los ríos Corumbá, Veríssimo y la porción goiana del río São Marcos (CBH CVSM).
+
+
+          Doctor y Magíster en Recursos Hídricos y Ambientales por el Programa de Posgrado en Ingeniería Agrícola de la Universidad Federal de Viçosa (DEA-UFV) e Ingeniero Agrícola por la Universidad Federal de Pelotas (FEA-UFPel).'
+      experience:
+        title: Actuación y áreas de interés
+      achievements:
+        title: Grupos e Infraestructura
+      plataformas:
+        title: Plataformas
+        subtitle: Herramientas computacionales abiertas, desarrolladas con estudiantes y socios, para la enseñanza, la investigación y el diseño en ingeniería.
+        items:
+        - title: Coretec Tools
+          content: Hub accesible de calculadoras de ingeniería civil y química, con teoría, ecuaciones y ejemplos junto a cada cálculo.
+          image: /images/plataformas/coretec.png
+          url: https://www.coretectools.com.br/
+          host: coretectools.com.br
+        - title: CONCRETA
+          content: Inteligencia artificial del GPEE que estima la resistencia a compresión (fck) del concreto a partir de los datos de dosificación.
+          image: /images/plataformas/concreta.svg
+          url: https://concreta.streamlit.app/
+          host: concreta.streamlit.app
+        - title: Biodigestor
+          content: Calculadora para dimensionar distintos modelos de biodigestores, con tutorial, teoría y parámetros estimados o personalizados.
+          image: /images/plataformas/biodigestor.svg
+          url: https://biodigestor.streamlit.app/
+          host: biodigestor.streamlit.app
+        - title: RainData
+          content: Mapa y exploración de datos de 602 estaciones pluviométricas, con análisis hidrológicos a partir de las series de lluvia.
+          image: /images/plataformas/raindata.svg
+          url: https://raindata.streamlit.app/
+          host: raindata.streamlit.app
+      projects:
+        title: Proyectos y Alianzas
+      contact:
+        title: Contacto
+        content: "**Universidad Federal de Catalão (UFCAT)**  \nFacultad de Ingeniería — Bloque O  \nAv. Dr. Lamartine Pinto de Avelar, 1120  \nSetor Universitário — Catalão — GO — Brasil  \nCP 75.704-020\n\nPara proyectos, alianzas y contacto institucional:"
+        btnName: Contactar
+      footer:
+        recentPosts:
+          title: Novedades
+      singlePages:
+        readTime:
+          content: min de lectura
+      terms:
+        read: Leer
+        toc: Contenido
+        copyright: Todos los derechos reservados
+        emailText: Compartir por correo electrónico
 outputs:
   home:
   - HTML

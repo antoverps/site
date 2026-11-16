@@ -1,0 +1,51 @@
+- title: Water and Environmental Resources
+  slug: recursos-hidricos-ambientais
+  summary: Hydrology, drainage, watersheds and environmental assessment.
+  topics:
+  - Hydrology and modeling of hydrological variables
+  - Intense rainfall, IDF curves and extreme events
+  - Urban drainage, flooding and inundation
+  - Watersheds, springs and water availability
+  - Land use and land cover, land suitability and conservation
+  - Geotechnologies and UAVs for territorial assessment
+- title: Water, Wastewater and Solid Waste Treatment and Management
+  slug: aguas-efluentes-residuos
+  summary: Sanitation, treatment, waste valorization and resource recovery.
+  topics:
+  - Water, greywater and wastewater treatment
+  - Domestic, industrial and ready-mix concrete plant effluents
+  - Chemical and natural coagulation
+  - Advanced oxidation processes
+  - Sewer networks and sanitation tools
+  - Solid waste management, composting and reuse
+  - Anaerobic digestion, biogas and waste-to-energy
+- title: Sustainable Construction
+  slug: construcao-sustentavel
+  summary: Materials, waste, efficiency and lower-impact solutions.
+  topics:
+  - Construction and demolition waste and recycled aggregates
+  - Concrete, mortar, pavers and pervious concrete
+  - Mineral waste, alloterites and alternative cementitious materials
+  - Kraft paper fibers, recycled gypsum and biomass ash
+  - Energy efficiency and environmental performance of buildings
+  - Sustainability indicators for the built environment
+- title: Statistical Tools and Machine Learning
+  slug: estatistica-aprendizado-maquina
+  summary: Applied statistics, predictive models, AI and computational tools.
+  topics:
+  - Applied statistics and distribution analysis
+  - Frequency analysis and modeling of hydrological extremes
+  - Machine learning for concrete and mortar properties
+  - Predictive models, classification and optimization
+  - Engineering workflow automation and algorithm development
+  - Dashboards, apps and decision-support tools
+- title: Finance and Investment Analysis
+  slug: financas-investimentos
+  summary: Economic feasibility, costs, scenarios and decision support.
+  topics:
+  - Economic feasibility analysis of projects
+  - Costs, benefits, payback and return of sustainable solutions
+  - Feasibility of energy recovery and waste valorization
+  - Sustainability indicators and real estate value
+  - Scenario and sensitivity analysis
+  - Economic and financial modeling for engineering decisions

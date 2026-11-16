@@ -2,10 +2,10 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <h3 class="mb-3">{{ .Site.Params.contact.title | default "Contato" }}</h3>
+        <h3 class="mb-3">{{ .Site.Params.contact.title | default (i18n "nav_contact") }}</h3>
         <div class="footer-contact-content text-secondary mb-4">{{ .Site.Params.contact.content | markdownify }}</div>
         <a class="footer-contact-btn" href="{{ .Site.Params.contact.btnLink }}">
-          {{ .Site.Params.contact.btnName | default "Entrar em contato" }}
+          {{ .Site.Params.contact.btnName | default (i18n "nav_contact") }}
         </a>
       </div>
     </div>

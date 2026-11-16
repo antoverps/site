@@ -1,0 +1,148 @@
+# Textos fixos dos layouts. Gerado a partir da mesma tabela para os três idiomas.
+
+[nav_home]
+other = "Home"
+
+[nav_about]
+other = "About"
+
+[nav_experience]
+other = "Expertise and research interests"
+
+[nav_projects]
+other = "Projects"
+
+[nav_achievements]
+other = "Groups and Infrastructure"
+
+[nav_contact]
+other = "Contact"
+
+[nav_blog]
+other = "News"
+
+[know_more]
+other = "View project"
+
+[lang_switch]
+other = "Language"
+
+[hero_btn_projects]
+other = "Explore the projects"
+
+[hero_btn_contact]
+other = "Contact details"
+
+[hero_logos]
+other = "Affiliated institutions and groups"
+
+[hero_social]
+other = "Contact and professional profiles"
+
+[open_cenpes]
+other = "Open the CENPES website"
+
+[lattes_cv]
+other = "Lattes CV"
+
+[email]
+other = "Email"
+
+[projects_filters]
+other = "Project filters"
+
+[filter_active]
+other = "Ongoing"
+
+[filter_done]
+other = "Completed"
+
+[filter_teaching]
+other = "Teaching"
+
+[filter_research]
+other = "Research"
+
+[filter_outreach]
+other = "Outreach"
+
+[filter_social]
+other = "Social"
+
+[filter_all]
+other = "All"
+
+[open_project]
+other = "Open project"
+
+[no_projects]
+other = "No projects found in this category."
+
+[back_projects]
+other = "← Back to projects"
+
+[projects_title]
+other = "Projects and Partnerships"
+
+[projects_intro]
+other = "Research, outreach, teaching and R&D&I projects and institutional partnerships."
+
+[open_site_of]
+other = "Open the website of"
+
+[open_page_of]
+other = "Open the page of"
+
+[back_groups]
+other = "← Back to Groups and Infrastructure"
+
+[open_platform]
+other = "Open the platform"
+
+[updates_title]
+other = "News"
+
+[updates_intro]
+other = "News, job openings, events, projects and publications."
+
+[read]
+other = "Read"
+
+[read_arrow]
+other = "Read →"
+
+[read_update]
+other = "Read more →"
+
+[all_updates]
+other = "See all news →"
+
+[no_updates]
+other = "No news published yet."
+
+[back_updates]
+other = "← Back to News"
+
+[tags_label]
+other = "Tags"
+
+[share]
+other = "Share"
+
+[share_linkedin]
+other = "Share on LinkedIn"
+
+[share_whatsapp]
+other = "Share on WhatsApp"
+
+[share_email]
+other = "Share by email"
+
+[footer_social]
+other = "Academic profiles and social media"
+
+[credit_tech]
+other = "Built with:"
+
+[credit_theme]
+other = "Base theme:"

@@ -4,7 +4,7 @@
 <section class="container py-4" id="recent-posts">
   {{ $recentPostsCount := .Site.Params.footer.recentPosts.count | default 3 }}
   {{ $recentPosts := first $recentPostsCount $posts.ByDate.Reverse }}
-  <h3 class="text-center text-secondary py-3">{{ .Site.Params.footer.recentPosts.title | default "Atualizações" }}</h3>
+  <h3 class="text-center text-secondary py-3">{{ .Site.Params.footer.recentPosts.title | default (i18n "updates_title") }}</h3>
   <div class="row justify-content-center g-3">
     {{ range $recentPosts }}
     {{ $post := . }}
@@ -19,14 +19,14 @@
           <div class="small text-secondary mb-2">{{ $post.Date.Format ($.Site.Params.datesFormat.articleRecent | default "02/01/2006") }}</div>
           <h4 class="h5 card-title"><a class="text-decoration-none" href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h4>
           {{ with $post.Description }}<p class="card-text text-secondary">{{ . }}</p>{{ end }}
-          <a class="mt-auto small" href="{{ $post.RelPermalink }}">Ler atualização →</a>
+          <a class="mt-auto small" href="{{ $post.RelPermalink }}">{{ i18n "read_update" }}</a>
         </div>
       </article>
     </div>
     {{ end }}
   </div>
   <div class="text-center mt-3">
-    <a class="small text-decoration-none" href="{{ $recentPostsPath | relURL }}/">Ver todas as atualizações →</a>
+    <a class="small text-decoration-none" href="{{ printf "%s/" $recentPostsPath | relLangURL }}">{{ i18n "all_updates" }}</a>
   </div>
 </section>
 {{ end }}

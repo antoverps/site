@@ -1,0 +1,51 @@
+- title: Recursos Hídricos y Ambientales
+  slug: recursos-hidricos-ambientais
+  summary: Hidrología, drenaje, cuencas hidrográficas y diagnóstico ambiental.
+  topics:
+  - Hidrología y modelación de variables hidrológicas
+  - Lluvias intensas, curvas IDF y eventos extremos
+  - Drenaje urbano, anegamientos e inundaciones
+  - Cuencas hidrográficas, manantiales y disponibilidad hídrica
+  - Uso y ocupación del suelo, aptitud y conservación ambiental
+  - Geotecnologías y VANT aplicados al diagnóstico territorial
+- title: Tratamiento y Gestión de Aguas, Efluentes y Residuos Sólidos
+  slug: aguas-efluentes-residuos
+  summary: Saneamiento, tratamiento, valorización de residuos y recuperación de recursos.
+  topics:
+  - Tratamiento de agua, aguas grises y aguas residuales
+  - Efluentes domésticos, industriales y de plantas de concreto
+  - Coagulación química y natural
+  - Procesos de oxidación avanzada
+  - Redes de alcantarillado y herramientas de saneamiento
+  - Gestión de residuos sólidos, compostaje y reaprovechamiento
+  - Biodigestión, biogás y valorización energética de residuos
+- title: Construcción Sostenible
+  slug: construcao-sustentavel
+  summary: Materiales, residuos, eficiencia y soluciones de menor impacto ambiental.
+  topics:
+  - Residuos de construcción y agregados reciclados
+  - Concretos, morteros, adoquines y concretos permeables
+  - Residuos minerales, aloteritas y materiales cementicios alternativos
+  - Fibras de papel Kraft, yeso reciclado y cenizas de biomasa
+  - Eficiencia energética y desempeño ambiental de edificaciones
+  - Indicadores de sostenibilidad aplicados al entorno construido
+- title: Herramientas Estadísticas y Aprendizaje Automático
+  slug: estatistica-aprendizado-maquina
+  summary: Estadística aplicada, modelos predictivos, IA y herramientas computacionales.
+  topics:
+  - Estadística aplicada y análisis de distribuciones
+  - Análisis de frecuencia y modelación de extremos hidrológicos
+  - Aprendizaje automático para propiedades de concretos y morteros
+  - Modelos predictivos, clasificación y optimización
+  - Automatización de rutinas de ingeniería y desarrollo de algoritmos
+  - Dashboards, aplicaciones y herramientas computacionales de apoyo a la decisión
+- title: Finanzas y Análisis de Inversiones
+  slug: financas-investimentos
+  summary: Viabilidad económica, costos, escenarios y apoyo a la decisión.
+  topics:
+  - Análisis de viabilidad económica de proyectos
+  - Costos, beneficios, payback y retorno de soluciones sostenibles
+  - Viabilidad del aprovechamiento energético y la valorización de residuos
+  - Indicadores de sostenibilidad y formación del valor inmobiliario
+  - Análisis de escenarios y sensibilidad
+  - Modelación económico-financiera aplicada a la decisión en ingeniería

@@ -3,3 +3,7 @@ resources/_gen/
 .hugo_build.lock
 .DS_Store
 __pycache__/
+
+# Gerados pelo scripts/sync_from_sheets.py no build (versões EN e ES)
+content_en/
+content_es/

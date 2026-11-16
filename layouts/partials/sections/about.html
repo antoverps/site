@@ -2,7 +2,7 @@
 <section id="about" class="py-5 antover-about-text-only">
   <div class="container">
     <div class="antover-about-wrap">
-      <h3 class="text-center mb-4">{{ .Site.Params.about.title | default "Sobre" }}</h3>
+      <h3 class="text-center mb-4">{{ .Site.Params.about.title | default (i18n "nav_about") }}</h3>
       <div class="antover-about-content">
         {{ .Site.Params.about.content | markdownify }}
       </div>

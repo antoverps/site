@@ -1,7 +1,7 @@
 {{ if .Site.Params.achievements.enable | default false }}
 <section id="achievements" class="py-5 groups-infra-section">
   <div class="container">
-    <h3 class="text-center mb-4">{{ .Site.Params.achievements.title | default "Grupos e Infraestrutura" }}</h3>
+    <h3 class="text-center mb-4">{{ .Site.Params.achievements.title | default (i18n "nav_achievements") }}</h3>
     {{ $groups := where .Site.RegularPages "Section" "grupos" }}
     <div class="row justify-content-center g-3">
       {{ range $groups.ByParam "ordem" }}
@@ -12,7 +12,7 @@
         <a href="{{ with $ext }}{{ . }}{{ else }}{{ $group.RelPermalink }}{{ end }}"
            {{ if $ext }}target="_blank" rel="noopener"{{ end }}
            class="group-infra-card card h-100 p-3 text-decoration-none"
-           aria-label="{{ if $ext }}Abrir o site de{{ else }}Abrir página de{{ end }} {{ $group.Title }}">
+           aria-label="{{ if $ext }}{{ i18n "open_site_of" }}{{ else }}{{ i18n "open_page_of" }}{{ end }} {{ $group.Title }}">
           <div class="group-infra-icon-wrap">
             {{ with $group.Params.image }}
             <img src="{{ . | relURL }}" class="group-infra-icon" alt="{{ $group.Title }}">
