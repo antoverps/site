@@ -294,16 +294,18 @@ def render_caption(data: dict) -> str:
     lines = [
         f"🏗️ BOLETIM DE VAGAS | ENGENHARIA CIVIL — {br(d)}",
         "",
-        f"Separei {n} vagas ATIVAS em Engenharia Civil, de todos os níveis — obras, saneamento, recursos hídricos, ambiental, geotecnia e infraestrutura. Todos os links foram conferidos hoje. 👇",
+        f"Separei {n} vagas ATIVAS em Engenharia Civil: estágio, assistente de engenharia, trainee, júnior, pleno e concursos — obras, saneamento, recursos hídricos, ambiental, geotecnia e infraestrutura. Todos os links foram conferidos hoje. 👇",
         "",
     ]
     icons = {"catalao": "📍", "goias": "🟢", "brasil": "🇧🇷", "estagio": "🎓"}
     tail = [
         "🔗 Descrição, requisitos e link de candidatura de cada vaga: LINK NA BIO (Atualizações → Boletim de Vagas)",
         "",
+        "💬 Quer vagas de outras engenharias ou áreas? Comente aqui qual área você procura — com os pedidos, passo a incluir outras engenharias e áreas a partir do próximo boletim!",
+        "",
         "📅 Toda segunda-feira tem boletim novo: siga @antoverps, ative as notificações e compartilhe com colegas da engenharia! 🏗️",
         "",
-        "#engenhariacivil #vagas #vagasdeemprego #engenheirocivil #oportunidades #estagio #estagioengenharia #trainee #programadetrainee "
+        "#engenhariacivil #vagas #vagasdeemprego #engenheirocivil #oportunidades #estagio #estagioengenharia #trainee #programadetrainee #concursos "
         "#catalao #catalaogo #goias #goiania #saneamento #recursoshidricos #geotecnia #construcaocivil #ufcat #egressos",
     ]
 
