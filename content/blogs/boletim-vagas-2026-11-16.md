@@ -4,7 +4,7 @@ date: 2026-11-16
 lastmod: 2026-11-16
 draft: false
 manual: true
-description: "38 vagas ativas em Engenharia Civil — Catalão, Goiás e Brasil. Edição de 16/11/2026."
+description: "51 vagas ativas em Engenharia Civil — Catalão, Goiás e Brasil. Edição de 16/11/2026."
 categories:
 - Vaga
 tags:
@@ -46,7 +46,7 @@ image_alt: "Boletim de Vagas de Engenharia Civil — 16/11/2026"
 <strong>Atualizado em 16 de novembro de 2026.</strong> Levantamento semanal (toda segunda-feira) de vagas em Engenharia Civil, de todos os níveis — obras, saneamento, recursos hídricos, ambiental, barragens, geotecnia e infraestrutura. Prioridade: <strong>Catalão</strong>, depois <strong>Goiás</strong> e <strong>Brasil</strong>. Cada link foi aberto e conferido na data acima; ainda assim, confirme prazo e requisitos na página oficial antes de se candidatar.
 </div>
 
-<div class="vg-summary"><a href="#catalao"><b>6</b>Catalão e região</a><a href="#goias"><b>23</b>Goiás (e entorno do DF)</a><a href="#brasil"><b>9</b>Brasil: trainees e concursos</a><a href="#estagio"><b>0</b>Estágios</a></div>
+<div class="vg-summary"><a href="#catalao"><b>6</b>Catalão e região</a><a href="#goias"><b>23</b>Goiás (e entorno do DF)</a><a href="#brasil"><b>9</b>Brasil: trainees e concursos</a><a href="#estagio"><b>13</b>Estágios</a></div>
 
 <section class="vg-sec" id="catalao">
 <h2>Catalão e região</h2>
@@ -333,7 +333,97 @@ image_alt: "Boletim de Vagas de Engenharia Civil — 16/11/2026"
 <h2>Estágios</h2>
 <p>Estágios em Engenharia Civil para estudantes — Catalão, Goiás e Brasil.</p>
 <div class="vg-grid">
-
+<article class="vg-card">
+<header><h4>Estagiário(a) de Engenharia Civil</h4><p class="vg-emp">Realiza Construtora</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Uberlândia/MG (presencial)</dd></div><div><dt>Nível / público</dt><dd>A partir do 4º período de Eng. Civil</dd></div><div><dt>Regime / salário</dt><dd>Bolsa a combinar + benefícios · 6 h/dia, seg–sex</dd></div></dl>
+<p><strong>Atividades:</strong> Estágio de engenharia civil em construtora.</p><p><strong>Requisitos:</strong> AutoCAD, Excel, proatividade e boa comunicação.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://www.bne.com.br/vaga-de-emprego-na-area-administrativo-em-uberlandia-mg/estagiario/6121285" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><span class="vg-badge">Seleção pública</span><h4>Estágio Nível Superior – inclui Eng. Civil (seleção Univ. Patativa do Assaré)</h4><p class="vg-emp">Saneago</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Goiânia, Aparecida, Anápolis, Jataí, Rio Verde, Luziânia, Formosa e outras/GO</dd></div><div><dt>Nível / público</dt><dd>A partir do 3º semestre (não pode estar no último)</dd></div><div><dt>Regime / salário</dt><dd>Bolsa R$ 1.240 + auxílio-transporte R$ 124 · 20 h/sem</dd></div><div><dt>Publicação</dt><dd>06/11/2026</dd></div><div><dt>Inscrições até</dt><dd>29/11/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Estágio em unidades da Saneago (saneamento); prova objetiva online em 06/12/2026.</p><p><strong>Requisitos:</strong> Matrícula regular; disponibilidade mínima de 6 meses.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://universidadepatativa.com.br/site/processo-seletivo-de-estagio-remunerado-para-niveis-medio-regular-e-tecnico-e-superior-saneago-edital-001-2026/" target="_blank" rel="noopener">Ver edital ↗</a><a class="vg-btn vg-btn-alt" href="mailto:saneago@universidadepatativa.com.br">saneago@universidadepatativa.com.br</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><span class="vg-badge">Bolsa R$ 1.800</span><h4>Programa de Estágio Tenda 2027 – Obra</h4><p class="vg-emp">Construtora Tenda</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Goiânia/GO (presencial)</dd></div><div><dt>Nível / público</dt><dd>Eng. Civil ou Arquitetura a partir do 4º semestre</dd></div><div><dt>Regime / salário</dt><dd>Bolsa R$ 1.800 (1º ano) / R$ 2.100 (2º ano) · 30 h/sem · VR, VT, Wellhub</dd></div><div><dt>Publicação</dt><dd>19/10/2026</dd></div><div><dt>Inscrições até</dt><dd>22/11/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Acompanhar infraestrutura, estrutura, acabamento e entrega de obras.</p><p><strong>Requisitos:</strong> 30 h/sem presenciais; Office e AutoCAD são diferenciais.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://estagiotenda.gupy.io/jobs/12714594?jobBoardSource=gupy_public_page" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Programa de Estágio – Engenharia Civil (obra)</h4><p class="vg-emp">MRV&amp;CO</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Goiânia/GO (presencial)</dd></div><div><dt>Nível / público</dt><dd>Cursando Eng. Civil, Arquitetura ou Eng. de Produção</dd></div><div><dt>Regime / salário</dt><dd>R$ 1.150 (4 h) ou R$ 1.700 (6 h) · vale lanche e benefícios</dd></div></dl>
+<p><strong>Atividades:</strong> Frentes de obra, quantitativos, leitura de projetos, diários de obra e qualidade.</p><p><strong>Requisitos:</strong> Pacote Office; 4 ou 6 h/dia.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://programadeestagiomrveco.gupy.io/jobs/12706236?jobBoardSource=gupy_public_page" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Programa de Estágio – Engenharia Civil (obra)</h4><p class="vg-emp">MRV&amp;CO</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Anápolis/GO (presencial)</dd></div><div><dt>Nível / público</dt><dd>Cursando Eng. Civil, Arquitetura ou Eng. de Produção</dd></div><div><dt>Regime / salário</dt><dd>R$ 1.150 (4 h) ou R$ 1.700 (6 h) · vale lanche e benefícios</dd></div></dl>
+<p><strong>Atividades:</strong> Quantitativos, leitura de projetos, diários de obra e controle de qualidade.</p><p><strong>Requisitos:</strong> Pacote Office; 4 ou 6 h/dia.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://programadeestagiomrveco.gupy.io/jobs/12780346?jobBoardSource=gupy_public_page" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Estágio em Engenharia Civil – Assistência Técnica</h4><p class="vg-emp">Brasal Incorporações</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Goiânia/GO</dd></div><div><dt>Nível / público</dt><dd>Cursando Engenharia Civil</dd></div><div><dt>Regime / salário</dt><dd>Bolsa não informada · VT, VA, seguro de vida</dd></div><div><dt>Publicação</dt><dd>09/11/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Fiscalização de obras, análise de projetos, relatórios, vistorias e pós-obra.</p><p><strong>Requisitos:</strong> Office e noções de AutoCAD.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://br.linkedin.com/jobs/view/bi-est%C3%A1gio-em-engenharia-civil-assist%C3%AAncia-t%C3%A9cnica-at-brasal-4485572026" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Estagiário(a) de Obra – Wide Maristta</h4><p class="vg-emp">EBM Desenvolvimento Imobiliário</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Goiânia/GO</dd></div><div><dt>Nível / público</dt><dd>Cursando Eng. Civil, Arquitetura ou Técnico em Edificações</dd></div><div><dt>Regime / salário</dt><dd>Bolsa não informada · VA/VR, VT, Wellhub</dd></div><div><dt>Publicação</dt><dd>09/11/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Quantitativos, orçado x realizado, diário de obra, segurança e 5S.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://br.linkedin.com/jobs/view/estagi%C3%A1rio-de-obra-wide-maristta-at-ebm-incorporacoes-4485876632" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Estagiário(a) na área de Engenharia Civil</h4><p class="vg-emp">Jobbol (recrutadora)</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Goiânia/GO (aceita Aparecida e Senador Canedo)</dd></div><div><dt>Nível / público</dt><dd>Superior em andamento em Eng. Civil; experiência não exigida</dd></div><div><dt>Regime / salário</dt><dd>Meio período · bolsa a combinar</dd></div><div><dt>Publicação</dt><dd>13/11/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Levantamento de dados para projetos, desenhos técnicos, relatórios e acompanhamento de obras.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://br.linkedin.com/jobs/view/estagi%C3%A1rio-na-%C3%A1rea-de-engenharia-civil-at-jobbol-4490522522" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Estagiário(a) de Engenharia</h4><p class="vg-emp">JSantos Engenharia</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Aparecida de Goiânia/GO</dd></div><div><dt>Nível / público</dt><dd>Eng. Civil, Mecânica ou Elétrica a partir do 3º semestre</dd></div><div><dt>Regime / salário</dt><dd>Meio período · bolsa não informada</dd></div><div><dt>Publicação</dt><dd>14/11/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Desenhos em AutoCAD/Revit, projetos de incêndio, hidrossanitários e laudos para o CERCON.</p><p><strong>Requisitos:</strong> AutoCAD básico/intermediário; NBRs e NRs.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://br.linkedin.com/jobs/view/estagi%C3%A1rio-de-engenharia-at-jsantos-engenharia-4488935682" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Estágio em Engenharia</h4><p class="vg-emp">Laselva RH (cliente)</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Goiânia/GO</dd></div><div><dt>Nível / público</dt><dd>Cursando Engenharia Civil</dd></div><div><dt>Regime / salário</dt><dd>Bolsa R$ 1.000 · 30 h/sem</dd></div><div><dt>Publicação</dt><dd>09/11/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Obras de estruturas de telhados e coberturas, leitura de projetos, medições e controle de materiais.</p><p><strong>Requisitos:</strong> AutoCAD desejável.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://br.linkedin.com/jobs/view/est%C3%A1gio-em-engenharia-at-laselva-recursos-humanos-4485566726" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Estágio em Engenharia Civil – Orçamentos</h4><p class="vg-emp">Empresa confidencial (esquadrias de alumínio)</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Goiânia/GO (Setor Oeste, presencial)</dd></div><div><dt>Nível / público</dt><dd>A partir do 5º período de Eng. Civil</dd></div><div><dt>Regime / salário</dt><dd>Bolsa R$ 1.600 · 30 h/sem · VT</dd></div><div><dt>Publicação</dt><dd>12/11/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Leitura de projetos, software de orçamento, propostas e contratos.</p><p><strong>Requisitos:</strong> AutoCAD, Excel; SketchUp e Revit são diferenciais.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://www.infojobs.com.br/vaga-de-estagio-engenharia-civil-em-goias__12214454.aspx" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Programa de Estágio nexTalent 2027</h4><p class="vg-emp">ACCIONA</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>SP, PR, PB, PE e ES</dd></div><div><dt>Nível / público</dt><dd>Penúltimo ou último ano (conclusão 12/2027–12/2028); inglês avançado</dd></div><div><dt>Regime / salário</dt><dd>Bolsa de mercado · até 2 anos · início mar/2027</dd></div><div><dt>Publicação</dt><dd>12/11/2026</dd></div><div><dt>Inscrições até</dt><dd>01/12/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Estágio em projetos de infraestrutura e construção, com tutor e trilha de desenvolvimento.</p><p><strong>Requisitos:</strong> Inglês avançado.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://www.acciona.com.br/trabalhe-conosco/talento-jovem/programa-de-estagio" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
+<article class="vg-card">
+<header><h4>Programa Talento Infinito 2027 – Estágio Superior</h4><p class="vg-emp">Hydro / Albras</p></header>
+<dl class="vg-meta"><div><dt>Local</dt><dd>Barcarena/PA (Eng. Civil); também Belém/PA e Rio de Janeiro/RJ</dd></div><div><dt>Nível / público</dt><dd>A partir do 4º semestre; residir em Belém, Barcarena ou RJ</dd></div><div><dt>Regime / salário</dt><dd>Bolsa de mercado · 30 h/sem · VR, VT, plano de saúde</dd></div><div><dt>Publicação</dt><dd>12/11/2026</dd></div><div><dt>Inscrições até</dt><dd>13/12/2026</dd></div></dl>
+<p><strong>Atividades:</strong> Estágio industrial de 12 meses (prorrogáveis), início em maio/2027.</p><p><strong>Requisitos:</strong> Inglês intermediário.</p>
+<div class="vg-actions"><a class="vg-btn" href="https://processo-seletivo.comtalento.com.br/hydro-estagio-superior-2027" target="_blank" rel="noopener">Candidatar-se ↗</a></div>
+<p class="vg-note">Verificada em 16/11/2026.</p>
+</article>
 </div>
 </section>
 

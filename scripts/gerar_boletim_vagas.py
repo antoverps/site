@@ -303,7 +303,7 @@ def render_caption(data: dict) -> str:
         "",
         "📅 Toda segunda-feira tem boletim novo: siga @antoverps, ative as notificações e compartilhe com colegas da engenharia! 🏗️",
         "",
-        "#engenhariacivil #vagas #vagasdeemprego #engenheirocivil #oportunidades #trainee #programadetrainee "
+        "#engenhariacivil #vagas #vagasdeemprego #engenheirocivil #oportunidades #estagio #estagioengenharia #trainee #programadetrainee "
         "#catalao #catalaogo #goias #goiania #saneamento #recursoshidricos #geotecnia #construcaocivil #ufcat #egressos",
     ]
 
