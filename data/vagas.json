@@ -373,6 +373,13 @@
           "verificacao": "Página de inscrição aberta em 12/11/2026; prazo não divulgado."
         }
       ]
+    },
+    {
+      "id": "estagio",
+      "titulo": "Estágios",
+      "kick": "Estágios",
+      "subtitulo": "Estágios em Engenharia Civil para estudantes — Catalão, Goiás e Brasil.",
+      "vagas": []
     }
   ],
   "dicas": [

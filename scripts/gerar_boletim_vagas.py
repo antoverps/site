@@ -29,9 +29,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "vagas.json"
-POST = ROOT / "content" / "blogs" / "boletim-vagas-engenharia-civil.md"
-COVER = ROOT / "static" / "images" / "updates" / "boletim-vagas.svg"
+BLOG = ROOT / "content" / "blogs"
+COVERS = ROOT / "static" / "images" / "updates"
+# Link fixo (bio do Instagram): página estática que redireciona para a edição mais recente.
 SITE_URL = "https://antoverps.github.io/site/blogs/boletim-vagas-engenharia-civil/"
+REDIRECT = ROOT / "static" / "blogs" / "boletim-vagas-engenharia-civil" / "index.html"
+ARQUIVO_MARK = "<!-- boletim-arquivado -->"
+
+
+def post_path(d: str) -> Path:
+    """Uma página por edição semanal: content/blogs/boletim-vagas-AAAA-MM-DD.md"""
+    return BLOG / f"boletim-vagas-{d}.md"
+
+
+def cover_path(d: str) -> Path:
+    return COVERS / f"boletim-vagas-{d}.svg"
 DEFAULT_IG = Path(r"C:\Users\sap-09\OneDrive\Fazendo\SITE-APS\instagram-vagas")
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho",
@@ -132,12 +144,12 @@ def render_post(data: dict) -> str:
 </section>""")
     dicas = "".join(f"<li>{e(t)}</li>" for t in data.get("dicas", []))
     fm = f"""---
-title: "Boletim de Vagas — Engenharia Civil"
+title: "Boletim de Vagas — Engenharia Civil ({br(d)})"
 date: {d}
 lastmod: {d}
 draft: false
 manual: true
-description: "{n} vagas ativas em Engenharia Civil — Catalão, Goiás e Brasil. Atualizado toda segunda-feira (última: {br(d)})."
+description: "{n} vagas ativas em Engenharia Civil — Catalão, Goiás e Brasil. Edição de {br(d)}."
 categories:
 - Vaga
 tags:
@@ -146,7 +158,7 @@ tags:
 - trainee
 - egressos
 - Catalão
-image: images/updates/boletim-vagas.svg
+image: images/updates/boletim-vagas-{d}.svg
 image_alt: "Boletim de Vagas de Engenharia Civil — {br(d)}"
 ---
 """
@@ -164,7 +176,7 @@ image_alt: "Boletim de Vagas de Engenharia Civil — {br(d)}"
 <section class="vg-sec vg-follow">
 <h2>Acompanhe o boletim toda segunda-feira</h2>
 <p>A lista é atualizada semanalmente aqui no site e divulgada no Instagram. Siga o perfil para ver as novas vagas assim que saírem e salve esta página nos favoritos.</p>
-<div class="vg-actions"><a class="vg-btn" href="https://www.instagram.com/antoverps/" target="_blank" rel="noopener">Seguir @antoverps no Instagram ↗</a><a class="vg-btn vg-btn-alt" href="{SITE_URL}">Link desta página</a></div>
+<div class="vg-actions"><a class="vg-btn" href="https://www.instagram.com/antoverps/" target="_blank" rel="noopener">Seguir @antoverps no Instagram ↗</a><a class="vg-btn vg-btn-alt" href="{SITE_URL}">Boletim mais recente</a></div>
 </section>
 
 <section class="vg-sec">
@@ -174,6 +186,34 @@ image_alt: "Boletim de Vagas de Engenharia Civil — {br(d)}"
 
 <p class="vg-note" style="margin-top:2rem">Encontrou uma vaga encerrada ou quer divulgar uma oportunidade? Fale comigo pelos contatos do site.</p>
 """
+
+
+# --------------------------------------------------------------------------- histórico
+
+def arquivar_anteriores(atual: str) -> None:
+    """Mantém as edições anteriores no site, com aviso de arquivo, e aponta o link fixo
+    (SITE_URL) para a edição mais recente."""
+    for p in BLOG.glob("boletim-vagas-*.md"):
+        m = re.fullmatch(r"boletim-vagas-(\d{4}-\d{2}-\d{2})\.md", p.name)
+        if not m or m[1] >= atual:
+            continue
+        t = p.read_text(encoding="utf-8")
+        if ARQUIVO_MARK in t:
+            continue
+        _, fm, body = t.split("---", 2)
+        aviso = (f'\n{ARQUIVO_MARK}\n<div class="vg-intro" style="border-left-color:#b7791f;background:rgba(183,121,31,.08)">'
+                 f'<strong>Edição de arquivo ({br(m[1])}).</strong> Esta é uma edição anterior do boletim, mantida como registro. '
+                 f'Algumas vagas podem ter sido encerradas depois desta data. '
+                 f'<a href="{SITE_URL}">Veja o boletim mais recente →</a></div>\n')
+        p.write_text("---" + fm + "---" + aviso + body, encoding="utf-8")
+    alvo = f"https://antoverps.github.io/site/blogs/boletim-vagas-{atual}/"
+    REDIRECT.parent.mkdir(parents=True, exist_ok=True)
+    REDIRECT.write_text(
+        '<!doctype html><html lang="pt-br"><head><meta charset="utf-8">'
+        '<title>Boletim de Vagas — Engenharia Civil</title>'
+        f'<link rel="canonical" href="{alvo}"><meta http-equiv="refresh" content="0; url={alvo}">'
+        f'</head><body><p>Redirecionando para o <a href="{alvo}">boletim mais recente</a>…</p></body></html>\n',
+        encoding="utf-8")
 
 
 # --------------------------------------------------------------------------- capa SVG
@@ -257,7 +297,7 @@ def render_caption(data: dict) -> str:
         f"Separei {n} vagas ATIVAS em Engenharia Civil, de todos os níveis — obras, saneamento, recursos hídricos, ambiental, geotecnia e infraestrutura. Todos os links foram conferidos hoje. 👇",
         "",
     ]
-    icons = {"catalao": "📍", "goias": "🟢", "brasil": "🇧🇷"}
+    icons = {"catalao": "📍", "goias": "🟢", "brasil": "🇧🇷", "estagio": "🎓"}
     tail = [
         "🔗 Descrição, requisitos e link de candidatura de cada vaga: LINK NA BIO (Atualizações → Boletim de Vagas)",
         "",
@@ -319,7 +359,7 @@ def to_png(browser: str, html_path: Path, png: Path) -> Path:
 # --------------------------------------------------------------------------- planilha
 
 SHEETS = ROOT / "data" / "sheets.json"
-SECAO_ID = {"catalao": "catalao", "goias": "goias", "brasil": "brasil"}
+SECAO_ID = {"catalao": "catalao", "goias": "goias", "brasil": "brasil", "estagio": "estagio"}
 # prefixo do cabeçalho na aba "11 - Boletim Vagas" -> chave interna
 COLS = [("seção", "secao"), ("empresa", "empresa"), ("cargo", "cargo"), ("local", "local"),
         ("nível", "nivel"), ("regime", "regime"), ("publicação", "publicada"), ("prazo", "prazo"),
@@ -422,9 +462,12 @@ def main() -> int:
         print(f"Vagas lidas do CSV local: {total(data)}")
     else:
         data = load_data(not args.sem_planilha)
-    POST.write_text(render_post(data), encoding="utf-8")
-    COVER.write_text(render_cover(data), encoding="utf-8")
-    print(f"Post: {POST.relative_to(ROOT)}\nCapa: {COVER.relative_to(ROOT)}")
+    d = data["atualizado_em"]
+    post, cover = post_path(d), cover_path(d)
+    post.write_text(render_post(data), encoding="utf-8")
+    cover.write_text(render_cover(data), encoding="utf-8")
+    arquivar_anteriores(d)
+    print(f"Post: {post.relative_to(ROOT)}\nCapa: {cover.relative_to(ROOT)}")
     if args.so_site:
         print(f"Total de vagas: {total(data)}")
         return 0
